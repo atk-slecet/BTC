@@ -1,0 +1,22 @@
+focus_tree = {
+    id = USA
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = USA
+        }
+    }
+    default = no
+
+    focus = {
+        id = the new day
+        x = 5
+        y = 0    
+
+        cost = 10
+        
+        ai_will_do = 0
+    }
+
+}
