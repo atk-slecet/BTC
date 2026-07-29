@@ -313,3 +313,4 @@ add_equipment_to_stockpile = {
 	amount = 800
 	producer = THA
 }
+focus_tree = "THA"
