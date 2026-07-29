@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country Leaders
+	VIC_Truong_Chinh1 = {
+		name = VIC_Truong_Chinh1
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VIC/VIC_Truong_Chinh1.png"
+			}
+		}
+		country_leader = {
+			desc = " "
+			ideology = communist_mao_zedong_thought_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}

@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country Leaders
+	GER_albert_speer_1982 = {
+		name = GER_albert_speer_1982
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/GER_albert_speer_1982.png"
+			}
+		}
+		country_leader = {
+			desc = " "
+			ideology = national_socialism_reformed_national_socialism_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}

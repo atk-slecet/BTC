@@ -1,0 +1,37 @@
+﻿l_simp_chinese:
+ NRB: "沙巴共和国"
+ NRB_DEF: "沙巴共和国"
+ NRB_ADJ: "沙巴"
+ BRU: "文莱"
+ BRU_DEF: "文莱达鲁萨兰国"
+ BRU_ADJ: "文莱"
+ SRK: "砂拉越王国"
+ SRK_DEF: "砂拉越王国"
+ SRK_ADJ: "砂拉越"
+
+ SRK_Abdul_Rahman_Yakub: "阿都拉曼·耶谷"
+ 
+ SRK_socialist_party: "马共-砂拉越支部"
+ SRK_socialist_party_long: "马来亚共产党-砂拉越地下支部（ Parti Komunis Malaya Cawangan Sarawak）"
+ SRK_progressivism_party: "民间进步思潮"
+ SRK_progressivism_party_long: "民间进步思潮（ Parti Kemajuan Masyarakat）"
+ SRK_conservatism_party: "南洋洪门组织"
+ SRK_conservatism_party_long: "南洋洪门组织（ Kongsi Hong Men Nanyang）"
+ SRK_paternalism_party: "砂拉越民族党"
+ SRK_paternalism_party_long: "砂拉越民族党（ Parti Kebangsaan Sarawak）"
+
+ NRB_Mohamad_Adhan_Robert: "默罕默德·阿德南·罗伯特"
+
+ NRB_despotism_party: "沙巴人民党"
+ NRB_despotism_party_long: "沙巴人民党（ Parti Rakyat Sabah）"
+ NRB_paternalism_party: "第37军"
+ NRB_paternalism_party_long: "大日本帝国第37军（ Dai-Nippon Teikoku 37-gun）"
+
+ BRU_Suitan_Haji_Hassanal_Bolkiah: "苏丹哈吉·哈桑纳尔·博尔基亚"
+
+ BRU_paternalism_party: "引能仕株式会社"
+ BRU_paternalism_party_long: "日本引能仕株式会社（ Nippon Inouji Shikisho Kaisha）"
+ BRU_despotism_party: "瓦达乌拉王朝"
+ BRU_despotism_party_long: "瓦达乌拉王朝（ Walda Ullah Dynasty）"
+ BRU_despotism_1_party: "第37军"
+ BRU_despotism_1_party_long: "大日本帝国第37军（ Dai-Nippon Teikoku 37-gun）"

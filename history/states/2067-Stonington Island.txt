@@ -1,0 +1,24 @@
+state = {
+	id = 2067
+	name = "STATE_2067" # Stonington Island
+	manpower = 1
+
+	state_category = wasteland
+
+	history = {
+		set_state_flag = state_renamings
+		owner = AAN
+		add_core_of = AAN
+		add_core_of = AAN
+		add_core_of = AAN
+		add_claim_by = ENG
+		victory_points = { 17724 1 }
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces = {
+		17724
+	}
+}

@@ -1,0 +1,19 @@
+characters = {
+	# Starting Country leaders
+	AZH_Prem_Sahgal = {
+		name = AZH_Prem_Sahgal
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AZH/AZH_Prem_Sahgal.png"
+			}
+		}
+		country_leader = {
+			desc = ""
+			expire = "2019.1.1"
+			ideology = despotism_military_socialism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+}
+

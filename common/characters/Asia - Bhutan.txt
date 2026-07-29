@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country Leaders
+	BHU_Jigme_Sengge_Wangchuck = {
+		name = BHU_Jigme_Sengge_Wangchuck
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BHU/BHU_Jigme_Sengge_Wangchuck.png"
+			}
+		}
+		country_leader = {
+			desc = " "
+			ideology = despotism_absolute_monarchy_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}

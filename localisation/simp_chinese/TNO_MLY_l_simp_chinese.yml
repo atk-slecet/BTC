@@ -1,0 +1,17 @@
+﻿l_simp_chinese:
+  MLY: "马来亚共和国"
+  MLY_DEF: "马来亚共和国"
+  MLY_ADJ: "马来亚"
+
+  MLY_communist_party:0 "马来亚共产党"
+  MLY_communist_party_long:0 "马来亚共产党(Malay Communist Party)"
+  MLY_socialist_party:0 "马来亚人民党"
+  MLY_socialist_party_long:0 "马来亚人民党(Malay People's Party)"
+  MLY_liberalism_party:0 "马来亚印度国大党"
+  MLY_liberalism_party_long:0 "马来亚印度国大党(Malay Indian Congress)"
+  MLY_liberal_conservatism_party:0 "无党派"
+  MLY_liberal_conservatism_party_long:0 "无党派(Non-Partisan)"
+  MLY_conservatism_party:0 "马华公会"
+  MLY_conservatism_party_long:0 "马华公会(Malayan Chinese Association)"
+  
+  MLY_Kampo_Radjo: "甘波·拉祖"

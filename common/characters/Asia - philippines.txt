@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country Leaders
+	PHI_Benigno_Aquino = {
+		name = PHI_Benigno_Aquino
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PHI/PHI_Benigno_Aquino.png"
+			}
+		}
+		country_leader = {
+			desc = " "
+			ideology = liberalism_social_liberalism_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}

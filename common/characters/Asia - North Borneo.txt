@@ -1,0 +1,37 @@
+characters = {
+	#North Borneo
+	NRB_Mohamad_Adhan_Robert = {
+		name = NRB_Mohamad_Adhan_Robert
+		portraits = { civilian = { large = "gfx/leaders/NRB/NRB_Mohamad_Adhan_Robert.png" } }
+		country_leader = {
+			desc = "POLITICS_SUGIYAMA_SHIGERU_DESC"
+			ideology = despotism_aristocratic_republicanism_subtype
+			expire = "1999.1.1.1"
+			id = -1
+		}
+	}
+
+	#Brunei
+	BRU_Suitan_Haji_Hassanal_Bolkiah = {
+		name = BRU_Suitan_Haji_Hassanal_Bolkiah
+		portraits = { civilian = { large = "gfx/leaders/BRU/BRU_Suitan_Haji_Hassanal_Bolkiah.png" } }
+		country_leader = {
+			#desc=""
+			ideology = despotism_absolute_monarchy_subtype
+			expire = "1999.1.1.1"
+			id = -1
+		}
+	}
+
+	#Sarawak
+	SRK_Abdul_Rahman_Yakub = {
+		name = SRK_Abdul_Rahman_Yakub
+		portraits = { civilian = { large = "gfx/leaders/SRK/SRK_Abdul_Rahman_Yakub.png" } }
+		country_leader = {
+			#desc =""
+			ideology = paternalism_social_nationalism_subtype
+			expire = "1999.1.1.1"
+			id = -1
+		}
+	}
+}

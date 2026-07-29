@@ -1,0 +1,22 @@
+state = {
+	id = 444
+	name = "STATE_444"
+
+	history = {
+		owner = PAK
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = PAK
+		add_claim_by = AZH
+		victory_points = { 13594 2 }
+		set_state_flag = state_renamings
+	}
+
+	provinces = {
+		12774 7917 15990 13594
+	}
+	manpower = 155564
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+}

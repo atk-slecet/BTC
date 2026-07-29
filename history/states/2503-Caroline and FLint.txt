@@ -1,0 +1,23 @@
+state = {
+	id = 2503
+	name = "STATE_2503"
+	manpower = 73
+	state_category = tiny_island
+
+	history = {
+		owner = USC
+		add_core_of = USC
+		add_claim_by = NZL
+		add_claim_by = ENG
+		buildings = {
+			infrastructure = 2
+			air_base = 2
+			19958 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces = {
+		19958
+	}
+}

@@ -1,0 +1,29 @@
+state = {
+	id = 410
+	name = "STATE_410"
+
+	resources = {
+		oil = 12
+	}
+
+	history = {
+		owner = IRA
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = IRA
+		victory_points = {
+			18746 1
+		}
+		set_state_flag = GDP_category_large_city
+		set_state_flag = state_renamings
+	}
+
+	provinces = {
+		13606 18719 18746
+	}
+	manpower = 161219
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+	local_supplies = 0.000
+}

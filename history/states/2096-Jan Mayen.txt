@@ -1,0 +1,25 @@
+state = {
+	id = 2096
+	name = "STATE_2096"
+	manpower = 30
+	state_category = tiny_island
+
+	history = {
+		owner = USC
+		add_core_of = USC
+		add_claim_by = NOR
+		buildings = {
+			infrastructure = 1
+			barracks = 1
+			radar_station = 5
+			barracks = 1
+			16824 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces = {
+		16824
+	}
+}

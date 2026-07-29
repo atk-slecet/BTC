@@ -1,0 +1,33 @@
+﻿l_simp_chinese:
+
+ SAF_Harry_Schwarz: "哈里·施瓦茨"
+
+ 
+ SAF_despotism_party: "国民党 - 军国派"
+ SAF_despotism_party_long: "国民党 - 军国派(National Party - Militarists)"
+ SAF_paternalism_party: "国民党"
+ SAF_paternalism_party_long: "国民党(National Party)"
+ SAF_conservatism_party: "联合党 - 保守派"
+ SAF_conservatism_party_long: "联合南非国民党 - 保守派(United South African National Party - Conservatives)"
+ SAF_liberal_conservatism_party: "新共和党"
+ SAF_liberal_conservatism_party_long: "新共和党(New Repubulician Party)"
+ SAF_liberalism_party: "联合党 - 自由派"
+ SAF_liberalism_party_long: "联合南非国民党（自由派）(United South African National Party (Liberals))"
+ SAF_progressivism_party: "进步联邦党"
+ SAF_progressivism_party_long: "进步联邦党(Progressive Federal Party)"
+ SAF_socialist_party: "非国大"
+ SAF_socialist_party_long: "非洲人国民大会(African National Congress)"
+ SAF_communist_party: "南非共产党"
+ SAF_communist_party_long: "南非共产党(South African Communist Party)"
+
+
+ SAF: "南非联邦"
+ SAF_DEF: "南非联邦"
+ SAF_ADJ: "南非"
+
+ SAF_REP: "南非共和国"
+ SAF_REP_DEF: "南非共和国"
+ SAF_REP_ADJ: "南非"
+ SAF_DEBEERS: "南非共和国"
+ SAF_DEBEERS_DEF: "南非共和国"
+ SAF_DEBEERS_ADJ: "南非"

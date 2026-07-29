@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country Leaders
+	MLY_Kampo_Radjo = {
+		name = MLY_Kampo_Radjo
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MLY/MLY_Kampo_Radjo.png"
+			}
+		}
+		country_leader = {
+			desc = " "
+			ideology = socialist_revolutionary_frontism_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}

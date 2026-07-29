@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country Leaders
+	INS_Hamengku_BuwonoIX = {
+		name = INS_Hamengku_BuwonoIX
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/INS/INS_Hamengku_BuwonoIX.png"
+			}
+		}
+		country_leader = {
+			desc = " "
+			ideology = liberal_conservatism_moderate_technocracy_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}

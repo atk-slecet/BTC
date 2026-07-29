@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country Leaders
+	THA_Prem_Tinnasulanon = {
+		name = THA_Prem_Tinnasulanon
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/THA/THA_Prem_Tinnasulanon.png"
+			}
+		}
+		country_leader = {
+			desc = " "
+			ideology = despotism_royal_dictatorship_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}

@@ -1,0 +1,17 @@
+characters = {
+	CAO_Felix_Roland_Moumie = {
+		name = CAO_Felix_Roland_Moumie
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CAO/CAO_Felix_Roland_Moumie.png"
+                        }
+		}
+		country_leader = {
+			desc = " "
+			ideology = socialist_left_wing_nationalism_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}

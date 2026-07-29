@@ -1,0 +1,22 @@
+state = {
+	id = 2073
+	name = "STATE_2073" # GalAZHez Island
+	manpower = 1
+
+	state_category = wasteland
+
+	history = {
+		set_state_flag = universal_renamings
+		owner = AAN
+		add_core_of = AAN
+		add_core_of = AAN
+		add_claim_by = ENG
+		buildings = {
+			infrastructure = 0
+		}
+	}
+
+	provinces = {
+		17689
+	}
+}

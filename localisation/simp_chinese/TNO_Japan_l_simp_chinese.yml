@@ -1,0 +1,32 @@
+﻿l_simp_chinese:
+ JAP: "大日本帝国"
+ JAP_DEF: "大日本帝国"
+ JAP_ADJ: "日本"
+
+ JAP_progressivism_party: "社会党"
+ JAP_progressivism_party_long: "社会党"
+
+ JAP_liberalism_party: "协同党 - 新政策研究会"
+ JAP_liberalism_party_long: "协同党 - 新政策研究会"
+ JAP_paternalism_party: "协同党 - 政策科学研究所"
+ JAP_paternalism_party_long: "协同党 - 政策科学研究所"
+
+ JAP_conservatism_2_party: "公明党"
+ JAP_conservatism_2_party_long: "公明党"
+
+ JAP_conservatism_party: "自由党 - 木曜俱乐部"
+ JAP_conservatism_party_long: "自由党 - 木曜俱乐部"
+ JAP_conservatism_1_party: "自由党 - 新自由俱乐部"
+ JAP_conservatism_1_party_long: "自由党 - 新自由俱乐部"
+ JAP_paternalism_2_party: "自由党 - 宏池会"
+ JAP_paternalism_2_party_long: "自由党 - 宏池会"
+
+ JAP_despotism_party: "护国新党 - 清和会"
+ JAP_despotism_party_long: "护国新党 - 清和会"
+ JAP_fascism_2_party: "护国新党 - 维持会"
+ JAP_fascism_2_party_long: "护国新党 - 维持会"
+ JAP_fascism_2_party: "护国新党 - 青岗会"
+ JAP_fascism_2_party_long: "护国新党 - 青岗会"
+
+
+ JAP_Yasuhiro_Nakasone: "中曾根康弘"

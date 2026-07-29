@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country leaders
+	SAF_Harry_Schwarz = {
+		name = SAF_Harry_Schwarz
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAF/SAF_Harry_Schwarz.png"
+			}
+		}
+		country_leader = {
+			desc = ""
+			expire = "2019.1.1"
+			ideology = progressivism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+}

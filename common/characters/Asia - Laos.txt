@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country Leaders
+	LAO_Kaysone_Phomvihane = {
+		name = LAO_Kaysone_Phomvihane
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAO/LAO_Kaysone_Phomvihane.png"
+			}
+		}
+		country_leader = {
+			desc = " "
+			ideology = socialist_revolutionary_frontism_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}

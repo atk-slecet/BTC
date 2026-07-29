@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country Leaders
+	PAK_Zia_haq = {
+		name = PAK_Zia_haq
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAK/PAK_Zia_haq.png"
+			}
+		}
+		country_leader = {
+			desc = " "
+			ideology = despotism_military_junta_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}

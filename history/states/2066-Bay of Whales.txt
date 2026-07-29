@@ -1,0 +1,21 @@
+state = {
+	id = 2066
+	name = "STATE_2066" # Little America
+	manpower = 1
+
+	state_category = wasteland
+
+	history = {
+		owner = AAN
+		add_core_of = AAN
+		add_core_of = AAZ
+		victory_points = { 17791 1 }
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces = {
+		17791
+	}
+}

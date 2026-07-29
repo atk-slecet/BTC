@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country Leaders
+	NEP_Birendra_Bir_Bikram_Shah = {
+		name = NEP_Birendra_Bir_Bikram_Shah
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NEP/NEP_Birendra_Bir_Bikram_Shah.png"
+			}
+		}
+		country_leader = {
+			desc = " "
+			ideology = despotism_royal_dictatorship_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}

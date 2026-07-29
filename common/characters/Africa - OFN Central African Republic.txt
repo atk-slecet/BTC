@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country leaders
+	USC_William_Proxmire = {
+		name = USC_William_Proxmire
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USC/USC_William_Proxmire.png"
+			}
+		}
+		country_leader = {
+			desc = ""
+			expire = "2019.1.1"
+			ideology = liberalism_dynastic_liberalism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+}

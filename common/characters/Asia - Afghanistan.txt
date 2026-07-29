@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country Leaders
+	AFG_Akram_Yari = {
+		name = AFG_Akram_Yari
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AFG/AFG_Akram_Yari.png"
+			}
+		}
+		country_leader = {
+			desc = " "
+			ideology = communist_mao_zedong_thought_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}

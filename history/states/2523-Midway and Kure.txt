@@ -1,0 +1,27 @@
+state = {
+	id = 2523
+	name = "STATE_2523"
+	manpower = 2450
+	state_category = tiny_island
+
+	history = {
+		owner = USC
+		add_core_of = USC
+		buildings = {
+			infrastructure = 2
+			radar_station = 2
+			air_base = 2
+			20001 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			20001 1
+		}
+		set_state_flag = universal_renamings
+	}
+
+	provinces = {
+		20001
+	}
+}

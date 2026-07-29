@@ -1,0 +1,25 @@
+state = { #Population Done
+	id = 702
+	name = "STATE_702"
+	manpower = 221484
+
+	state_category = tiny_island
+
+	history = {
+		owner = CPV
+		add_core_of = CPV
+		victory_points = { 13014 5 }
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			13014 = {
+				naval_base = 1
+			}
+		}
+		set_state_flag = state_renamings
+	}
+
+	provinces = {
+		13014
+	}
+}

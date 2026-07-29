@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country Leaders
+	JAP_Yasuhiro_Nakasone = {
+		name = JAP_Yasuhiro_Nakasone
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAP_Yasuhiro_Nakasone.png"
+			}
+		}
+		country_leader = {
+			desc = " "
+			ideology = paternalism_national_conservatism_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}

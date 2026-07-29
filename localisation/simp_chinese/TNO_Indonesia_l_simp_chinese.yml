@@ -1,0 +1,25 @@
+﻿l_simp_chinese:
+ INS_communist:0 "印度尼西亚人民共和国"
+ INS_communist_DEF:0 "印度尼西亚人民共和国"
+ INS_socialist:0 "印度尼西亚人民共和国"
+ INS_socialist_DEF:0 "印度尼西亚人民共和国"
+ INS_FRI: "印度尼西亚共和国"
+ INS_FRI_DEF: "印度尼西亚共和国"
+ INS_FRI_ADJ: "印度尼西亚"
+
+ INS_Hamengku_BuwonoIX: "哈孟库·布沃诺九世"
+
+ INS_socialist_party:0 "印尼共产党"
+ INS_socialist_party_long:0 "印尼共产党"
+ INS_progressivism_party:0 "印尼社会党"
+ INS_progressivism_party_long:0 "印度尼西亚社会党(Partai Demokrasi Indonesia Perjuangan)"
+ INS_liberal_conservatism_party:0 "印度尼西亚民主党"
+ INS_liberal_conservatism_party_long:0 "印度尼西亚民主党"
+ INS_conservatism_party:0 "马斯尤美党"
+ INS_conservatism_party_long:0 "马斯尤美党(Partai Rakjat Muslimin Indonesia)"
+ INS_paternalism_party:0 "无党派"
+ INS_paternalism_party_long:0 "无党派(Non-Partisan)"
+
+ INS:0 "印度尼西亚共和国"
+ INS_DEF:0 "印度尼西亚共和国"
+ INS_ADJ:0 "印度尼西亚"

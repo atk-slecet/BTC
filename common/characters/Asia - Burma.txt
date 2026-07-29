@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country Leaders
+	BUR_Ting_Wu = {
+		name = BUR_Ting_Wu
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BUR/BUR_Ting_Wu.png"
+			}
+		}
+		country_leader = {
+			desc = " "
+			ideology = paternalism_social_nationalism_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}
