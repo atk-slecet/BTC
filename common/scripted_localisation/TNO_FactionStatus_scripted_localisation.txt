@@ -192,8 +192,8 @@ defined_text = {
 
 	### TRIUM ###
 	text = {
-		trigger = { has_idea = TRI_Founder_IT }
-		localization_key = "GFX_TRI_Founder_IT"
+		trigger = { has_idea = CP_Leader }
+		localization_key = "GFX_CP_Leader"
 	}
 	text = {
 		trigger = { has_idea = TRI_Founder_IB }
@@ -622,8 +622,8 @@ defined_text = {
 	}
 
 	text = {
-		trigger = { has_idea = TRI_Founder_IT }
-		localization_key = TRI_Founder_IT
+		trigger = { has_idea = CP_Leader }
+		localization_key = CP_Leader
 	}
 	text = {
 		trigger = { has_idea = TRI_Founder_IB }
@@ -1140,10 +1140,10 @@ defined_text = {
 	}
 
 
-	###Triumvirate
+	###Carnaro
 	text = {
-		trigger = { has_idea = TRI_Founder_IT }
-		localization_key = TRI_Founder_IT_desc
+		trigger = { has_idea = CP_Leader }
+		localization_key = CP_Leader_desc
 	}
 	text = {
 		trigger = { has_idea = TRI_Founder_IB }
