@@ -142,6 +142,11 @@ TNO_Spheres_init = {
 	}
 	
 	### ITALIAN SPHERE
+        for_each_scope_loop = {
+		array = ITA.faction_members
+		set_variable = { ECON_SPHERE_LEADER = ITA }
+	}
+
 	for_each_scope_loop = {
 		array = ITA.subjects
 		set_variable = { ECON_SPHERE_LEADER = ITA }
@@ -162,6 +167,7 @@ TNO_Spheres_init = {
 				tag = CHD
 				tag = MOR 
 				tag = AZA 
+ 
 			}
 		}
 		set_variable = { ECON_SPHERE_LEADER = ITA }
