@@ -122,8 +122,8 @@ spriteTypes = {
 		textureFile = "gfx/interface/factions/UA.dds"
 	}
 	spriteType = {
-		name = "GFX_einheitspakt"
-		textureFile = "gfx/interface/factions/EP.dds"
+		name = "GFX_Carnaro"
+		textureFile = "gfx/interface/factions/CA.dds"
 	}
 	spriteType = {
 		name = "GFX_triumvirate"
