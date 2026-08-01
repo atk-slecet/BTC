@@ -167,20 +167,8 @@ TNO_Spheres_init = {
 		set_variable = { ECON_SPHERE_LEADER = ITA }
 	}
 	
-	for_each_scope_loop = {
-		array = TUR.subjects
-		set_variable = { ECON_SPHERE_LEADER = TUR }
-	}
 	
-	every_country = {
-		limit = {
-			OR = {
-				tag = SNS
-				tag = BKU
-			}
-		}
-		set_variable = { ECON_SPHERE_LEADER = TUR }
-	}
+	
 
 	### IBERIAN SPHERE 
 	for_each_scope_loop = {
