@@ -1,0 +1,29 @@
+﻿l_simp_chinese:
+ 
+ SWI: "瑞士联邦"
+ SWI_DEF: "瑞士联邦"
+ SWI_ADJ: "瑞士联邦"
+
+ SWI_socialist_party:0 "瑞士劳动党和进步组织"
+ SWI_socialist_party_long:0 "瑞士劳动党和进步组织(Arbeiterpartei und Fortschrittsorganisation der Schweiz)"
+ SWI_progressivism_party:0 "社会民主党"
+ SWI_progressivism_party_long:0 "瑞士社会民主党(Sozialdemokratische Partei der Schweiz)"
+ SWI_progressivism_1_party:0 "地方进步主义政党"
+ SWI_progressivism_1_party_long:0 "地方进步主义政党(Lokalistische Fortschrittspartei)"
+ SWI_liberalism_party:0 "自由民主党"
+ SWI_liberalism_party_long:0 "瑞士自由民主党(Freisinnig-Demokratische Partei der Schweiz)"
+ SWI_liberalism_1_party:0 "地方自由主义政党"
+ SWI_liberalism_1_party_long:0 "地方自由主义政党(Lokalistische Freisinnige Partei)"
+ SWI_liberal_conservatism_party:0 "基督教民主人民党"
+ SWI_liberal_conservatism_party_long:0 "瑞士基督教民主人民党(Kristlich-Demokratische Volkspartei der Schweiz)"
+ SWI_conservatism_party:0 "瑞士人民党"
+ SWI_conservatism_party_long:0 "瑞士人民党(Schweizerische Volkspartei)"
+ SWI_paternalism_party:0 "瑞士联邦委员会"
+ SWI_paternalism_party_long:0 "瑞士联邦委员会(Schweizerische Bundesrat)"
+ SWI_conservatism_1_party:0 "地方保守主义政党"
+ SWI_conservatism_1_party_long:0 "地方保守主义政党(Lokalistische Konservative Partei)"
+ SWI_paternalism_1_party:0 "地方右翼政党"
+ SWI_paternalism_1_party_long:0 "地方右翼政党(Lokalistische Rechte Partei)"
+
+ SWI_Federal_Council: "联邦委员会"
+ 

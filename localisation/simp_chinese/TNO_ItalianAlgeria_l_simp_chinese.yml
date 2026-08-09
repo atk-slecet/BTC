@@ -2,4 +2,14 @@
  ILG: "阿尔及利亚共和国"
  ILG_DEF: "阿尔及利亚共和国"
  ILG_ADJ: "阿尔及利亚"
- 
+
+ ILG_Chadli_Ben_Djedid: "查德利·本·杰迪德"
+
+ ILG_ultranationalism_party: "阿尔及利亚伊斯兰运动"
+ ILG_ultranationalism_party_long: "阿尔及利亚伊斯兰运动(Algerian Islamic Movement)"
+ ILG_socialist_party: "社会主义先锋党"
+ ILG_socialist_party_long: "社会主义先锋党(Front of Socialist Forces)"
+ ILG_conservatism_party: "民族解放阵线-改革派"
+ ILG_conservatism_party_long: "民族解放阵线-改革派(Front for the Liberation of Algeria - Reformist Wing)"
+ ILG_paternalism_party: "民族解放阵线-保守派"
+ ILG_paternalism_party_long: "民族解放阵线-保守派(Front for the Liberation of Algeria - Conservative Wing)"
