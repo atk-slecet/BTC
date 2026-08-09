@@ -142,10 +142,14 @@ spriteTypes = {
 		textureFile = "gfx/interface/factions/status/OFN_Suspended_Member.dds"
 	}	
 
-	# Triumvirate
+	# CP (After Triumvirate)
 	spriteType = {
 		name = "GFX_CP_Leader"
 		textureFile = "gfx/interface/factions/status/GFX_CP_Leader.dds"
+	}
+	spriteType = {
+		name = "GFX_CP_Member_Client"
+		textureFile = "gfx/interface/factions/status/GFX_CP_Member_Client.dds"
 	}
 	spriteType = {
 		name = "GFX_TRI_Founder_IB"
