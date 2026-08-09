@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country Leaders
+	UKR_Otto_Kumm = {
+		name = UKR_Otto_Kumm
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UKR/UKR_Otto_Kumm.png"
+			}
+		}
+		country_leader = {
+			desc = " "
+			ideology = national_socialism_reformed_national_socialism_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}

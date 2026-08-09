@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country Leaders
+	BLR_Leo_Hepp = {
+		name = BLR_Leo_Hepp
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BLR/BLR_Leo_Hepp.png"
+			}
+		}
+		country_leader = {
+			desc = " "
+			ideology = national_socialism_reformed_national_socialism_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}

@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country Leaders
+	OST_Ulrich_Maiziere = {
+		name = OST_Ulrich_Maiziere
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/OST/OST_Ulrich_Maiziere.png"
+			}
+		}
+		country_leader = {
+			desc = " "
+			ideology = national_socialism_reformed_national_socialism_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}

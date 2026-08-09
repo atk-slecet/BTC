@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country Leaders
+	FRA_Francois_Mitterland = {
+		name = FRA_Francois_Mitterland
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/FRA_Francois_Mitterland.png"
+			}
+		}
+		country_leader = {
+			desc = " "
+			ideology = progressivism_reformist_socialism_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}

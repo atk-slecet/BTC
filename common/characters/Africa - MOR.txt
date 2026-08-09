@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country Leaders
+	MOR_Hassan_II = {
+		name = MOR_Hassan_II
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MOR/MOR_Hassan_II.png"
+			}
+		}
+		country_leader = {
+			desc = " "
+			ideology = despotism_royal_dictatorship_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}
