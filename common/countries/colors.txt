@@ -418,8 +418,8 @@ SWI = {
 }
 
 IBR = {
-	color = rgb { 198 172 130 }
-	color_ui = rgb { 198 172 130 }
+	color = rgb { 224 156 60 }
+	color_ui = rgb { 224 156 60 }
 }
 POR = {
 	color = rgb { 76 102 76 }
