@@ -20,7 +20,7 @@ TNO_Spheres_init = {
 				tag = WAL
 				tag = SWE
 				
-				
+				tag = TUR
 				tag = PAD
                                 tag = BLR
 			}
@@ -163,10 +163,6 @@ TNO_Spheres_init = {
 				tag = IRQ
 				tag = CRO
 				tag = OMA
-				tag = SWI
-				tag = CHD
-				tag = MOR 
-				tag = AZA 
  
 			}
 		}
@@ -185,7 +181,7 @@ TNO_Spheres_init = {
 	every_country = {
 		limit = {
 			OR = {
-				
+				tag = IBR
 			}
 		}
 		set_variable = { ECON_SPHERE_LEADER = IBR }
@@ -196,7 +192,6 @@ TNO_Spheres_init = {
 		limit = {
 			OR = {
 				tag = BRA
-				tag = GUC
 			}
 		}
 		set_variable = { ECON_SPHERE_LEADER = BRA }
