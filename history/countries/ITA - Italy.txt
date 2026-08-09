@@ -370,7 +370,6 @@ add_faction_goal_slot = { category = short_term  value = -10 }
 add_faction_goal_slot = { category = medium_term value = -10 }
 add_faction_goal_slot = { category = long_term   value = -10 }
 add_to_faction = ITA
-add_to_faction = IBR
 add_to_faction = GRE
 add_to_faction = YEM
 add_to_faction = IRQ
@@ -389,8 +388,6 @@ add_to_faction = JOR
 add_to_faction = ALB
 add_to_faction = TUN
 add_to_faction = BUL
-add_to_faction = MOR
-
 
 
 ### Policy Effectiveness

@@ -312,15 +312,15 @@ set_politics = {
 }
 
 set_popularities = {
-        socialist = 37.0
-        Progressivism_2 = 7.5
+        socialist = 35.0
+        Progressivism_2 = 6.5
         Progressivism = 4.0
-        liberalism = 7.5
+        liberalism = 6.5
         liberalism_2 = 2.0
         liberal_conservatism = 4.5
-        conservatism_2 = 1.5
-        conservatism = 30.0
-        conservatism_1 = 6.0
+        conservatism_2 = 2.5
+        conservatism = 31.0
+        conservatism_1 = 8.0
 
 }
 

@@ -25,105 +25,33 @@ add_mastery = {
 
 #CHARACTERS
 #Leaders
-recruit_character = IBR_Francisco_Franco
-recruit_character = IBR_Antonio_Salazar
-recruit_character = IBR_Iberian_Council
-recruit_character = IBR_Decentralized
-recruit_character = IBR_Manuel_Fraga
-recruit_character = IBR_Joao_Miller_Guerra
-recruit_character = IBR_Marcelo_Caetano
-recruit_character = IBR_Power_Vacuum
-recruit_character = IBR_Fernando_Alvarez_Miranda
-recruit_character = IBR_Jose_Maria_Gil_Robles
-recruit_character = IBR_Pio_Cabanillas
-recruit_character = IBR_Joaquin_Garrigues_Walker
-recruit_character = IBR_Francisco_Pinto_Balsemao
-recruit_character = IBR_Joaquin_Ruiz_Gimenez
-recruit_character = IBR_Francisco_Fernandez_Ordonez
-recruit_character = IBR_Armando_Adao_Silva
-recruit_character = IBR_Rodolfo_Llopis
-recruit_character = IBR_Mario_Soares
-recruit_character = IBR_Santiago_Carrillo
-recruit_character = IBR_Alvaro_Cunhal
-recruit_character = IBR_Enrique_Tierno_Galvan
-recruit_character = IBR_Rodolfo_Martin_Villa
-recruit_character = IBR_Various_Leaders
+
+recruit_character = IBR_Jorge_Verstrynge
+
 #Ministers
-recruit_character = IBR_Fernando_Maria_Castiella
-recruit_character = IBR_Jose_Ferreira_Dias
-recruit_character = IBR_Luis_Teixeira
-recruit_character = IBR_Jose_Correia_Oliveira
-recruit_character = IBR_Antonio_Barroso_Sanchez
-recruit_character = IBR_Pablo_Martin_Alonso
-recruit_character = IBR_Camilo_Menendez_Tolosa
-recruit_character = IBR_Antonio_Castro_Fernandes
-recruit_character = IBR_Mariano_Navarro_Rubio
-recruit_character = IBR_Juan_Castanon_Mena
-recruit_character = IBR_Jose_Maria_Areilza
-recruit_character = IBR_Enrique_Fuentes_Quintana
-recruit_character = IBR_Fernando_de_Santiago
-recruit_character = IBR_Torcuato_Fernandez_Miranda
-recruit_character = IBR_Joao_Freitas_Cruz
-recruit_character = IBR_Manuel_Gutierrez_Mellado
-recruit_character = IBR_Joao_Pereira_Campos
-recruit_character = IBR_Andre_Goncalves_Pereira
-recruit_character = IBR_Laureano_Lopez_Rodo
-recruit_character = IBR_Fernando_Herrero_Tejedor
+
+
 #High Command
-recruit_character = IBR_Luis_Camara_Pina
-recruit_character = IBR_Alberto_Andrade_Silva
-recruit_character = IBR_Francisco_Costa_Gomes
-recruit_character = IBR_Felipe_Jose_Abarzuza
-recruit_character = IBR_Adolfo_Baturone_Colombo
-recruit_character = IBR_Carlos_Buhigas_Garcia
-recruit_character = IBR_Bernardo_Mira_Delgado
-recruit_character = IBR_Joao_Corte_Real
-recruit_character = IBR_Luis_Navarro_Garnica
-recruit_character = IBR_Ignacio_Alfaro_Arregui
-recruit_character = IBR_Fernando_Quintanilha
-recruit_character = IBR_Juan_Romero_Manso
-recruit_character = IBR_Jose_Rodriguez_Lecea
-recruit_character = IBR_Jose_Daniel_Lacalle
-recruit_character = IBR_Julio_Salvador_Diaz
-recruit_character = IBR_Manuel_Diogo_Neto
-recruit_character = IBR_Angel_Gonzalez_Mendoza
-recruit_character = IBR_Indalencio_Nunez_Iglesias
-recruit_character = IBR_Manuel_Diez_Alegria
+
 #Generals and admirals
-recruit_character = IBR_Agustin_Munoz_Grandes
-recruit_character = IBR_Carlos_Asensio_Cabanillas
-recruit_character = IBR_Francisco_Coloma_Gallegos
-recruit_character = IBR_Mohammed_Mezziane
-recruit_character = IBR_Alfonso_Armada
-recruit_character = IBR_Antonio_Spinola
-recruit_character = IBR_Camilo_Alonso_Vega
-recruit_character = IBR_Santiago_Amado_Loriga
-recruit_character = IBR_Luis_Carrero_Blanco
-recruit_character = IBR_Angel_Liberal_Lucini
-recruit_character = IBR_Gabriel_Pita_Veiga
-recruit_character = IBR_Americo_Tomas
-recruit_character = IBR_Henrique_Tenreiro
-recruit_character = IBR_Pedro_Nieto_Antunez
-recruit_character = IBR_Rafael_Garcia_Valino
-recruit_character = IBR_Afonso_Almeida_Fernandes
+
 
 set_politics = {
-	ruling_party = despotism
-	last_election = "1936.2.16"
-	election_frequency = 36
-	elections_allowed = no
+	ruling_party = conservatism
+	last_election = "1979.2.16"
+	election_frequency = 48
+	elections_allowed = yes
 }
 
 set_popularities = {
-	communist = 6
-	socialist = 4
-	liberal_conservatism = 2
-	paternalism = 13
-	despotism = 0
-	despotism_3 = 28
-	despotism_2 = 20
-	fascism = 16
-	fascism_2 = 11
+	communist = 6.2
+	socialist = 4.6
+        socialist_1 = 2.8
+        progressivism = 30.4
+        liberalism = 1.6
+	liberal_conservatism = 11.4
+        conservatism = 40.9
+	paternalism = 2.1
 }
 
 set_variable = { despotism_2_var = token:IBR_despotism_2_auth }
@@ -158,58 +86,24 @@ set_air_oob = "IBR_1962_air"
 set_naval_oob = "IBR_1962_naval"
 load_focus_tree = IBR_Colonial_Budget
 
+set_country_flag = HAS_ECON_SPHERE
 
 
-add_dynamic_modifier = { modifier = IBR_iberian_economy_nightmare_dyn_mod }
-set_variable = { IBR_gdp_growth_nightmare_variable = -3.25 }
-set_variable = { IBR_inflation_nightmare_variable = 1.0 }
-set_variable = { IBR_misc_income_nightmare_variable = 0 }
-set_variable = { IBR_efficiency_gain_nightmare_variable = -0.15 }
-set_variable = { IBR_capacity_factory_nightmare_variable = -0.20 }
-set_variable = { IBR_building_speed_nightmare_variable = -0.25 }
-set_variable = { IBR_Economy_State_Var = 5 }
 
-add_dynamic_modifier = { modifier = IBR_agri_subsidies_dyn_mod }
-set_variable = { IBR_agri_subsidies_misc_costs_var = 0.30 }
+
 
 ###Evil and Intimidating Colonial Costs Code
-add_dynamic_modifier = { modifier = IBR_colonial_checks_balances_dyn_mod }
 #Component Calculation
-set_variable = { IBR_colonial_angola_costs = 0 } #N/A
-set_variable = { IBR_colonial_mozambique_costs = 0 } #N/A
-set_variable = { IBR_colonial_morocco_costs = 0.2 } #Garrison
-set_variable = { IBR_colonial_guinea_bissau_costs = 0.125 } #Garrison & Admin
-set_variable = { IBR_colonial_sao_tome_costs = 0.01 } #Garrison & Admin
-set_variable = { IBR_colonial_cabo_verde_costs = 0.090 } #Garrison & Admin
-set_variable = { IBR_colonial_equatorial_guinea_costs = 0.100 } #Garrison & Admin
-set_variable = { IBR_colonial_algeria_costs = 0.65 } #Garrison & Admin
-set_variable = { IBR_colonial_western_sahara_costs = 0.04 } #Garrison & Admin
 #Starting Amount of 1.207 Billion, aka 5% of GDP
-set_variable = { IBR_colonial_subsidies_misc_costs_var = 1.207 }
-
 ###Equally Evil and Intimidating Colonial Revenue Code
 #Component Calculation
-set_variable = { IBR_colonial_angola_revenue = 0 } #N/A
-set_variable = { IBR_colonial_mozambique_revenue = 0 } #N/A
-set_variable = { IBR_colonial_morocco_revenue = 0.325 } #Indirect Revenue
-set_variable = { IBR_colonial_guinea_bissau_revenue = 0.045 } #Resource Exploitation
-set_variable = { IBR_colonial_sao_tome_revenue = 0.001 } #Resource Exploitation
-set_variable = { IBR_colonial_cabo_verde_revenue = 0.034 } #Resource Exploitation
-set_variable = { IBR_colonial_equatorial_guinea_revenue = 0.02 } #Resource Exploitation
-set_variable = { IBR_colonial_algeria_revenue = 0.32 } #Resource Exploitation & Cheap Labor
-set_variable = { IBR_colonial_western_sahara_revenue = 0.001 } #Nothing, G, There is Nothing
-#Starting Amount of 0.746 Billion
-set_variable = { IBR_colonial_revenue_misc_income_var = 0.746 }
-#KD's Notes - It may look surprisingly close but keep in mind Morocco is giving a lot more than it costs and Iberia only controls 1/3 of Algeria
 
-set_variable = { IBR_colonial_political_var = 0.23 }
-set_variable = { IBR_colonial_consumer_goods_var = 0.24 }
-set_variable = { IBR_colonial_garrison_var = -0.12 }
-set_variable = { IBR_colonial_deficit_var = -3.688 }
+
 
 
 
 add_ideas = {
+        #
 	
 	#cabinet#
 	IBR_Antonio_Salazar_hog
@@ -281,12 +175,53 @@ add_ideas = {
 
 set_country_flag = tno_defined_startup_effectiveness
 
+set_variable = { tno_political_parties_effectiveness = 67 }
+set_variable = { tno_religious_rights_effectiveness = 39 }
+set_variable = { tno_trade_unions_effectiveness = 73 }
+set_variable = { tno_immigration_effectiveness = 50 }
+set_variable = { tno_slavery_effectiveness = 62 }
+set_variable = { tno_public_meetings_effectiveness = 80 }
+set_variable = { tno_press_rights_effectiveness = 72 }
+set_variable = { tno_vote_franchise_effectiveness = 72 }
 
+set_variable = { tno_conscription_effectiveness = 59 }
+set_variable = { tno_military_supervision_effectiveness = 68 }
+set_variable = { tno_training_effectiveness = 80 }
+set_variable = { tno_draft_exemptions_effectiveness = 61 }
 
+set_variable = { tno_trade_laws_effectiveness = 37 }
+set_variable = { tno_income_taxation_effectiveness = 53 }
+set_variable = { tno_minimum_wage_effectiveness = 70 }
+set_variable = { tno_max_workhours_effectiveness = 70 }
+set_variable = { tno_pensions_effectiveness = 76 }
+set_variable = { tno_unemployment_effectiveness = 65 }
 
+set_variable = { tno_health_care_effectiveness = 49 }
+set_variable = { tno_education_effectiveness = 68 }
+set_variable = { tno_penal_system_effectiveness = 75 }
+set_variable = { tno_gender_rights_effectiveness = 20 }
+set_variable = { tno_security_effectiveness = 68 }
+set_variable = { tno_regulations_effectiveness = 60 }
 
-set_variable = { TNO_economy_type = token:Econ_Type_Planned }
-set_variable = { TNO_economy_subtype = token:Econ_Subtype_Dirigisme }
+set_autonomy = {
+	target = MOR
+	autonomous_state = autonomy_associated
+}
+set_autonomy = {
+	target = GNB
+	autonomous_state = autonomy_associated
+}
+set_autonomy = {
+	target = SAO
+	autonomous_state = autonomy_associated
+}
+set_autonomy = {
+	target = EQG
+	autonomous_state = autonomy_associated
+}
+
+set_variable = { TNO_economy_type = token:Econ_Type_Capitalism }
+set_variable = { TNO_economy_subtype = token:Econ_Subtype_Social_Market }
 
 set_technology = {
 	basic_train = 1

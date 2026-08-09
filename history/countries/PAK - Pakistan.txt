@@ -1,4 +1,4 @@
-capital = 433
+capital = 1316
 
 # Vacant
 recruit_character = PAK_Generic_Vacant
