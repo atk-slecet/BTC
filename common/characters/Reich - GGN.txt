@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country Leaders
+	GGN_Ulrich_Wegener = {
+		name = GGN_Ulrich_Wegener
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GGN/GGN_Ulrich_Wegener.png"
+			}
+		}
+		country_leader = {
+			desc = " "
+			ideology = national_socialism_reformed_national_socialism_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}

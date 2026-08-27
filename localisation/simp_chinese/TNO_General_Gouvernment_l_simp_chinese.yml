@@ -2,3 +2,12 @@
  GGN: "波兰直辖领"
  GGN_DEF: "维斯瓦河省"
  GGN_ADJ: "德国"
+
+ GGN_communist_party: "波兰工人党"
+ GGN_communist_party_long: "波兰工人党"
+ GGN_paternalism_party: "波兰国家军"
+ GGN_paternalism_party_long: "波兰国家军"
+ GGN_national_socialism_party: "纳粹党-波兰"
+ GGN_national_socialism_party_long: "民族社会主义德意志工人党-波兰支部"
+
+ GGN_Ulrich_Wegener: "乌尔里希·韦格纳"

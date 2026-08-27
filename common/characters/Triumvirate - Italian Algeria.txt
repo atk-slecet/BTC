@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country Leaders
+	ILG_Chadli_Ben_Djedid = {
+		name = ILG_Chadli_Ben_Djedid
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ILG/ILG_Chadli_Ben_Djedid.png"
+			}
+		}
+		country_leader = {
+			desc = " "
+			ideology = conservatism_paternalistic_conservatism_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}

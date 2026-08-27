@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country Leaders
+	EGY_Anwar_Sadat = {
+		name = EGY_Anwar_Sadat
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EGY/EGY_Anwar_Sadat.png"
+			}
+		}
+		country_leader = {
+			desc = " "
+			ideology = paternalism_social_nationalism_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}

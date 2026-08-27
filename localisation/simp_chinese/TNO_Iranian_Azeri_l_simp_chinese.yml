@@ -1,0 +1,25 @@
+﻿l_simp_chinese:
+ IRA_communist_party: "伊朗人民党"
+ IRA_communist_party_long: "伊朗人民党(Noureddin Kianouri)"
+ IRA_communist_2_party: "人民敢死队游击队组织"
+ IRA_communist_2_party_long: "人民敢死队游击队组织(Bijan Jazani)"
+ IRA_communist_1_party: "工人阶级解放斗争组织"
+ IRA_communist_1_party_long: "工人阶级解放斗争组织(Taghi Shahram)"
+ IRA_socialist_party: "人民圣战者组织"
+ IRA_socialist_party_long: "人民圣战者组织(Massoud Rajavi)"
+ IRA_progressivism_party: "独立人士"
+ IRA_progressivism_party_long: "独立人士(Abdolkarim Lahiji)"
+ IRA_paternalism_party: "伊朗民族阵线"
+ IRA_paternalism_party_long: "伊朗民族阵线(Karim Sanjabi)"
+ IRA_paternalism_1_party: "库尔德斯坦民主党"
+ IRA_paternalism_1_party_long: "库尔德斯坦民主党(Abdul Rahman Ghassemlou)"
+ IRA_despotism_party: "伊斯兰共和党"
+ IRA_despotism_party_long: "伊斯兰共和党(Mohammad-Hoseyn Beheshti)"
+
+
+ IRA: "伊朗社会主义联邦"
+ IRA_DEF: "伊朗社会主义联邦"
+ IRA_ADJ: "伊朗"
+
+ 
+ IRA_Noureddin_Kianouri: "努尔丁·基亚努里"

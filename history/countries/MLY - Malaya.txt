@@ -280,10 +280,7 @@ set_variable = { tno_military_supervision_effectiveness = 50 }
 set_variable = { tno_training_effectiveness = 50 }
 set_variable = { tno_draft_exemptions_effectiveness = 50 }
 
-declare_war_on = {
-	target = SHO
-	type = civil_war
-}
+
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_2

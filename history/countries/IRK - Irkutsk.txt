@@ -94,6 +94,8 @@ add_faction_goal_slot = { category = short_term  value = -10 }
 add_faction_goal_slot = { category = medium_term value = -10 }
 add_faction_goal_slot = { category = long_term   value = -10 }
 add_to_faction = AFG
+add_to_faction = RFI
+add_to_faction = IRA
 
 
 add_ideas = {

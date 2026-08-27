@@ -440,6 +440,11 @@ diplomatic_relation = {
 	relation = military_access
 	active = yes
 }
+diplomatic_relation = {
+	country = SRK
+	relation = military_access
+	active = yes
+}
 
 
 

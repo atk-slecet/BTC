@@ -3925,11 +3925,11 @@ defined_text = {
 	}
 	text = {
 		trigger = { check_variable = { ECON_SPHERE_LEADER = CHI } }
-		localization_key = econ_sphere_name_tab_CME
+		localization_key = econ_sphere_name_tab_CHI
 	}
 	text = {
 		trigger = { check_variable = { ECON_SPHERE_LEADER = IRK } }
-		localization_key = econ_sphere_name_tab_IRK
+		localization_key = econ_sphere_name_tab_CME
 	}
 	text = {
 		trigger = { check_variable = { ECON_SPHERE_LEADER = ITA } }
@@ -4128,7 +4128,6 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = { ECON_SPHERE_LEADER = IBR }
-			has_global_flag = Triumvirate_Collapse
 		}
 		localization_key = "GFX_econ_sphere_icon_IBR"
 	}
