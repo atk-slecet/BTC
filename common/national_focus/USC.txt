@@ -1,0 +1,35 @@
+focus_tree = {
+    id = USC
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = USC
+        }
+    }
+    default = no
+
+    focus = {
+        id = Procmel_s_term
+        x = 5
+        y = 0    
+        cost = 10
+        ai_will_do = 0
+    }
+	focus = {
+		id = On_previous_scholars_views
+		relative_position_id = Procmel_s_term
+		x = -2
+		y = 2
+		cost = 1
+		ai_will_do = 0
+	}
+	focus = {
+		id = Assessment_of_the_current_situation
+		relative_position_id = Procmel_s_term
+		x = 2
+		y = 2
+		cost = 1
+		ai_will_do = 0
+	}
+}
