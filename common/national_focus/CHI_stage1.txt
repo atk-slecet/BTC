@@ -1,0 +1,332 @@
+shared_focus = {
+    id = Happy_New_Year
+    x = 5
+    y = 0
+    cost = 1
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    id = Preparing_the_policy_program
+    prerequisite = {
+        focus = Happy_New_Year
+    }
+    available_if_capitulated = yes
+    x = 5
+    y = 1
+    cost = 2
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    id = Legislative_agenda_set
+    prerequisite = {
+        focus = Preparing_the_policy_program
+    }
+    x = 5
+    y = 2
+    cost = 2
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    id = Cabinet_Policy_Outline
+    prerequisite = {
+        focus = Legislative_agenda_set
+    }
+    x = 5
+    y = 3
+    cost = 1
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    id = The_strategy_of_fiscal_centralization
+    prerequisite = {
+        focus = Cabinet_Policy_Outline
+    }
+    x = 0
+    y = 4
+    cost = 1
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    id = Live_within_your_means
+    prerequisite = {
+        focus = The_strategy_of_fiscal_centralization
+    }
+    x = 0
+    y = 5
+    cost = 1
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    id = A_plan_to_balance_provincial_governance
+    prerequisite = {
+        focus = Cabinet_Policy_Outline
+    }
+    x = 2
+    y = 4
+    cost = 1
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    id = Joint_provincial_governance
+    prerequisite = {
+        focus = A_plan_to_balance_provincial_governance
+    }
+    x = 2
+    y = 5
+    cost = 1
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    id = National_Defense_Strategy_Agenda
+    prerequisite = {
+        focus = Cabinet_Policy_Outline
+    }
+    x = 8
+    y = 4
+    cost = 1
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    id = The_strategy_of_strengthening_the_army_and_fortifying_defenses
+    prerequisite = {
+        focus = National_Defense_Strategy_Agenda
+    }
+    x = 8
+    y = 5
+    cost = 1
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    id = Diplomatic_relations_are_established
+    prerequisite = {
+        focus = Cabinet_Policy_Outline
+    }
+    x = 10
+    y = 4
+    cost = 1
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    id = mediate
+    prerequisite = {
+        focus = Diplomatic_relations_are_established
+    }
+    x = 10
+    y = 5
+    cost = 1
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    id = take_everything_into_consideration
+    prerequisite = {
+        focus = Cabinet_Policy_Outline
+    }
+    x = 5
+    y = 5
+    cost = 1
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    id = Department_Report
+    prerequisite = {
+        focus = Live_within_your_means
+    }
+    prerequisite = {
+        focus = Joint_provincial_governance
+    }
+    prerequisite = {
+        focus = take_everything_into_consideration
+    }
+    prerequisite = {
+        focus = The_strategy_of_strengthening_the_army_and_fortifying_defenses
+    }
+    prerequisite = {
+        focus = mediate
+    }
+    x = 5
+    y = 6
+    cost = 1
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    id = Successfully_discussing_policy
+    prerequisite = {
+        focus = Department_Report
+    }
+    x = 5
+    y = 7
+    cost = 1
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    id = juesuanyuzhenglingzhengbei
+    prerequisite = {
+        focus = Successfully_discussing_policy
+    }
+    x = 0
+    y = 8
+    cost = 1
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    id = yusuancaoanshenji
+    prerequisite = {
+        focus = juesuanyuzhenglingzhengbei
+    }
+    x = 0
+    y = 9
+    cost = 1
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    id = kaochayufangtuanshenhe
+    prerequisite = {
+        focus = Successfully_discussing_policy
+    }
+    x = 3
+    y = 8
+    cost = 1
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    id = kaochahuibao
+    prerequisite = {
+        focus = kaochayufangtuanshenhe
+    }
+    x = 3
+    y = 9
+    cost = 1
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    id = shenjidingdiao
+    prerequisite = {
+        focus = Successfully_discussing_policy
+    }
+    x = 7
+    y = 8
+    cost = 1
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    id = tijiaoshenjibaohao
+    prerequisite = {
+        focus = shenjidingdiao
+    }
+    x = 7
+    y = 9
+    cost = 1
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    id = zhaokaidangdaihui
+    prerequisite = {
+        focus = Successfully_discussing_policy
+    }
+    x = 10
+    y = 8
+    cost = 1
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    id = jueyianjiaofu
+    prerequisite = {
+        focus = zhaokaidangdaihui
+    }
+    x = 10
+    y = 9
+    cost = 1
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    id = juesuanjishizhengfananshenjihui
+    prerequisite = {
+        focus = yusuancaoanshenji
+    }
+    prerequisite = {
+        focus = tijiaoshenjibaohao
+    }
+    prerequisite = {
+        focus = kaochahuibao
+    }
+    prerequisite = {
+        focus = jueyianjiaofu
+    }
+    x = 5
+    y = 10
+    cost = 1
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    id = yusuanshencha
+    prerequisite = {
+        focus = juesuanjishizhengfananshenjihui
+    }
+    x = 2
+    y = 11
+    cost = 1
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    id = sheizhengjiantao
+    prerequisite = {
+        focus = juesuanjishizhengfananshenjihui
+    }
+    x = 5
+    y = 11
+    cost = 1
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    id = yusuankuangjia
+    prerequisite = {
+        focus = juesuanjishizhengfananshenjihui
+    }
+    x = 8
+    y = 11
+    cost = 1
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    id = bimu
+    prerequisite = {
+        focus = yusuanshencha
+    }
+    prerequisite = {
+        focus = sheizhengjiantao
+    }
+    prerequisite = {
+        focus = yusuankuangjia
+    }
+    x = 5
+    y = 12
+    cost = 1
+    ai_will_do = { factor = 100 }
+}
