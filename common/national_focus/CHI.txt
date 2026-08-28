@@ -19,7 +19,7 @@ focus_tree = {
     focus={
 		id=Preparing_the_policy_program
 		relative_position_id=Happy_New_Year
-        prerequisites={focus=Happy_New_Year}
+        prerequisite={focus=Happy_New_Year}
         available_if_capitulated=yes
 		x=0
 		y=2
@@ -29,7 +29,7 @@ focus_tree = {
     focus={
         id=Legislative_agenda_set
         relative_position_id=Preparing_the_policy_program
-        prerequisites={focus=Preparing_the_policy_program}
+        prerequisite={focus=Preparing_the_policy_program}
         x=0
         y=2
         cost=2
@@ -38,7 +38,7 @@ focus_tree = {
     focus={
         id=Cabinet_Policy_Outline
         relative_position_id=Legislative_agenda_set
-        prerequisites={focus=Legislative_agenda_set}
+        prerequisite={focus=Legislative_agenda_set}
         x=0
         y=2
         cost=1
@@ -47,7 +47,7 @@ focus_tree = {
     focus={
         id=The_strategy_of_fiscal_centralization
         relative_position_id=Cabinet_Policy_Outline
-        prerequisites={focus=Cabinet_Policy_Outline}
+        prerequisite={focus=Cabinet_Policy_Outline}
         x=-5
         y=2
         cost=1
@@ -56,7 +56,7 @@ focus_tree = {
     focus={
         id=Live_within_your_means
         relative_position_id=The_strategy_of_fiscal_centralization
-        prerequisites={focus=The_strategy_of_fiscal_centralization}
+        prerequisite={focus=The_strategy_of_fiscal_centralization}
         x=0
         y=2
         cost=1
@@ -65,7 +65,7 @@ focus_tree = {
     focus={
         id=A_plan_to_balance_provincial_governance
         relative_position_id=Cabinet_Policy_Outline
-        prerequisites={focus=Cabinet_Policy_Outline}
+        prerequisite={focus=Cabinet_Policy_Outline}
         x=-3
         y=2
         cost=1
@@ -74,7 +74,7 @@ focus_tree = {
     focus={
         id=Joint_provincial_governance
         relative_position_id=A_plan_to_balance_provincial_governance
-        prerequisites={focus=A_plan_to_balance_provincial_governance}
+        prerequisite={focus=A_plan_to_balance_provincial_governance}
         x=0
         y=2
         cost=1
@@ -83,7 +83,7 @@ focus_tree = {
     focus={
         id=National_Defense_Strategy_Agenda
         relative_position_id=Cabinet_Policy_Outline
-        prerequisites={focus=Cabinet_Policy_Outline}
+        prerequisite={focus=Cabinet_Policy_Outline}
         x=3
         y=2
         cost=1
@@ -92,7 +92,7 @@ focus_tree = {
     focus={
         id=The_strategy_of_strengthening_the_army_and_fortifying_defenses
         relative_position_id=National_Defense_Strategy_Agenda
-        prerequisites={focus=National_Defense_Strategy_Agenda}
+        prerequisite={focus=National_Defense_Strategy_Agenda}
         x=0
         y=2
         cost=1
@@ -101,7 +101,7 @@ focus_tree = {
     focus={
         id=Diplomatic_relations_are_established
         relative_position_id=Cabinet_Policy_Outline
-        prerequisites={focus=Cabinet_Policy_Outline}
+        prerequisite={focus=Cabinet_Policy_Outline}
         x=5
         y=2
         cost=1
@@ -110,7 +110,7 @@ focus_tree = {
     focus={
         id=mediate
         relative_position_id=Diplomatic_relations_are_established
-        prerequisites={focus=Diplomatic_relations_are_established}
+        prerequisite={focus=Diplomatic_relations_are_established}
         x=0
         y=2
         cost=1
@@ -119,7 +119,7 @@ focus_tree = {
     focus={
         id=take_everything_into_consideration
         relative_position_id=Cabinet_Policy_Outline
-        prerequisites={focus=Cabinet_Policy_Outline}
+        prerequisite={focus=Cabinet_Policy_Outline}
         x=0
         y=4
         cost=1
@@ -127,11 +127,11 @@ focus_tree = {
     }
     focus={
         id=Department_Report
-        prerequisites={focus=Live_within_your_means}
-        prerequisites={focus=Joint_provincial_governance}
-        prerequisites={focus=take_everything_into_consideration}
-        prerequisites={focus=The_strategy_of_strengthening_the_army_and_fortifying_defenses}
-        prerequisites={focus=mediate}
+        prerequisite={focus=Live_within_your_means}
+        prerequisite={focus=Joint_provincial_governance}
+        prerequisite={focus=take_everything_into_consideration}
+        prerequisite={focus=The_strategy_of_strengthening_the_army_and_fortifying_defenses}
+        prerequisite={focus=mediate}
         relative_position_id=Cabinet_Policy_Outline
         x=0
         y=6
@@ -141,7 +141,7 @@ focus_tree = {
     focus={
         id=Successfully_discussing_policy
         relative_position_id=Department_Report
-        prerequisites={focus=Department_Report}
+        prerequisite={focus=Department_Report}
         x=0
         y=2 
         cost=1
@@ -150,7 +150,7 @@ focus_tree = {
     focus={
         id=juesuanyuzhenglingzhengbei
         relative_position_id=Successfully_discussing_policy
-        prerequisites={focus=Successfully_discussing_policy}
+        prerequisite={focus=Successfully_discussing_policy}
         x=-5
         y=2
         cost=1
@@ -159,7 +159,7 @@ focus_tree = {
     focus={
         id=yusuancaoanshenji
         relative_position_id=juesuanyuzhenglingzhengbei
-        prerequisites={focus=juesuanyuzhenglingzhengbei}
+        prerequisite={focus=juesuanyuzhenglingzhengbei}
         x=0
         y=2
         cost=1
@@ -168,7 +168,7 @@ focus_tree = {
     focus={
         id=kaochayufangtuanshenhe
         relative_position_id=Successfully_discussing_policy
-        prerequisites={focus=Successfully_discussing_policy}
+        prerequisite={focus=Successfully_discussing_policy}
         x=-2
         y=2 
         cost=1
@@ -177,7 +177,7 @@ focus_tree = {
     focus={
         id=kaochahuibao
         relative_position_id=kaochayufangtuanshenhe
-        prerequisites={focus=kaochayufangtuanshenhe}
+        prerequisite={focus=kaochayufangtuanshenhe}
         x=0
         y=2
         cost=1
@@ -186,7 +186,7 @@ focus_tree = {
     focus={
         id=shenjidingdiao
         relative_position_id=Successfully_discussing_policy
-        prerequisites={focus=Successfully_discussing_policy}
+        prerequisite={focus=Successfully_discussing_policy}
         x=2
         y=2
         cost=1
@@ -195,7 +195,7 @@ focus_tree = {
     focus={
         id=tijiaoshenjibaohao
         relative_position_id=shenjidingdiao
-        prerequisites={focus=shenjidingdiao}
+        prerequisite={focus=shenjidingdiao}
         x=0
         y=2
         cost=1
@@ -204,7 +204,7 @@ focus_tree = {
     focus={
         id=zhaokaidangdaihui
         relative_position_id=Successfully_discussing_policy
-        prerequisites={focus=Successfully_discussing_policy}
+        prerequisite={focus=Successfully_discussing_policy}
         x=5
         y=2
         cost=1
@@ -213,7 +213,7 @@ focus_tree = {
     focus={
         id=jueyianjiaofu
         relative_position_id=zhaokaidangdaihui
-        prerequisites={focus=zhaokaidangdaihui}
+        prerequisite={focus=zhaokaidangdaihui}
         x=0
         y=2
         cost=1
@@ -221,10 +221,10 @@ focus_tree = {
     }
     focus={
         id=juesuanjishizhengfananshenjihui
-        prerequisites={focus={yusuancaoanshenji}}
-        prerequisites={focus={tijiaoshenjibaohao}}
-        prerequisites={focus={kaochahuibao}}
-        prerequisites={focus={jueyianjiaofu}}
+        prerequisite={focus=yusuancaoanshenji}
+        prerequisite={focus=tijiaoshenjibaohao}
+        prerequisite={focus=kaochahuibao}
+        prerequisite={focus=jueyianjiaofu}
         relative_position_id=Successfully_discussing_policy
         x=0
         y=6
@@ -233,7 +233,7 @@ focus_tree = {
     }
     focus={
         id=yusuanshencha
-        prerequisites={focus={juesuanjishizhengfananshenjihui}}
+        prerequisite={focus=juesuanjishizhengfananshenjihui}
         relative_position_id=juesuanjishizhengfananshenjihui
         x=-3
         y=2
@@ -242,7 +242,7 @@ focus_tree = {
     }
      focus={
         id=sheizhengjiantao
-        prerequisites={focus={juesuanjishizhengfananshenjihui}}
+        prerequisite={focus=juesuanjishizhengfananshenjihui}
         relative_position_id=juesuanjishizhengfananshenjihui
         x=0
         y=2
@@ -251,7 +251,7 @@ focus_tree = {
     }
     focus={
         id=yusuankuangjia
-        prerequisites={focus={juesuanjishizhengfananshenjihui}}
+        prerequisite={focus=juesuanjishizhengfananshenjihui}
         relative_position_id=juesuanjishizhengfananshenjihui
         x=3
         y=2
@@ -260,9 +260,9 @@ focus_tree = {
     }
     focus={
         id=bimu
-        prerequisites={focus={yusuanshencha}}
-        prerequisites={focus={sheizhengjiantao}}
-        prerequisites={focus={yusuankuangjia}}
+        prerequisite={focus=yusuanshencha}
+        prerequisite={focus=sheizhengjiantao}
+        prerequisite={focus=yusuankuangjia}
         relative_position_id=juesuanjishizhengfananshenjihui
         x=0
         y=4
