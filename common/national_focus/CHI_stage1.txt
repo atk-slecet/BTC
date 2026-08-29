@@ -8,6 +8,7 @@ shared_focus = {
 
 shared_focus = {
     id = Preparing_the_policy_program
+    icon = CHI_stage1_Happy_new_year.png
     prerequisite = {
         focus = Happy_New_Year
     }
