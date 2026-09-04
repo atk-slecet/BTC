@@ -1,5 +1,7 @@
 shared_focus = {
-    id = Happy_New_Year
+    #新年快乐#
+    id = CHI_stage1_1
+    icon = gfx_focus_CHI_stage_1_1
     x = 5
     y = 0
     cost = 1
@@ -7,10 +9,10 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = Preparing_the_policy_program
-    icon = CHI_stage1_Happy_new_year.png
+    #筹备施政纲领#
+    id = CHI_stage1_2
     prerequisite = {
-        focus = Happy_New_Year
+        focus = CHI_stage1_1
     }
     available_if_capitulated = yes
     x = 5
@@ -20,9 +22,10 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = Legislative_agenda_set
+    #立法院议程安排#
+    id = CHI_stage1_3
     prerequisite = {
-        focus = Preparing_the_policy_program
+        focus = CHI_stage1_2
     }
     x = 5
     y = 2
@@ -31,9 +34,10 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = Cabinet_Policy_Outline
+    #内阁政策总纲#
+    id = CHI_stage1_4
     prerequisite = {
-        focus = Legislative_agenda_set
+        focus = CHI_stage1_3
     }
     x = 5
     y = 3
@@ -42,9 +46,10 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = The_strategy_of_fiscal_centralization
+    #财政集中化策略#
+    id = CHI_stage1_5
     prerequisite = {
-        focus = Cabinet_Policy_Outline
+        focus = CHI_stage1_4
     }
     x = 0
     y = 4
@@ -53,9 +58,10 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = Live_within_your_means
+    #量入为出#
+    id = CHI_stage1_6
     prerequisite = {
-        focus = The_strategy_of_fiscal_centralization
+        focus = CHI_stage1_5
     }
     x = 0
     y = 5
@@ -64,9 +70,10 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = A_plan_to_balance_provincial_governance
+    #平衡省治#
+    id = CHI_stage1_7
     prerequisite = {
-        focus = Cabinet_Policy_Outline
+        focus = CHI_stage1_4
     }
     x = 2
     y = 4
@@ -75,9 +82,10 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = Joint_provincial_governance
+    #联合省治#
+    id = CHI_stage1_8
     prerequisite = {
-        focus = A_plan_to_balance_provincial_governance
+        focus = CHI_stage1_7
     }
     x = 2
     y = 5
@@ -86,9 +94,10 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = National_Defense_Strategy_Agenda
+    #国防战略议程#
+    id = CHI_stage1_9
     prerequisite = {
-        focus = Cabinet_Policy_Outline
+        focus = CHI_stage1_4
     }
     x = 8
     y = 4
@@ -97,9 +106,10 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = The_strategy_of_strengthening_the_army_and_fortifying_defenses
+    #加强军队与巩固防御的策略#
+    id = CHI_stage1_10
     prerequisite = {
-        focus = National_Defense_Strategy_Agenda
+        focus = CHI_stage1_9
     }
     x = 8
     y = 5
@@ -108,9 +118,10 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = Diplomatic_relations_are_established
+    #外交关系建立#
+    id = CHI_stage1_11
     prerequisite = {
-        focus = Cabinet_Policy_Outline
+        focus = CHI_stage1_4
     }
     x = 10
     y = 4
@@ -119,9 +130,10 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = mediate
+    #调解#
+    id = CHI_stage1_12
     prerequisite = {
-        focus = Diplomatic_relations_are_established
+        focus = CHI_stage1_11
     }
     x = 10
     y = 5
@@ -130,9 +142,10 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = take_everything_into_consideration
+    #统筹兼顾#
+    id = CHI_stage1_13
     prerequisite = {
-        focus = Cabinet_Policy_Outline
+        focus = CHI_stage1_4
     }
     x = 5
     y = 5
@@ -141,21 +154,22 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = Department_Report
+    #部门报告#
+    id = CHI_stage1_14
     prerequisite = {
-        focus = Live_within_your_means
+        focus = CHI_stage1_6
     }
     prerequisite = {
-        focus = Joint_provincial_governance
+        focus = CHI_stage1_8
     }
     prerequisite = {
-        focus = take_everything_into_consideration
+        focus = CHI_stage1_10
     }
     prerequisite = {
-        focus = The_strategy_of_strengthening_the_army_and_fortifying_defenses
+        focus = CHI_stage1_12
     }
     prerequisite = {
-        focus = mediate
+        focus = CHI_stage1_13
     }
     x = 5
     y = 6
@@ -164,9 +178,10 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = Successfully_discussing_policy
+    #成功讨论政策#
+    id = CHI_stage1_15
     prerequisite = {
-        focus = Department_Report
+        focus = CHI_stage1_14
     }
     x = 5
     y = 7
@@ -175,9 +190,10 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = juesuanyuzhenglingzhengbei
+    #决策预算与政策制定#
+    id = CHI_stage1_16
     prerequisite = {
-        focus = Successfully_discussing_policy
+        focus = CHI_stage1_15
     }
     x = 0
     y = 8
@@ -186,9 +202,10 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = yusuancaoanshenji
+    #预算草案审查#
+    id = CHI_stage1_17
     prerequisite = {
-        focus = juesuanyuzhenglingzhengbei
+        focus = CHI_stage1_16
     }
     x = 0
     y = 9
@@ -197,9 +214,10 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = kaochayufangtuanshenhe
+    #考察与方案审核#
+    id = CHI_stage1_18
     prerequisite = {
-        focus = Successfully_discussing_policy
+        focus = CHI_stage1_15
     }
     x = 3
     y = 8
@@ -208,9 +226,10 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = kaochahuibao
+    #考察报告#
+    id = CHI_stage1_19
     prerequisite = {
-        focus = kaochayufangtuanshenhe
+        focus = CHI_stage1_18
     }
     x = 3
     y = 9
@@ -219,9 +238,10 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = shenjidingdiao
+    #审定国策定调#
+    id = CHI_stage1_20
     prerequisite = {
-        focus = Successfully_discussing_policy
+        focus = CHI_stage1_15
     }
     x = 7
     y = 8
@@ -230,9 +250,10 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = tijiaoshenjibaohao
+    #提交审查报告#
+    id = CHI_stage1_21
     prerequisite = {
-        focus = shenjidingdiao
+        focus = CHI_stage1_20
     }
     x = 7
     y = 9
@@ -241,9 +262,10 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = zhaokaidangdaihui
+    #召开党的大会#
+    id = CHI_stage1_22
     prerequisite = {
-        focus = Successfully_discussing_policy
+        focus = CHI_stage1_15
     }
     x = 10
     y = 8
@@ -252,9 +274,10 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = jueyianjiaofu
+    #决议案交符#
+    id = CHI_stage1_23
     prerequisite = {
-        focus = zhaokaidangdaihui
+        focus = CHI_stage1_22
     }
     x = 10
     y = 9
@@ -263,18 +286,31 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = juesuanjishizhengfananshenjihui
+    #决策预算与政策制定#
+    id = CHI_stage1_16
     prerequisite = {
-        focus = yusuancaoanshenji
+        focus = CHI_stage1_15
+    }
+    x = 0
+    y = 8
+    cost = 1
+    ai_will_do = { factor = 100 }
+}
+
+shared_focus = {
+    #预算草案审查#
+    id = CHI_stage1_24
+    prerequisite = {
+        focus = CHI_stage1_17
     }
     prerequisite = {
-        focus = tijiaoshenjibaohao
+        focus = CHI_stage1_21
     }
     prerequisite = {
-        focus = kaochahuibao
+        focus = CHI_stage1_19
     }
     prerequisite = {
-        focus = jueyianjiaofu
+        focus = CHI_stage1_23
     }
     x = 5
     y = 10
@@ -283,9 +319,10 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = yusuanshencha
+    #决算审查#
+    id = CHI_stage1_25
     prerequisite = {
-        focus = juesuanjishizhengfananshenjihui
+        focus = CHI_stage1_24
     }
     x = 2
     y = 11
@@ -294,9 +331,10 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = sheizhengjiantao
+    #财政审查#
+    id = CHI_stage1_26
     prerequisite = {
-        focus = juesuanjishizhengfananshenjihui
+        focus = CHI_stage1_24
     }
     x = 5
     y = 11
@@ -305,9 +343,10 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = yusuankuangjia
+    #预算框架#
+    id = CHI_stage1_27
     prerequisite = {
-        focus = juesuanjishizhengfananshenjihui
+        focus = CHI_stage1_24
     }
     x = 8
     y = 11
@@ -316,15 +355,16 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = bimu
+    #闭幕#
+    id = CHI_stage1_28
     prerequisite = {
-        focus = yusuanshencha
+        focus = CHI_stage1_25
     }
     prerequisite = {
-        focus = sheizhengjiantao
+        focus = CHI_stage1_26
     }
     prerequisite = {
-        focus = yusuankuangjia
+        focus = CHI_stage1_27
     }
     x = 5
     y = 12

@@ -15,6 +15,7 @@ focus_tree = {
 
     default = no
 
-    shared_focus = Happy_New_Year
+    #新年快乐#
+    shared_focus = CHI_stage1_1
     
 }
