@@ -1,0 +1,359 @@
+CHI_election_category = {
+
+    CHI_open_election_gui = {
+
+        icon = GFX_decision_generic_political_action
+
+        allowed = {
+            original_tag = CHI
+        }
+
+        visible = {
+            always = yes
+        }
+
+        available = {
+            NOT = {
+                has_country_flag = CHI_election_gui_open
+            }
+        }
+
+        cost = 0
+
+        complete_effect = {
+
+            if = {
+                limit = {
+                    NOT = {
+                        has_country_flag = CHI_election_system_initialized
+                    }
+                }
+
+                set_country_flag = CHI_election_system_initialized
+
+                set_variable = {
+                    CHI_guangdong_map_frame = 0
+                }
+            }
+
+            CHI_initialize_party_system = yes
+
+            set_country_flag = CHI_election_gui_open
+
+            set_variable = {
+                CHI_election_selected_tab = 1
+            }
+            set_variable = {
+                CHI_guangdong_fill_y = 125
+            }
+            set_variable = {
+                CHI_xinjiang_fill_y = 125
+            }
+        }
+    }
+
+    CHI_test_guangdong_blue = {
+
+        icon = GFX_decision_generic_political_action
+
+        allowed = {
+            original_tag = CHI
+        }
+
+        visible = {
+            always = yes
+        }
+
+        available = {
+            always = yes
+        }
+
+        cost = 0
+
+        complete_effect = {
+
+            set_variable = {
+                CHI_guangdong_map_frame = 1
+            }
+        }
+    }
+
+
+    CHI_test_guangdong_red = {
+
+        icon = GFX_decision_generic_political_action
+
+        allowed = {
+            original_tag = CHI
+        }
+
+        visible = {
+            always = yes
+        }
+
+        available = {
+            always = yes
+        }
+
+        cost = 0
+
+        complete_effect = {
+
+            set_variable = {
+                CHI_guangdong_map_frame = 2
+            }
+        }
+    }
+        # ==========================================
+    # DEBUG：民盟加入民主宪政联盟
+    # ==========================================
+
+    CHI_debug_CDL_to_DCA = {
+
+        icon = GFX_decision_generic_political_action
+
+        allowed = {
+            original_tag = CHI
+        }
+
+        visible = {
+            always = yes
+        }
+
+        available = {
+            check_variable = {
+                CHI_CDL_alliance = 1
+            }
+        }
+
+        cost = 0
+
+        complete_effect = {
+
+            set_variable = {
+                CHI_CDL_alliance = 2
+            }
+
+            CHI_calculate_alliance_support = yes
+        }
+    }
+
+
+    # ==========================================
+    # DEBUG：民盟回到人民民主统一战线
+    # ==========================================
+
+    CHI_debug_CDL_to_PDUF = {
+
+        icon = GFX_decision_generic_political_action
+
+        allowed = {
+            original_tag = CHI
+        }
+
+        visible = {
+            always = yes
+        }
+
+        available = {
+            check_variable = {
+                CHI_CDL_alliance = 2
+            }
+        }
+
+        cost = 0
+
+        complete_effect = {
+
+            set_variable = {
+                CHI_CDL_alliance = 1
+            }
+
+            CHI_calculate_alliance_support = yes
+        }
+    }
+
+    CHI_debug_GD_frame_0 = {
+
+        icon = GFX_decision_generic_political_action
+
+        allowed = {
+            original_tag = CHI
+        }
+
+        visible = {
+            always = yes
+        }
+
+        available = {
+            always = yes
+        }
+
+        cost = 0
+
+        complete_effect = {
+            set_variable = {
+                CHI_guangdong_map_frame = 1
+            }
+        }
+    }
+
+
+    CHI_debug_GD_frame_1 = {
+
+        icon = GFX_decision_generic_political_action
+
+        allowed = {
+            original_tag = CHI
+        }
+
+        visible = {
+            always = yes
+        }
+
+        available = {
+            always = yes
+        }
+
+        cost = 0
+
+        complete_effect = {
+            set_variable = {
+                CHI_guangdong_map_frame = 2
+            }
+        }
+    }
+
+
+    CHI_debug_GD_frame_2 = {
+
+        icon = GFX_decision_generic_political_action
+
+        allowed = {
+            original_tag = CHI
+        }
+
+        visible = {
+            always = yes
+        }
+
+        available = {
+            always = yes
+        }
+
+        cost = 0
+
+        complete_effect = {
+            set_variable = {
+                CHI_guangdong_map_frame = 3
+            }
+        }
+    }
+
+
+    CHI_debug_GD_frame_3 = {
+
+        icon = GFX_decision_generic_political_action
+
+        allowed = {
+            original_tag = CHI
+        }
+
+        visible = {
+            always = yes
+        }
+
+        available = {
+            always = yes
+        }
+
+        cost = 0
+
+        complete_effect = {
+            set_variable = {
+                CHI_guangdong_map_frame = 4
+            }
+        }
+    }
+    
+    CHI_debug_GD_swing = {
+
+        icon = GFX_decision_generic_political_action
+
+        allowed = {
+            original_tag = CHI
+        }
+
+        visible = {
+            always = yes
+        }
+
+        available = {
+            always = yes
+        }
+
+        cost = 0
+
+        complete_effect = {
+
+            set_variable = {
+                CHI_GD_margin = 5
+            }
+
+            CHI_classify_guangdong_result = yes
+        }
+    }
+
+    CHI_debug_GD_red = {
+
+        icon = GFX_decision_generic_political_action
+
+        allowed = {
+            original_tag = CHI
+        }
+
+        visible = {
+            always = yes
+        }
+
+        available = {
+            always = yes
+        }
+
+        cost = 0
+
+        complete_effect = {
+
+            set_variable = {
+                CHI_GD_margin = -15
+            }
+
+            CHI_classify_guangdong_result = yes
+        }
+    }
+
+    CHI_debug_GD_party_raw_support = {
+
+        icon = GFX_decision_generic_political_action
+
+        allowed = {
+            original_tag = CHI
+        }
+
+        visible = {
+            always = yes
+        }
+
+        available = {
+            always = yes
+        }
+
+        cost = 0
+
+        complete_effect = {
+            CHI_calculate_guangdong_party_raw_support = yes
+            
+            CHI_calculate_guangdong_alliance_support = yes
+        }
+    } 
+}

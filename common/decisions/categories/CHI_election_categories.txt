@@ -1,0 +1,8 @@
+CHI_election_category = {
+
+    icon = GFX_decision_category_generic_political_actions
+
+    visible = {
+        original_tag = CHI
+    }
+}
