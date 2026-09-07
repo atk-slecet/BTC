@@ -1873,8 +1873,8 @@ PAN = {
 ## South America ##
 
 ARG = {
-	color = rgb { 59 52 129 }
-	color_ui = rgb { 59 52 129 }
+	color = rgb { 148 175 178 }
+	color_ui = rgb { 148 175 178 }
 }
 ARS = {
 	color = rgb { 148 175 178 }
