@@ -1,0 +1,50 @@
+﻿l_simp_chinese:
+ CHI_election_category: "中华民国政治"
+ CHI_election_category_desc: "中华民国的立法与选举。"
+
+ CHI_open_election_gui: "打开选举系统"
+ CHI_open_election_gui_desc: "查看全国选区与立法院的政治局势。"
+
+
+
+ CHI_LEGISLATURE_GUI_TITLE: "中华民国立法院"
+ CHI_ELECTION_DISTRICT_TAB: "选区"
+ CHI_ELECTION_LEGISLATURE_TAB: "立法院"
+ CHI_ELECTION_DISTRICT_PAGE_TEST: ""
+ CHI_ELECTION_LEGISLATURE_PAGE_TEST: "这里是立法院页面"
+ 
+ CHI_test_guangdong_blue: "§BDebug：广东变蓝§!"
+ CHI_test_guangdong_blue_desc: "将广东省的地图显示状态设置为国民党联盟。"
+
+ CHI_test_guangdong_red: "§RDebug：广东变红§!"
+ CHI_test_guangdong_red_desc: "将广东省的地图显示状态设置为共产党联盟。"
+
+ CHI_debug_CDL_to_DCA: "DEBUG：民盟加入民主宪政联盟"
+ CHI_debug_CDL_to_PDUF: "DEBUG：民盟加入人民民主统一战线"
+
+ CHI_debug_GD_party_raw_support: "DEBUG：计算广东地方政党支持率\n 中国共产党：[?CHI_GD_CPC_raw_support] 中国国民党： [?CHI_GD_KMT_raw_support] 临时测试: [?CHI_GD_PDUF_support] [?CHI_GD_DCA_support] [?CHI_GD_NEUTRAL_support]"
+
+ CHI_debug_CDL_to_DCA_desc: "§Y全国联盟支持率 Debug§!\n人民民主统一战线：§R[?CHI_PDUF_support]§!%\n民主宪政联盟：§B[?CHI_DCA_support]§!%\n中立：§W[?CHI_NEUTRAL_support]§!% \n\n广东 margin：[?CHI_GD_margin] 广东 map state：[?CHI_GD_map_state]"
+
+ CHI_debug_CDL_to_PDUF_desc: "§Y全国联盟支持率 Debug§!\n人民民主统一战线：§R[?CHI_PDUF_support]§!%\n民主宪政联盟：§B[?CHI_DCA_support]§!%\n中立：§W[?CHI_NEUTRAL_support]§!%"
+
+ CHI_GUANGDONG_POPUP_TITLE: "广东省"
+
+ CHI_GUANGDONG_HITBOX_TEST: "广东省\n\n岭南之地，珠江水暖，商通五大洲。\n\n各党支持率：\n§V中国共产党§!:[?CHI_GD_CPC_support|2]%\n§C中国国民党革命委员会§!:[?CHI_GD_RCCK_support|2]%\n§J中国农工民主党§!：[?CHI_GD_CAPD_support|2]%\n§I九三学社§!:[?CHI_GD_JSS_support|2]%\n§<中国民主同盟§!:[?CHI_GD_CDL_support|2]%\n§a中国致公党§!:[?CHI_GD_ZGD_support|2]%\n§i中国国民党§!:[?CHI_GD_KMT_support|2]%\n§B中国青年党§!:[?CHI_GD_YP_support|2]%\n§W无党派人士§!:[?CHI_GD_IND_support|2]%"
+ 
+ CHI_XINJIANG_HITBOX: "新疆省\n\n天山南北，大漠胡杨，西域之通衢。\n\n各党支持率：\n§V中国共产党§!:[?CHI_XJ_CPC_support|2]%\n§C中国国民党革命委员会§!:[?CHI_XJ_RCCK_support|2]%\n§J中国农工民主党§!：[?CHI_XJ_CAPD_support|2]%\n§I九三学社§!:[?CHI_XJ_JSS_support|2]%\n§<中国民主同盟§!:[?CHI_XJ_CDL_support|2]%\n§a中国致公党§!:[?CHI_XJ_ZGD_support|2]%\n§i中国国民党§!:[?CHI_XJ_KMT_support|2]%\n§B中国青年党§!:[?CHI_XJ_YP_support|2]%\n§W无党派人士§!:[?CHI_XJ_IND_support|2]%"
+ 
+ CHI_LIAONING_HITBOX: "辽宁省\n\n辽河沃野，渤海之滨，东北锁钥地。\n\n各党支持率：\n§V中国共产党§!:[?CHI_LN_CPC_support|2]%\n§C中国国民党革命委员会§!:[?CHI_LN_RCCK_support|2]%\n§J中国农工民主党§!:[?CHI_LN_CAPD_support|2]%\n§I九三学社§!:[?CHI_LN_JSS_support|2]%\n§<中国民主同盟§!:[?CHI_LN_CDL_support|2]%\n§a中国致公党§!:[?CHI_LN_ZGD_support|2]%\n§i中国国民党§!:[?CHI_LN_KMT_support|2]%\n§B中国青年党§!:[?CHI_LN_YP_support|2]%\n§W无党派人士§!:[?CHI_LN_IND_support|2]%"
+ CHI_JILIN_HITBOX: "吉林省\n\n松花江畔，长白山下，黑土育粮仓。\n\n各党支持率：\n§V中国共产党§!:[?CHI_JL_CPC_support|2]%\n§C中国国民党革命委员会§!:[?CHI_JL_RCCK_support|2]%\n§J中国农工民主党§!:[?CHI_JL_CAPD_support|2]%\n§I九三学社§!:[?CHI_JL_JSS_support|2]%\n§<中国民主同盟§!:[?CHI_JL_CDL_support|2]%\n§a中国致公党§!:[?CHI_JL_ZGD_support|2]%\n§i中国国民党§!:[?CHI_JL_KMT_support|2]%\n§B中国青年党§!:[?CHI_JL_YP_support|2]%\n§W无党派人士§!:[?CHI_JL_IND_support|2]%"
+ CHI_HEILONGJIANG_HITBOX: "黑龙江省\n\n北大荒原，三江汇流，寒地蕴生机。\n\n各党支持率：\n§V中国共产党§!:[?CHI_HLJ_CPC_support|2]%\n§C中国国民党革命委员会§!:[?CHI_HLJ_RCCK_support|2]%\n§J中国农工民主党§!:[?CHI_HLJ_CAPD_support|2]%\n§I九三学社§!:[?CHI_HLJ_JSS_support|2]%\n§<中国民主同盟§!:[?CHI_HLJ_CDL_support|2]%\n§a中国致公党§!:[?CHI_HLJ_ZGD_support|2]%\n§i中国国民党§!:[?CHI_HLJ_KMT_support|2]%\n§B中国青年党§!:[?CHI_HLJ_YP_support|2]%\n§W无党派人士§!:[?CHI_HLJ_IND_support|2]%"
+ CHI_XINGAN_HITBOX: "兴安省\n\n远东故土，雪原千里，树林海苍茫。\n\n各党支持率：\n§V中国共产党§!:[?CHI_XA_CPC_support|2]%\n§C中国国民党革命委员会§!:[?CHI_XA_RCCK_support|2]%\n§J中国农工民主党§!:[?CHI_XA_CAPD_support|2]%\n§I九三学社§!:[?CHI_XA_JSS_support|2]%\n§<中国民主同盟§!:[?CHI_XA_CDL_support|2]%\n§a中国致公党§!:[?CHI_XA_ZGD_support|2]%\n§i中国国民党§!:[?CHI_XA_KMT_support|2]%\n§B中国青年党§!:[?CHI_XA_YP_support|2]%\n§W无党派人士§!:[?CHI_XA_IND_support|2]%"
+ CHI_WUSULI_HITBOX: "乌苏里省\n\n千里黑金，群峰藏矿，龙脊锁北疆。\n\n各党支持率：\n§V中国共产党§!:[?CHI_WSL_CPC_support|2]%\n§C中国国民党革命委员会§!:[?CHI_WSL_RCCK_support|2]%\n§J中国农工民主党§!:[?CHI_WSL_CAPD_support|2]%\n§I九三学社§!:[?CHI_WSL_JSS_support|2]%\n§<中国民主同盟§!:[?CHI_WSL_CDL_support|2]%\n§a中国致公党§!:[?CHI_WSL_ZGD_support|2]%\n§i中国国民党§!:[?CHI_WSL_KMT_support|2]%\n§B中国青年党§!:[?CHI_WSL_YP_support|2]%\n§W无党派人士§!:[?CHI_WSL_IND_support|2]%"
+ CHI_HAISHENWEI_HITBOX: "海参崴院辖市\n\n远东良港，雪覆深湾，振兴新边疆。\n\n各党支持率：\n§V中国共产党§!:[?CHI_HSW_CPC_support|2]%\n§C中国国民党革命委员会§!:[?CHI_HSW_RCCK_support|2]%\n§J中国农工民主党§!:[?CHI_HSW_CAPD_support|2]%\n§I九三学社§!:[?CHI_HSW_JSS_support|2]%\n§<中国民主同盟§!:[?CHI_HSW_CDL_support|2]%\n§a中国致公党§!:[?CHI_HSW_ZGD_support|2]%\n§i中国国民党§!:[?CHI_HSW_KMT_support|2]%\n§B中国青年党§!:[?CHI_HSW_YP_support|2]%\n§W无党派人士§!:[?CHI_HSW_IND_support|2]%"
+ CHI_REHE_HITBOX: "热河省\n\n避暑山庄，塞外水乡，燕山北咽喉。\n\n各党支持率：\n§V中国共产党§!:[?CHI_RH_CPC_support|2]%\n§C中国国民党革命委员会§!:[?CHI_RH_RCCK_support|2]%\n§J中国农工民主党§!:[?CHI_RH_CAPD_support|2]%\n§I九三学社§!:[?CHI_RH_JSS_support|2]%\n§<中国民主同盟§!:[?CHI_RH_CDL_support|2]%\n§a中国致公党§!:[?CHI_RH_ZGD_support|2]%\n§i中国国民党§!:[?CHI_RH_KMT_support|2]%\n§B中国青年党§!:[?CHI_RH_YP_support|2]%\n§W无党派人士§!:[?CHI_RH_IND_support|2]%"
+ 
+ CHI_SHANXI_HITBOX: "山西省\n\n表里山河，三晋风骨，煤铁甲天下。\n\n各党支持率：\n§V中国共产党§!:[?CHI_SX_CPC_support|2]%\n§C中国国民党革命委员会§!:[?CHI_SX_RCCK_support|2]%\n§J中国农工民主党§!:[?CHI_SX_CAPD_support|2]%\n§I九三学社§!:[?CHI_SX_JSS_support|2]%\n§<中国民主同盟§!:[?CHI_SX_CDL_support|2]%\n§a中国致公党§!:[?CHI_SX_ZGD_support|2]%\n§i中国国民党§!:[?CHI_SX_KMT_support|2]%\n§B中国青年党§!:[?CHI_SX_YP_support|2]%\n§W无党派人士§!:[?CHI_SX_IND_support|2]%"
+ 
+ CHI_debug_GD_frame_0: "DEBUG：广东 Frame 0"
+ CHI_debug_GD_frame_1: "DEBUG：广东 Frame 1"
+ CHI_debug_GD_frame_2: "DEBUG：广东 Frame 2"
+ CHI_debug_GD_frame_3: "DEBUG：广东 Frame 3"

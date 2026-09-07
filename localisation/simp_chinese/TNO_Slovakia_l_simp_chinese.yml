@@ -1,0 +1,28 @@
+﻿l_simp_chinese:
+ SLO_communist_party: "斯共"
+ SLO_communist_party_long: "斯洛伐克共产党(Komunistická Strana Slovenska)"
+ #SLO_socialist_party: "复兴党"
+ #SLO_socialist_party_long: "斯洛伐克复兴党(Strana Slovenskej Obrody)"
+ #SLO_progressivism_party: "斯洛伐克社民党"
+ #SLO_progressivism_party_long: "斯洛伐克社会民主党(Sociálnodemokratická Strana Slovenska)"
+ SLO_progressivism_party: "斯洛伐克安提法"
+ SLO_progressivism_party_long: "斯洛伐克反法西斯运动"
+ SLO_liberalism_party: "异见分子"
+ SLO_liberalism_party_long: "异见分子"
+ #SLO_liberalism_party: "自由和团结党"
+ #SLO_liberalism_party_long: "自由和团结党(Sloboda a Solidarita)"
+ #SLO_conservatism_party: "民主党"
+ #SLO_conservatism_party_long: "民主党(Demokratická Strana)"
+ SLO_paternalism_party: "斯洛伐克国民议会"
+ SLO_paternalism_party_long: "斯洛伐克国民议会(Slovenská Národná Rada)"
+ SLO_fascism_party: "赫林卡党"
+ SLO_fascism_party_long: "赫林卡斯洛伐克人民党(Hlinkova Slovenská Ludová Strana)"
+ SLO_national_socialism_party: "赫林卡党"
+ SLO_national_socialism_party_long: "赫林卡斯洛伐克人民党(Hlinkova Slovenská Ludová Strana)"
+
+
+ SLO_Stefan_Tiso: "什特凡·蒂索"
+ 
+ SLO_DEF: "斯洛伐克共和国"
+ SLO_ADJ: "斯洛伐克"
+ SLO: "斯洛伐克共和国"

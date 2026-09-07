@@ -1,0 +1,28 @@
+﻿l_simp_chinese:
+ DEN_communist_party:0 "丹麦共产党"
+ DEN_communist_party_long:0 "丹麦共产党(Dansk Kommunist Parti)"
+ DEN_socialist_party:0 "丹麦共产党"
+ DEN_socialist_party_long:0 "丹麦共产党(Dansk Kommunist Parti)"
+ DEN_progressivism_party:0 "社会民主党"
+ DEN_progressivism_party_long:0 "社会民主党(Sosialdemokratiet)"
+ DEN_liberalism_2_party:0 "激进自由党"
+ DEN_liberalism_2_party_long:0 "激进自由党"
+ DEN_liberalism_party:0 "自由党"
+ DEN_liberalism_party_long:0 "自由党"
+ DEN_liberal_conservatism_party:0 "中央民主党"
+ DEN_liberal_conservatism_party_long:0 "中央民主党"
+ DEN_conservatism_party:0 "保守人民党"
+ DEN_conservatism_party_long:0 "保守人民党(Konservativtt Folkeparti)"
+ DEN_conservatism_1_party:0 "进步党"
+ DEN_conservatism_1_party_long:0 "进步党"
+ DEN_conservatism_2_party:0 "基督教人民党"
+ DEN_conservatism_2_party_long:0 "基督教人民党"
+ DEN_fascism_party:0 "地方极右翼政党"
+ DEN_fascism_party_long:0 "地方极右翼政党"
+
+
+ DEN:0 "丹麦王国"
+ DEN_DEF:0 "丹麦王国"
+ DEN_ADJ:0 "丹麦"
+
+ DEN_Anker_Jorgensen:0 "安高·约恩森"
