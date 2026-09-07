@@ -1,15 +1,15 @@
 characters = {
 	# Starting Country Leaders
-	JAP_Yasuhiro_Nakasone = {
-		name = JAP_Yasuhiro_Nakasone
+	JAP_Toshio_Komoto = {
+		name = JAP_Toshio_Komoto
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/JAP/JAP_Yasuhiro_Nakasone.png"
+				large = "gfx/leaders/JAP/JAP_Toshio_Komoto.png"
 			}
 		}
 		country_leader = {
 			desc = " "
-			ideology = paternalism_national_conservatism_subtype
+			ideology = liberalism_national_liberal_subtype
 			traits = { }
 			expire = "2019.1.1.1"
 			id = -1

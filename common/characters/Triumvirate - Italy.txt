@@ -1,0 +1,18 @@
+characters = {
+	# Country leaders #
+	ITA_Giorgio_Pini = {
+		name = ITA_Giorgio_Pini
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ITA/ITA_Giorgio_Pini.png"
+			}
+		}
+		country_leader = {
+			desc = ""
+			expire = "1999.1.1"
+			ideology = fascism_sansepolcrismo_subtype
+			traits = { }
+			id = -1
+		}
+	}
+}

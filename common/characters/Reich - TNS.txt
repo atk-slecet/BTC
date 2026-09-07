@@ -1,15 +1,15 @@
 characters = {
 	# Starting Country Leaders
-	BLR_Leo_Hepp = {
-		name = BLR_Leo_Hepp
+	TNS_Pridnestrovian_Rada = {
+		name = TNS_Pridnestrovian_Rada
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/BLR/BLR_Leo_Hepp.png"
+				large = "gfx/leaders/TNS/TNS_Pridnestrovian_Rada.png"
 			}
 		}
 		country_leader = {
 			desc = " "
-			ideology = national_socialism_reformed_national_socialism_subtype
+			ideology = despotism_civilian_dictatorship_subtype
 			traits = { }
 			expire = "2019.1.1.1"
 			id = -1
