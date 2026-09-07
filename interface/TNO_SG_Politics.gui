@@ -190,7 +190,7 @@ guiTypes = {
 			position = {x = -30 y = -26}
 			quadTextureSprite = "GFX_Carnaro"
 			scale = 0.61334
-			pdx_tooltip = Carnaro
+			pdx_tooltip = Carnaro_treaty
 		}
 		iconType = {
 			name = "faction_icon_mediterranean_bloc"
