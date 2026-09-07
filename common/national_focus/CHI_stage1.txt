@@ -1,5 +1,6 @@
 shared_focus = {
     id = Happy_New_Year
+    icon = GFX_focus_Happy_New_Year
     x = 5
     y = 0
     cost = 1
