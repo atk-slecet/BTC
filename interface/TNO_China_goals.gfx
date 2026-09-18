@@ -1,7 +1,0 @@
-SpriteTypes = {
-	SpriteType = {
-		name = "gfx_focus_CHI_stage_1_1"
-		texturefile = "gfx/interface/goals/CHI/gfx_focus_CHI_stage_1_1.dds"
-	}
-	
-}

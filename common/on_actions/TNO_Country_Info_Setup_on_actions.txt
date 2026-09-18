@@ -71,28 +71,46 @@ on_actions = {
 					add_to_array = { CountryInfo_array_main = 101 }
 					add_to_array = { CountryInfo_array_main = 1 }
 					add_to_array = { CountryInfo_array_main = 2 }
-					add_to_array = { CountryInfo_array_main = 3 }
-					add_to_array = { CountryInfo_array_main = 4 }
-					add_to_array = { CountryInfo_array_main = 5 }
 					
 					add_to_array = { CountryInfo_folder_country_101 = 1 }
 					add_to_array = { CountryInfo_folder_country_101 = 2 }
-					add_to_array = { CountryInfo_folder_country_101 = 3 }
-					add_to_array = { CountryInfo_folder_country_101 = 4 }
-					add_to_array = { CountryInfo_folder_country_101 = 5 }
 					
 					add_to_array = { CountryInfo_array_main = 102 }
+					add_to_array = { CountryInfo_array_main = 3 }
+					add_to_array = { CountryInfo_array_main = 4 }
+					
+					add_to_array = { CountryInfo_folder_country_102 = 3 }
+					add_to_array = { CountryInfo_folder_country_102 = 4 }
+
+					add_to_array = { CountryInfo_array_main = 103 }
+					add_to_array = { CountryInfo_array_main = 5 }
 					add_to_array = { CountryInfo_array_main = 6 }
 					add_to_array = { CountryInfo_array_main = 7 }
+					
+					add_to_array = { CountryInfo_folder_country_103 = 5 }
+					add_to_array = { CountryInfo_folder_country_103 = 6 }
+					add_to_array = { CountryInfo_folder_country_103 = 7 }
+
+					add_to_array = { CountryInfo_array_main = 104 }
 					add_to_array = { CountryInfo_array_main = 8 }
 					add_to_array = { CountryInfo_array_main = 9 }
+					add_to_array = { CountryInfo_array_main = 10 }
 					
-					add_to_array = { CountryInfo_folder_country_102 = 6 }
-					add_to_array = { CountryInfo_folder_country_102 = 7 }
-					add_to_array = { CountryInfo_folder_country_102 = 8 }
-					add_to_array = { CountryInfo_folder_country_102 = 9 }
+					add_to_array = { CountryInfo_folder_country_104 = 8 }
+					add_to_array = { CountryInfo_folder_country_104 = 9 }
+					add_to_array = { CountryInfo_folder_country_104 = 10 }
+					
+					add_to_array = { CountryInfo_array_main = 105 }
+					add_to_array = { CountryInfo_array_main = 11 }
+					add_to_array = { CountryInfo_array_main = 12 }
+					
+					add_to_array = { CountryInfo_folder_country_105 = 11 }
+					add_to_array = { CountryInfo_folder_country_105 = 12 }
+
+
 					set_country_flag = CountryInfo_HasCustomCloseButton
 				}
+
 				if = {
 					limit = {
 						original_tag = BRG
@@ -226,22 +244,39 @@ on_actions = {
 				}
 
 				else_if = {
-					limit = {
-						original_tag = IRK
-					}
+					      limit = {
+                        original_tag = IRK
+                    }
+                    add_to_array = { CountryInfo_array_main = 101 }
+                    add_to_array = { CountryInfo_array_main = 1 }
+                    add_to_array = { CountryInfo_array_main = 2 }
+                    add_to_array = { CountryInfo_array_main = 3 }
+                    add_to_array = { CountryInfo_folder_country_101 = 1 }
+                    add_to_array = { CountryInfo_folder_country_101 = 2 }
+                    add_to_array = { CountryInfo_folder_country_101 = 3 }
 
-					add_to_array = { CountryInfo_array_main = 101 }
-					add_to_array = { CountryInfo_array_main = 1 }
-					add_to_array = { CountryInfo_array_main = 2 }
-					add_to_array = { CountryInfo_folder_country_101 = 1 }
-					add_to_array = { CountryInfo_folder_country_101 = 2 }
-					
-					add_to_array = { CountryInfo_array_main = 102 }
-					add_to_array = { CountryInfo_array_main = 3 }
-					add_to_array = { CountryInfo_array_main = 4 }
-					add_to_array = { CountryInfo_folder_country_102 = 3 }
+                    
+                    add_to_array = { CountryInfo_array_main = 102 }
+                    add_to_array = { CountryInfo_array_main = 4 }
+                    add_to_array = { CountryInfo_array_main = 5 }
+                    add_to_array = { CountryInfo_array_main = 6 }
+                    add_to_array = { CountryInfo_array_main = 7 }
 					add_to_array = { CountryInfo_folder_country_102 = 4 }
-				}
+					add_to_array = { CountryInfo_folder_country_102 = 5 }
+					add_to_array = { CountryInfo_folder_country_102 = 6 }
+					add_to_array = { CountryInfo_folder_country_102 = 7 }
+
+                    add_to_array = { CountryInfo_array_main = 103 }
+                    add_to_array = { CountryInfo_array_main = 8 }
+                    add_to_array = { CountryInfo_array_main = 9 }
+                    add_to_array = { CountryInfo_array_main = 10 }
+                    add_to_array = { CountryInfo_array_main = 11 }
+                    add_to_array = { CountryInfo_folder_country_103 = 8 }
+                    add_to_array = { CountryInfo_folder_country_103 = 9 }
+                    add_to_array = { CountryInfo_folder_country_103 = 10 }
+                    add_to_array = { CountryInfo_folder_country_103 = 11 }
+                    set_country_flag = CountryInfo_HasCustomCloseButton
+                }
 
 				else_if = {
 					limit = {

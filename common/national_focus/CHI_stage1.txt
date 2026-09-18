@@ -1,7 +1,7 @@
 shared_focus = {
     #新年快乐#
-    id = CHI_stage1_1
-    icon = gfx_focus_CHI_stage_1_1
+    id = Happy_New_Year
+    icon GFX_focus_Happy_New_Year
     x = 5
     y = 0
     cost = 1
@@ -10,9 +10,9 @@ shared_focus = {
 
 shared_focus = {
     #筹备施政纲领#
-    id = CHI_stage1_2
+    id = Preparing_a_policy_agenda
     prerequisite = {
-        focus = CHI_stage1_1
+        focus = Happy_New_Year
     }
     available_if_capitulated = yes
     x = 5
@@ -23,9 +23,9 @@ shared_focus = {
 
 shared_focus = {
     #立法院议程安排#
-    id = CHI_stage1_3
+    id = Legislative_Agenda
     prerequisite = {
-        focus = CHI_stage1_2
+        focus = Preparing_a_policy_agenda
     }
     x = 5
     y = 2
@@ -35,9 +35,9 @@ shared_focus = {
 
 shared_focus = {
     #内阁政策总纲#
-    id = CHI_stage1_4
+    id = Cabinet_Policy_Outline
     prerequisite = {
-        focus = CHI_stage1_3
+        focus = Legislative_Agenda
     }
     x = 5
     y = 3
@@ -47,9 +47,9 @@ shared_focus = {
 
 shared_focus = {
     #财政集中化策略#
-    id = CHI_stage1_5
+    id = Fiscal_Centralization_Strategy
     prerequisite = {
-        focus = CHI_stage1_4
+        focus = Cabinet_Policy_Outline
     }
     x = 0
     y = 4
@@ -59,9 +59,9 @@ shared_focus = {
 
 shared_focus = {
     #量入为出#
-    id = CHI_stage1_6
+    id = Live_within_your_means
     prerequisite = {
-        focus = CHI_stage1_5
+        focus = Fiscal_Centralization_Strategy
     }
     x = 0
     y = 5
@@ -71,9 +71,9 @@ shared_focus = {
 
 shared_focus = {
     #平衡省治#
-    id = CHI_stage1_7
+    id = Balanced_provincial_governance
     prerequisite = {
-        focus = CHI_stage1_4
+        focus = Cabinet_Policy_Outline
     }
     x = 2
     y = 4
@@ -83,9 +83,9 @@ shared_focus = {
 
 shared_focus = {
     #联合省治#
-    id = CHI_stage1_8
+    id = Joint_provincial_governance
     prerequisite = {
-        focus = CHI_stage1_7
+        focus = Balanced_provincial_governance
     }
     x = 2
     y = 5
@@ -95,9 +95,9 @@ shared_focus = {
 
 shared_focus = {
     #国防战略议程#
-    id = CHI_stage1_9
+    id = National_Defense_Strategy_Agenda
     prerequisite = {
-        focus = CHI_stage1_4
+        focus = Cabinet_Policy_Outline
     }
     x = 8
     y = 4
@@ -107,9 +107,9 @@ shared_focus = {
 
 shared_focus = {
     #加强军队与巩固防御的策略#
-    id = CHI_stage1_10
+    id = Strategies_for_strengthening_the_army_and_shoring_up_defenses
     prerequisite = {
-        focus = CHI_stage1_9
+        focus = National_Defense_Strategy_Agenda
     }
     x = 8
     y = 5
@@ -119,9 +119,9 @@ shared_focus = {
 
 shared_focus = {
     #外交关系建立#
-    id = CHI_stage1_11
+    id = Establishing_diplomatic_relations
     prerequisite = {
-        focus = CHI_stage1_4
+        focus = Cabinet_Policy_Outline
     }
     x = 10
     y = 4
@@ -131,9 +131,9 @@ shared_focus = {
 
 shared_focus = {
     #调解#
-    id = CHI_stage1_12
+    id = mediate
     prerequisite = {
-        focus = CHI_stage1_11
+        focus = Establishing_diplomatic_relations
     }
     x = 10
     y = 5
@@ -143,9 +143,9 @@ shared_focus = {
 
 shared_focus = {
     #统筹兼顾#
-    id = CHI_stage1_13
+    id = take_everything_into_consideration
     prerequisite = {
-        focus = CHI_stage1_4
+        focus = Cabinet_Policy_Outline
     }
     x = 5
     y = 5
@@ -155,21 +155,21 @@ shared_focus = {
 
 shared_focus = {
     #部门报告#
-    id = CHI_stage1_14
+    id = Department_Report
     prerequisite = {
-        focus = CHI_stage1_6
+        focus = Live_within_your_means
     }
     prerequisite = {
-        focus = CHI_stage1_8
+        focus = Joint_provincial_governance
     }
     prerequisite = {
-        focus = CHI_stage1_10
+        focus = Strategies_for_strengthening_the_army_and_shoring_up_defenses
     }
     prerequisite = {
-        focus = CHI_stage1_12
+        focus = mediate
     }
     prerequisite = {
-        focus = CHI_stage1_13
+        focus = take_everything_into_consideration
     }
     x = 5
     y = 6
@@ -179,9 +179,9 @@ shared_focus = {
 
 shared_focus = {
     #成功讨论政策#
-    id = CHI_stage1_15
+    id = Successfully_discussed_policy
     prerequisite = {
-        focus = CHI_stage1_14
+        focus = Department_Report
     }
     x = 5
     y = 7
@@ -191,9 +191,9 @@ shared_focus = {
 
 shared_focus = {
     #决策预算与政策制定#
-    id = CHI_stage1_16
+    id = Decision-making_budgeting_and_policy-making
     prerequisite = {
-        focus = CHI_stage1_15
+        focus = Successfully_discussed_policy
     }
     x = 0
     y = 8
@@ -203,9 +203,9 @@ shared_focus = {
 
 shared_focus = {
     #预算草案审查#
-    id = CHI_stage1_17
+    id = Budget_Draft_Review
     prerequisite = {
-        focus = CHI_stage1_16
+        focus = Decision-making_budgeting_and_policy-making
     }
     x = 0
     y = 9
@@ -215,9 +215,9 @@ shared_focus = {
 
 shared_focus = {
     #考察与方案审核#
-    id = CHI_stage1_18
+    id = Inspection_and_Plan_Review
     prerequisite = {
-        focus = CHI_stage1_15
+        focus = Successfully_discussed_policy
     }
     x = 3
     y = 8
@@ -227,9 +227,9 @@ shared_focus = {
 
 shared_focus = {
     #考察报告#
-    id = CHI_stage1_19
+    id = Survey_Report
     prerequisite = {
-        focus = CHI_stage1_18
+        focus = Inspection_and_Plan_Review
     }
     x = 3
     y = 9
@@ -238,10 +238,10 @@ shared_focus = {
 }
 
 shared_focus = {
-    #审定国策定调#
-    id = CHI_stage1_20
+    #调审定国策定#
+    id = Set_the_tone_for_national_policy_review
     prerequisite = {
-        focus = CHI_stage1_15
+        focus = Successfully_discussed_policy
     }
     x = 7
     y = 8
@@ -251,9 +251,9 @@ shared_focus = {
 
 shared_focus = {
     #提交审查报告#
-    id = CHI_stage1_21
+    id = Submit_the_review_report
     prerequisite = {
-        focus = CHI_stage1_20
+        focus = Set_the_tone_for_national_policy_review
     }
     x = 7
     y = 9
@@ -263,9 +263,9 @@ shared_focus = {
 
 shared_focus = {
     #召开党的大会#
-    id = CHI_stage1_22
+    id = Hold_a_party_meeting
     prerequisite = {
-        focus = CHI_stage1_15
+        focus = Successfully_discussed_policy
     }
     x = 10
     y = 8
@@ -275,9 +275,9 @@ shared_focus = {
 
 shared_focus = {
     #决议案交符#
-    id = CHI_stage1_23
+    id = Resolution_delivery
     prerequisite = {
-        focus = CHI_stage1_22
+        focus = Hold_a_party_meeting
     }
     x = 10
     y = 9
@@ -286,31 +286,19 @@ shared_focus = {
 }
 
 shared_focus = {
-    #决策预算与政策制定#
-    id = CHI_stage1_16
-    prerequisite = {
-        focus = CHI_stage1_15
-    }
-    x = 0
-    y = 8
-    cost = 1
-    ai_will_do = { factor = 100 }
-}
-
-shared_focus = {
     #预算草案审查#
-    id = CHI_stage1_24
+    id = Budget_and_Policy_Review_Meeting
     prerequisite = {
-        focus = CHI_stage1_17
+        focus = Budget_Draft_Review
     }
     prerequisite = {
-        focus = CHI_stage1_21
+        focus = Survey_Report
     }
     prerequisite = {
-        focus = CHI_stage1_19
+        focus = Submit_the_review_report
     }
     prerequisite = {
-        focus = CHI_stage1_23
+        focus = Resolution_delivery
     }
     x = 5
     y = 10
@@ -320,9 +308,9 @@ shared_focus = {
 
 shared_focus = {
     #决算审查#
-    id = CHI_stage1_25
+    id = Final_Accounts_Review
     prerequisite = {
-        focus = CHI_stage1_24
+        focus = Budget_and_Policy_Review_Meeting
     }
     x = 2
     y = 11
@@ -332,9 +320,9 @@ shared_focus = {
 
 shared_focus = {
     #财政审查#
-    id = CHI_stage1_26
+    id = financial_review
     prerequisite = {
-        focus = CHI_stage1_24
+        focus = Budget_and_Policy_Review_Meeting
     }
     x = 5
     y = 11
@@ -344,9 +332,9 @@ shared_focus = {
 
 shared_focus = {
     #预算框架#
-    id = CHI_stage1_27
+    id = Budget_framework
     prerequisite = {
-        focus = CHI_stage1_24
+        focus = Budget_and_Policy_Review_Meeting
     }
     x = 8
     y = 11
@@ -356,15 +344,15 @@ shared_focus = {
 
 shared_focus = {
     #闭幕#
-    id = CHI_stage1_28
+    id = Closed
     prerequisite = {
-        focus = CHI_stage1_25
+        focus = Final_Accounts_Review
     }
     prerequisite = {
-        focus = CHI_stage1_26
+        focus = financial_review
     }
     prerequisite = {
-        focus = CHI_stage1_27
+        focus = Budget_framework
     }
     x = 5
     y = 12
