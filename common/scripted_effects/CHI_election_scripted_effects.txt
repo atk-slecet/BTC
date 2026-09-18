@@ -1,0 +1,46 @@
+CHI_update_guangdong_map = {
+
+    # ==========================================
+    # 默认 Debug 状态
+    # ==========================================
+
+    set_variable = {
+        CHI_guangdong_map_frame = 0
+    }
+
+
+    # ==========================================
+    # 国民党联盟胜
+    # ==========================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_guangdong_kmt_alliance_support >
+                CHI_guangdong_cpc_alliance_support
+            }
+        }
+
+        set_variable = {
+            CHI_guangdong_map_frame = 1
+        }
+    }
+
+
+    # ==========================================
+    # 共产党联盟胜
+    # ==========================================
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_guangdong_cpc_alliance_support >
+                CHI_guangdong_kmt_alliance_support
+            }
+        }
+
+        set_variable = {
+            CHI_guangdong_map_frame = 2
+        }
+    }
+}

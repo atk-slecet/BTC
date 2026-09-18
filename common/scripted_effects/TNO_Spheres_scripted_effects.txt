@@ -50,15 +50,17 @@ TNO_Spheres_init = {
 				tag = PAN
 				tag = ECU
 				tag = HON
-				tag = GUA
-				tag = ELS
-				tag = NIC
 				tag = PRU
 				tag = VEN
-				tag = CHL
 				tag = URG
 				tag = FWI
                                 tag = PHI
+				tag = BOL
+				tag = ARG
+				tag = ARS 
+				tag = PAR
+                                tag = GUC
+     
 			}
 		}
 		set_variable = { ECON_SPHERE_LEADER = USC }
@@ -182,6 +184,8 @@ TNO_Spheres_init = {
 		limit = {
 			OR = {
 				tag = IBR
+				tag = ELS
+				tag = NIC 
 			}
 		}
 		set_variable = { ECON_SPHERE_LEADER = IBR }
@@ -202,17 +206,22 @@ TNO_Spheres_init = {
 	every_country = {
 		limit = {
 			OR = {
-				tag = ARG
-				tag = PAR
-				tag = STC
+				
 			}
 		}
 		set_variable = { ECON_SPHERE_LEADER = ARG }
 	}
 
 	### Mexican Sphere
-	MEX = {
-		set_country_flag = HAS_ECON_SPHERE
+	MEX = { set_country_flag = HAS_ECON_SPHERE }
+	every_country = {
+		limit = {
+			OR = {
+				tag = MEX
+				tag = GUA
+				
+			}
+		}
 		set_variable = { ECON_SPHERE_LEADER = MEX }
 	}
 }

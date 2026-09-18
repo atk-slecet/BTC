@@ -1,0 +1,349 @@
+scripted_gui = {
+
+    CHI_election_gui = {
+
+        window_name = "CHI_election_window"
+        context_type = player_context
+
+        visible = {
+            original_tag = CHI
+            has_country_flag = CHI_election_gui_open
+        }
+
+        properties = {
+
+            CHI_guangdong_fill = {
+                frame = CHI_guangdong_map_frame
+                y = CHI_guangdong_fill_y
+            }
+
+            CHI_xinjiang_fill = {
+                frame = CHI_xinjiang_map_frame
+                y = CHI_xinjiang_fill_y
+            }
+
+            CHI_liaoning_fill = {
+                frame = CHI_liaoning_map_frame
+                y = CHI_liaoning_fill_y
+            }
+
+            CHI_jilin_fill = {
+                frame = CHI_jilin_map_frame
+                y = CHI_jilin_fill_y
+            }
+
+            CHI_heilongjiang_fill = {
+                frame = CHI_heilongjiang_map_frame
+                y = CHI_heilongjiang_fill_y
+            }
+
+            CHI_xingan_fill = {
+                frame = CHI_xingan_map_frame
+                y = CHI_xingan_fill_y
+            }
+
+            CHI_wusuli_fill = {
+                frame = CHI_wusuli_map_frame
+                y = CHI_xingan_fill_y
+            }
+
+            CHI_haishenwei_fill = {
+                frame = CHI_haishenwei_map_frame
+                y = CHI_haishenwei_fill_y
+            }
+
+            CHI_rehe_fill = {
+                frame = CHI_rehe_map_frame
+                y = CHI_rehe_fill_y
+            }
+
+            CHI_shanxi_fill = {
+                frame = CHI_shanxi_map_frame
+                y = CHI_shanxi_fill_y
+            }
+        }
+
+        effects = {
+
+            CHI_election_close_button_click = {
+                clr_country_flag = CHI_election_gui_open
+            }
+
+            CHI_district_tab_button_click = {
+                set_variable = {
+                    CHI_election_selected_tab = 1
+                }
+                
+
+                set_variable = {
+                    CHI_guangdong_fill_y = 135
+                }
+
+                set_variable = {
+                    CHI_xinjiang_fill_y = 135
+                }
+
+                set_variable = {
+                    CHI_liaoning_fill_y = 135
+                }
+
+                set_variable = {
+                    CHI_jilin_fill_y = 135
+                }
+
+                set_variable = {
+                    CHI_heilongjiang_fill_y = 135
+                }
+
+                set_variable = {
+                    CHI_xingan_fill_y = 135
+                }
+
+                set_variable = {
+                    CHI_wusuli_fill_y = 135
+                }
+
+                set_variable = {
+                    CHI_haishenwei_fill_y = 135
+                }
+
+                set_variable = {
+                    CHI_rehe_fill_y = 135
+                }
+
+                set_variable = {
+                    CHI_shanxi_fill_y = 135
+                }
+
+                
+            }
+
+            CHI_legislature_tab_button_click = {
+                set_variable = {
+                    CHI_election_selected_tab = 2
+                }
+                
+
+
+                set_variable = {
+                    CHI_guangdong_fill_y = -1000
+                }
+
+                set_variable = {
+                    CHI_xinjiang_fill_y = -1000
+                }
+
+                set_variable = {
+                    CHI_liaoning_fill_y = -1000
+                }
+
+                set_variable = {
+                    CHI_jilin_fill_y = -1000
+                }
+
+                set_variable = {
+                    CHI_heilongjiang_fill_y = -1000
+                }
+
+                set_variable = {
+                    CHI_xingan_fill_y = -1000
+                }
+
+                set_variable = {
+                    CHI_wusuli_fill_y = -1000
+                }
+
+                set_variable = {
+                    CHI_haishenwei_fill_y = -1000
+                }
+
+                set_variable = {
+                    CHI_rehe_fill_y = -1000
+                }
+
+                set_variable = {
+                    CHI_shanxi_fill_y = -1000
+                }
+
+                
+            }
+        }
+
+        triggers = {
+
+
+            CHI_legislature_title_visible = {
+                check_variable = {
+                    CHI_election_selected_tab = 2
+                }
+            }
+
+            CHI_legislature_page_text_visible = {
+                check_variable = {
+                    CHI_election_selected_tab = 2
+                }
+            }
+
+            CHI_election_map_base_visible = {
+
+                check_variable = {
+                    CHI_election_selected_tab = 1
+                }
+            }
+
+            CHI_guangdong_fill_visible = {
+
+                check_variable = {
+                    CHI_election_selected_tab = 1
+                }
+            }
+
+            CHI_xinjiang_fill_visible = {
+
+                check_variable = {
+                    CHI_election_selected_tab = 1
+                }
+            }
+
+            CHI_liaoning_fill_visible = {
+
+                check_variable = {
+                    CHI_election_selected_tab = 1
+                }
+            }
+
+            CHI_jilin_fill_visible = {
+
+                check_variable = {
+                    CHI_election_selected_tab = 1
+                }
+            }
+
+            CHI_heilongjiang_fill_visible = {
+
+                check_variable = {
+                    CHI_election_selected_tab = 1
+                }
+            }
+
+            CHI_xingan_fill_visible = {
+
+                check_variable = {
+                    CHI_election_selected_tab = 1
+                }
+            }
+
+            CHI_wusuli_fill_visible = {
+
+                check_variable = {
+                    CHI_election_selected_tab = 1
+                }
+            }
+
+            CHI_haishenwei_fill_visible = {
+
+                check_variable = {
+                    CHI_election_selected_tab = 1
+                }
+            }
+
+            CHI_rehe_fill_visible = {
+
+                check_variable = {
+                    CHI_election_selected_tab = 1
+                }
+            }
+
+            CHI_shanxi_fill_visible = {
+
+                check_variable = {
+                    CHI_election_selected_tab = 1
+                }
+            }
+
+            CHI_guangdong_selected_test_visible = {
+
+                check_variable = {
+                    CHI_election_selected_tab = 1
+                }
+            }
+
+            CHI_guangdong_hitbox_visible = {
+
+                check_variable = {
+                    CHI_election_selected_tab = 1
+                }
+            }
+
+            CHI_xinjiang_hitbox_1_visible = {
+
+                check_variable = {
+                    CHI_election_selected_tab = 1
+                }
+            }
+
+            CHI_xinjiang_hitbox_2_visible = {
+
+                check_variable = {
+                    CHI_election_selected_tab = 1
+                }
+            }
+
+            CHI_xinjiang_hitbox_3_visible = {
+
+                check_variable = {
+                    CHI_election_selected_tab = 1
+                }
+            }
+
+            CHI_liaoning_hitbox_visible = {
+
+                check_variable = {
+                    CHI_election_selected_tab = 1
+                }
+            }
+            
+            CHI_jilin_hitbox_visible = {
+
+                check_variable = {
+                    CHI_election_selected_tab = 1
+                }
+            }
+
+            CHI_heilongjiang_hitbox_visible = {
+
+                check_variable = {
+                    CHI_election_selected_tab = 1
+                }
+            }
+
+            CHI_xingan_hitbox_visible = {
+
+                check_variable = {
+                    CHI_election_selected_tab = 1
+                }
+            }
+
+            CHI_wusuli_hitbox_visible = {
+
+                check_variable = {
+                    CHI_election_selected_tab = 1
+                }
+            }
+
+            CHI_haishenwei_hitbox_visible = {
+
+                check_variable = {
+                    CHI_election_selected_tab = 1
+                }
+            }
+
+            CHI_shanxi_hitbox_visible = {
+
+                check_variable = {
+                    CHI_election_selected_tab = 1
+                }
+            }
+        }
+    }
+}

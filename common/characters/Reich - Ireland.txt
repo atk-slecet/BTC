@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country Leaders
+	IRE_Charles_Haughey = {
+		name = IRE_Charles_Haughey
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IRE/IRE_Charles_Haughey.png"
+			}
+		}
+		country_leader = {
+			desc = " "
+			ideology = paternalism_paternalistic_developmentalism_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}

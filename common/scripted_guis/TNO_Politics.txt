@@ -27,6 +27,15 @@ scripted_gui = {
 					is_in_faction_with = GER
 				}
 			}
+			faction_icon_moscowpakt_visible = {
+				is_in_faction = yes
+				#is_subject = no
+				IRK = { is_faction_leader = yes }
+				OR = {
+					tag = IRK
+					is_in_faction_with = IRK
+				}
+			}
 			faction_icon_as_visible = {
 				is_in_faction = yes
 				#is_subject = no
@@ -48,10 +57,10 @@ scripted_gui = {
 			faction_icon_OFN_visible = {
 				is_in_faction = yes
 				#is_subject = no
-				USA = { is_faction_leader = yes }
+				USC = { is_faction_leader = yes }
 				OR = {
-					tag = USA
-					is_in_faction_with = USA
+					tag = USC
+					is_in_faction_with = USC
 				}
 			}
 			faction_icon_UA_visible = {
@@ -199,6 +208,13 @@ scripted_gui = {
 						}
 					}
 					AND = {
+						IRK = { is_faction_leader = yes }
+						OR = {
+							tag = IRK
+							is_in_faction_with = IRK
+						}
+					}
+					AND = {
 						GRO = { is_faction_leader = yes }
 						OR = {
 							tag = GRO
@@ -265,6 +281,7 @@ scripted_gui = {
 					has_idea = TRI_Observer
 					has_idea = NLF_Member
 					has_idea = OFN_Suspended_Member
+					has_idea = CP_Observer
 				}
 			}
 		}

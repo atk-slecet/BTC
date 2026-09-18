@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country Leaders
+	DEN_Anker_Jorgensen = {
+		name = DEN_Anker_Jorgensen
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DEN/DEN_Anker_Jorgensen.png"
+			}
+		}
+		country_leader = {
+			desc = " "
+			ideology = progressivism_neocorporatism_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}

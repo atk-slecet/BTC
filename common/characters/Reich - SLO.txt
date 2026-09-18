@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country Leaders
+	SLO_Stefan_Tiso = {
+		name = SLO_Stefan_Tiso
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SLO/SLO_Stefan_Tiso.png"
+			}
+		}
+		country_leader = {
+			desc = " "
+			ideology = national_socialism_clerical_fascism_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}

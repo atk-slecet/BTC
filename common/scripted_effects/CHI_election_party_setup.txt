@@ -1,0 +1,4003 @@
+# =========================================================
+# 中华民国选举系统 - 政党数据初始化
+#
+# 联盟编号：
+# 0 = 中立
+# 1 = 人民民主统一战线
+# 2 = 民主宪政联盟
+# =========================================================
+
+
+CHI_initialize_party_system = {
+
+    # 防止重复初始化
+    if = {
+        limit = {
+            NOT = {
+                has_country_flag = CHI_party_system_initialized
+            }
+        }
+
+        set_country_flag = CHI_party_system_initialized
+
+
+        # =================================================
+        # 人民民主统一战线
+        # =================================================
+
+        # 中国共产党
+        set_variable = {
+            CHI_CPC_alliance = 1
+        }
+
+        # 中国国民党革命委员会
+        set_variable = {
+            CHI_RCCK_alliance = 1
+        }
+
+        # 中国农工民主党
+        set_variable = {
+            CHI_CAPD_alliance = 1
+        }
+
+        # 中国共产党-九三学社
+        set_variable = {
+            CHI_JSS_alliance = 1
+        }
+
+        # 中国民主同盟
+        # 唯一允许在两大联盟之间切换的政党
+        set_variable = {
+            CHI_CDL_alliance = 1
+        }
+
+
+        # =================================================
+        # 中立
+        # =================================================
+
+        # 中国致公党
+        set_variable = {
+            CHI_ZGD_alliance = 0
+        }
+
+        # 无党派人士
+        set_variable = {
+            CHI_IND_alliance = 0
+        }
+
+
+        # =================================================
+        # 民主宪政联盟
+        # =================================================
+
+        # 中国国民党
+        set_variable = {
+            CHI_KMT_alliance = 2
+        }
+
+        # 中国青年党
+        set_variable = {
+            CHI_YP_alliance = 2
+        }
+
+        # =================================================
+        # 全国政党支持率
+        # 单位：百分比，范围 0 - 100
+        # 九党总和应保持为 100
+        # =================================================
+
+        # 中国共产党
+        set_variable = {
+            CHI_CPC_support = 35
+        }
+
+        # 中国国民党革命委员会
+        set_variable = {
+            CHI_RCCK_support = 6.5
+        }
+
+        # 中国农工民主党
+        set_variable = {
+            CHI_CAPD_support = 4
+        }
+
+        # 中国共产党-九三学社
+        set_variable = {
+            CHI_JSS_support = 2
+        }
+
+        # 中国民主同盟
+        set_variable = {
+            CHI_CDL_support = 6.5
+        }
+
+        # 无党派人士
+        set_variable = {
+            CHI_IND_support = 4.5
+        }
+
+        # 中国致公党
+        set_variable = {
+            CHI_ZGD_support = 2.5
+        }
+
+        # 中国国民党
+        set_variable = {
+            CHI_KMT_support = 31
+        }
+
+        # 中国青年党
+        set_variable = {
+            CHI_YP_support = 8
+        }
+        
+        # =================================================
+        # 广东省政治参数
+        #
+        # regional_bias：
+        #   正数 = 长期偏民主宪政联盟
+        #   负数 = 长期偏人民民主统一战线
+        #
+        # national_swing_weight：
+        #   全国政治风向对广东的影响程度
+        #
+        # 当前数值为第一版平衡测试参数
+        # 后续可由设定与测试调整
+        # =================================================
+
+        set_variable = {
+            CHI_GD_regional_bias = 20
+        }
+
+        set_variable = {
+            CHI_GD_national_swing_weight = 0.4
+        }
+
+        # =================================================
+        # 广东省政党地方基本盘系数
+        #
+        # 1.0 = 与全国平均一致
+        # >1.0 = 在广东强于全国平均
+        # <1.0 = 在广东弱于全国平均
+        #
+        # 第一版平衡参数，后续可调整
+        # =================================================
+
+        set_variable = {
+            CHI_GD_CPC_local_weight = 0.45
+        }
+
+        set_variable = {
+            CHI_GD_RCCK_local_weight = 1.25
+        }
+
+        set_variable = {
+            CHI_GD_CAPD_local_weight = 0.55
+        }
+
+        set_variable = {
+            CHI_GD_JSS_local_weight = 0.50
+        }
+
+        set_variable = {
+            CHI_GD_CDL_local_weight = 0.65
+        }
+
+        set_variable = {
+            CHI_GD_IND_local_weight = 1.30
+        }
+
+        set_variable = {
+            CHI_GD_ZGD_local_weight = 1.60
+        }
+
+        set_variable = {
+            CHI_GD_KMT_local_weight = 2.20
+        }
+
+        set_variable = {
+            CHI_GD_YP_local_weight = 0.20
+        }
+        
+        # =================================================
+        # 新疆省政党地方基本盘系数
+        #
+        # 1.0 = 与全国平均一致
+        # >1.0 = 在新疆强于全国平均
+        # <1.0 = 在新疆弱于全国平均
+        #
+        # 新疆历史核心：
+        # CPC / RCCK / CAPD
+        #
+        # 第一版平衡参数，后续可调整
+        # =================================================
+
+        set_variable = {
+            CHI_XJ_CPC_local_weight = 2.20
+        }
+
+        set_variable = {
+            CHI_XJ_RCCK_local_weight = 2.20
+        }
+
+        set_variable = {
+            CHI_XJ_CAPD_local_weight = 2.20
+        }
+
+        set_variable = {
+            CHI_XJ_JSS_local_weight = 0.05
+        }
+
+        set_variable = {
+            CHI_XJ_CDL_local_weight = 0.35
+        }
+
+        set_variable = {
+            CHI_XJ_IND_local_weight = 0.30
+        }
+
+        set_variable = {
+            CHI_XJ_ZGD_local_weight = 0.05
+        }
+
+        set_variable = {
+            CHI_XJ_KMT_local_weight = 0.05
+        }
+
+        set_variable = {
+            CHI_XJ_YP_local_weight = 0.05
+        }
+
+        
+        # =================================================
+        # 辽宁省政党地方基本盘系数
+        #
+        # 历史背景：
+        
+        #
+        #
+        # 1.0 = 全国平均
+        # >1.0 = 强于全国平均
+        # <1.0 = 弱于全国平均
+        # =================================================
+
+        set_variable = {
+            CHI_LN_CPC_local_weight = 1.25
+        }
+
+        set_variable = {
+            CHI_LN_RCCK_local_weight = 1.15
+        }
+
+        set_variable = {
+            CHI_LN_CAPD_local_weight = 1.00
+        }
+
+        set_variable = {
+            CHI_LN_JSS_local_weight = 1.00
+        }
+
+        set_variable = {
+            CHI_LN_CDL_local_weight = 1.00
+        }
+
+        set_variable = {
+            CHI_LN_IND_local_weight = 1.00
+        }
+
+        set_variable = {
+            CHI_LN_ZGD_local_weight = 0.80
+        }
+
+        set_variable = {
+            CHI_LN_KMT_local_weight = 0.95
+        }
+
+        set_variable = {
+            CHI_LN_YP_local_weight = 0.85
+        }
+
+        # =================================================
+        # 吉林省政党地方基本盘系数
+        #
+        # 历史背景：
+        
+        #
+        #
+        # 1.0 = 全国平均
+        # >1.0 = 强于全国平均
+        # <1.0 = 弱于全国平均
+        # =================================================
+
+        set_variable = {
+            CHI_JL_CPC_local_weight = 1.30
+        }
+
+        set_variable = {
+            CHI_JL_RCCK_local_weight = 0.85
+        }
+
+        set_variable = {
+            CHI_JL_CAPD_local_weight = 1.15
+        }
+
+        set_variable = {
+            CHI_JL_JSS_local_weight = 1.00
+        }
+
+        set_variable = {
+            CHI_JL_CDL_local_weight = 1.00
+        }
+
+        set_variable = {
+            CHI_JL_IND_local_weight = 1.00
+        }
+
+        set_variable = {
+            CHI_JL_ZGD_local_weight = 0.75
+        }
+
+        set_variable = {
+            CHI_JL_KMT_local_weight = 0.90
+        }
+
+        set_variable = {
+            CHI_JL_YP_local_weight = 0.85
+        }
+
+        # =================================================
+        # 黑龙江省政党地方基本盘系数
+        #
+        # 历史背景：
+        
+        #
+        #
+        # 1.0 = 全国平均
+        # >1.0 = 强于全国平均
+        # <1.0 = 弱于全国平均
+        # =================================================
+
+        set_variable = {
+            CHI_HLJ_CPC_local_weight = 1.45
+        }
+
+        set_variable = {
+            CHI_HLJ_RCCK_local_weight = 0.80
+        }
+
+        set_variable = {
+            CHI_HLJ_CAPD_local_weight = 1.30
+        }
+
+        set_variable = {
+            CHI_HLJ_JSS_local_weight = 0.25
+        }
+
+        set_variable = {
+            CHI_HLJ_CDL_local_weight = 1.00
+        }
+
+        set_variable = {
+            CHI_HLJ_IND_local_weight = 1.00
+        }
+
+        set_variable = {
+            CHI_HLJ_ZGD_local_weight = 0.75
+        }
+
+        set_variable = {
+            CHI_HLJ_KMT_local_weight = 0.95
+        }
+
+        set_variable = {
+            CHI_HLJ_YP_local_weight = 0.15
+        }
+
+        # =================================================
+        # 兴安省政党地方基本盘系数
+        #
+        # 历史背景：
+        
+        #
+        #
+        # 1.0 = 全国平均
+        # >1.0 = 强于全国平均
+        # <1.0 = 弱于全国平均
+        # =================================================
+
+        set_variable = {
+            CHI_XA_CPC_local_weight = 1.60
+        }
+
+        set_variable = {
+            CHI_XA_RCCK_local_weight = 0.80
+        }
+
+        set_variable = {
+            CHI_XA_CAPD_local_weight = 1.40
+        }
+
+        set_variable = {
+            CHI_XA_JSS_local_weight = 0.25
+        }
+
+        set_variable = {
+            CHI_XA_CDL_local_weight = 1.00
+        }
+
+        set_variable = {
+            CHI_XA_IND_local_weight = 1.00
+        }
+
+        set_variable = {
+            CHI_XA_ZGD_local_weight = 0.75
+        }
+
+        set_variable = {
+            CHI_XA_KMT_local_weight = 0.95
+        }
+
+        set_variable = {
+            CHI_XA_YP_local_weight = 0.15
+        }
+
+        # =================================================
+        # 乌苏里省政党地方基本盘系数
+        #
+        # 历史背景：
+        
+        #
+        #
+        # 1.0 = 全国平均
+        # >1.0 = 强于全国平均
+        # <1.0 = 弱于全国平均
+        # =================================================
+
+        set_variable = {
+            CHI_WSL_CPC_local_weight = 1.58
+        }
+
+        set_variable = {
+            CHI_WSL_RCCK_local_weight = 0.80
+        }
+
+        set_variable = {
+            CHI_WSL_CAPD_local_weight = 1.40
+        }
+
+        set_variable = {
+            CHI_WSL_JSS_local_weight = 0.25
+        }
+
+        set_variable = {
+            CHI_WSL_CDL_local_weight = 1.00
+        }
+
+        set_variable = {
+            CHI_WSL_IND_local_weight = 1.00
+        }
+
+        set_variable = {
+            CHI_WSL_ZGD_local_weight = 0.55
+        }
+
+        set_variable = {
+            CHI_WSL_KMT_local_weight = 0.97
+        }
+
+        set_variable = {
+            CHI_WSL_YP_local_weight = 0.05
+        }
+
+        
+        
+        # =================================================
+        # 海参崴市政党地方基本盘系数
+        #
+        # 历史背景：
+        
+        #
+        #
+        # 1.0 = 全国平均
+        # >1.0 = 强于全国平均
+        # <1.0 = 弱于全国平均
+        # =================================================
+
+        set_variable = {
+            CHI_HSW_CPC_local_weight = 1.30
+        }
+
+        set_variable = {
+            CHI_HSW_RCCK_local_weight = 0.80
+        }
+
+        set_variable = {
+            CHI_HSW_CAPD_local_weight = 1.40
+        }
+
+        set_variable = {
+            CHI_HSW_JSS_local_weight = 0.25
+        }
+
+        set_variable = {
+            CHI_HSW_CDL_local_weight = 1.00
+        }
+
+        set_variable = {
+            CHI_HSW_IND_local_weight = 1.00
+        }
+
+        set_variable = {
+            CHI_HSW_ZGD_local_weight = 0.55
+        }
+
+        set_variable = {
+            CHI_HSW_KMT_local_weight = 0.99
+        }
+
+        set_variable = {
+            CHI_HSW_YP_local_weight = 0.05
+        }
+
+        # =================================================
+        # 热河省政党地方基本盘系数
+        #
+        # 历史背景：
+        
+        #
+        #
+        # 1.0 = 全国平均
+        # >1.0 = 强于全国平均
+        # <1.0 = 弱于全国平均
+        # =================================================
+
+        set_variable = {
+            CHI_RH_CPC_local_weight = 1.20
+        }
+
+        set_variable = {
+            CHI_RH_RCCK_local_weight = 0.80
+        }
+
+        set_variable = {
+            CHI_RH_CAPD_local_weight = 1.40
+        }
+
+        set_variable = {
+            CHI_RH_JSS_local_weight = 0.25
+        }
+
+        set_variable = {
+            CHI_RH_CDL_local_weight = 1.10
+        }
+
+        set_variable = {
+            CHI_RH_IND_local_weight = 1.00
+        }
+
+        set_variable = {
+            CHI_RH_ZGD_local_weight = 0.55
+        }
+
+        set_variable = {
+            CHI_RH_KMT_local_weight = 0.99
+        }
+
+        set_variable = {
+            CHI_RH_YP_local_weight = 0.05
+        }
+
+        # =================================================
+        # 山西省政党地方基本盘系数
+        #
+        # 历史背景：
+        # 傅作义及晋陕行政公署旧部在战后分别进入
+        # CPC / RCCK / KMT。
+        #
+        # 山西缺乏陕西式的强烈红色革命传统，
+        # 因此形成红蓝双方均有深厚组织基础的摇摆省。
+        #
+        # 1.0 = 全国平均
+        # >1.0 = 强于全国平均
+        # <1.0 = 弱于全国平均
+        # =================================================
+
+        set_variable = {
+            CHI_SX_CPC_local_weight = 1.00
+        }
+
+        set_variable = {
+            CHI_SX_RCCK_local_weight = 1.80
+        }
+
+        set_variable = {
+            CHI_SX_CAPD_local_weight = 0.80
+        }
+
+        set_variable = {
+            CHI_SX_JSS_local_weight = 0.75
+        }
+
+        set_variable = {
+            CHI_SX_CDL_local_weight = 0.85
+        }
+
+        set_variable = {
+            CHI_SX_IND_local_weight = 1.10
+        }
+
+        set_variable = {
+            CHI_SX_ZGD_local_weight = 0.60
+        }
+
+        set_variable = {
+            CHI_SX_KMT_local_weight = 1.35
+        }
+
+        set_variable = {
+            CHI_SX_YP_local_weight = 0.80
+        }
+    }
+
+    CHI_calculate_alliance_support = yes
+}
+
+# =========================================================
+# 计算全国联盟支持率
+#
+# 结果：
+# CHI_PDUF_support    人民民主统一战线
+# CHI_DCA_support     民主宪政联盟
+# CHI_NEUTRAL_support 中立
+# =========================================================
+
+CHI_calculate_alliance_support = {
+
+    # 每次计算前清零
+    set_variable = {
+        CHI_PDUF_support = 0
+    }
+
+    set_variable = {
+        CHI_DCA_support = 0
+    }
+
+    set_variable = {
+        CHI_NEUTRAL_support = 0
+    }
+
+
+    # =====================================================
+    # CPC
+    # =====================================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_CPC_alliance = 1
+            }
+        }
+
+        add_to_variable = {
+            CHI_PDUF_support = CHI_CPC_support
+        }
+    }
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_CPC_alliance = 2
+            }
+        }
+
+        add_to_variable = {
+            CHI_DCA_support = CHI_CPC_support
+        }
+    }
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_CPC_alliance = 0
+            }
+        }
+
+        add_to_variable = {
+            CHI_NEUTRAL_support = CHI_CPC_support
+        }
+    }
+
+
+    # =====================================================
+    # RCCK
+    # =====================================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_RCCK_alliance = 1
+            }
+        }
+
+        add_to_variable = {
+            CHI_PDUF_support = CHI_RCCK_support
+        }
+    }
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_RCCK_alliance = 2
+            }
+        }
+
+        add_to_variable = {
+            CHI_DCA_support = CHI_RCCK_support
+        }
+    }
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_RCCK_alliance = 0
+            }
+        }
+
+        add_to_variable = {
+            CHI_NEUTRAL_support = CHI_RCCK_support
+        }
+    }
+
+
+    # =====================================================
+    # CAPD
+    # =====================================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_CAPD_alliance = 1
+            }
+        }
+
+        add_to_variable = {
+            CHI_PDUF_support = CHI_CAPD_support
+        }
+    }
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_CAPD_alliance = 2
+            }
+        }
+
+        add_to_variable = {
+            CHI_DCA_support = CHI_CAPD_support
+        }
+    }
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_CAPD_alliance = 0
+            }
+        }
+
+        add_to_variable = {
+            CHI_NEUTRAL_support = CHI_CAPD_support
+        }
+    }
+
+
+    # =====================================================
+    # JSS
+    # =====================================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_JSS_alliance = 1
+            }
+        }
+
+        add_to_variable = {
+            CHI_PDUF_support = CHI_JSS_support
+        }
+    }
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_JSS_alliance = 2
+            }
+        }
+
+        add_to_variable = {
+            CHI_DCA_support = CHI_JSS_support
+        }
+    }
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_JSS_alliance = 0
+            }
+        }
+
+        add_to_variable = {
+            CHI_NEUTRAL_support = CHI_JSS_support
+        }
+    }
+
+
+    # =====================================================
+    # CDL —— 民盟，可换边
+    # =====================================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_CDL_alliance = 1
+            }
+        }
+
+        add_to_variable = {
+            CHI_PDUF_support = CHI_CDL_support
+        }
+    }
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_CDL_alliance = 2
+            }
+        }
+
+        add_to_variable = {
+            CHI_DCA_support = CHI_CDL_support
+        }
+    }
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_CDL_alliance = 0
+            }
+        }
+
+        add_to_variable = {
+            CHI_NEUTRAL_support = CHI_CDL_support
+        }
+    }
+
+
+    # =====================================================
+    # IND
+    # =====================================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_IND_alliance = 1
+            }
+        }
+
+        add_to_variable = {
+            CHI_PDUF_support = CHI_IND_support
+        }
+    }
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_IND_alliance = 2
+            }
+        }
+
+        add_to_variable = {
+            CHI_DCA_support = CHI_IND_support
+        }
+    }
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_IND_alliance = 0
+            }
+        }
+
+        add_to_variable = {
+            CHI_NEUTRAL_support = CHI_IND_support
+        }
+    }
+
+
+    # =====================================================
+    # ZGD
+    # =====================================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_ZGD_alliance = 1
+            }
+        }
+
+        add_to_variable = {
+            CHI_PDUF_support = CHI_ZGD_support
+        }
+    }
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_ZGD_alliance = 2
+            }
+        }
+
+        add_to_variable = {
+            CHI_DCA_support = CHI_ZGD_support
+        }
+    }
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_ZGD_alliance = 0
+            }
+        }
+
+        add_to_variable = {
+            CHI_NEUTRAL_support = CHI_ZGD_support
+        }
+    }
+
+
+    # =====================================================
+    # KMT
+    # =====================================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_KMT_alliance = 1
+            }
+        }
+
+        add_to_variable = {
+            CHI_PDUF_support = CHI_KMT_support
+        }
+    }
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_KMT_alliance = 2
+            }
+        }
+
+        add_to_variable = {
+            CHI_DCA_support = CHI_KMT_support
+        }
+    }
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_KMT_alliance = 0
+            }
+        }
+
+        add_to_variable = {
+            CHI_NEUTRAL_support = CHI_KMT_support
+        }
+    }
+
+
+    # =====================================================
+    # YP
+    # =====================================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_YP_alliance = 1
+            }
+        }
+
+        add_to_variable = {
+            CHI_PDUF_support = CHI_YP_support
+        }
+    }
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_YP_alliance = 2
+            }
+        }
+
+        add_to_variable = {
+            CHI_DCA_support = CHI_YP_support
+        }
+    }
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_YP_alliance = 0
+            }
+        }
+
+        add_to_variable = {
+            CHI_NEUTRAL_support = CHI_YP_support
+        }
+    }
+
+    # ==========================================
+    # 地方政治系统初始化/调用
+    # ==========================================
+
+    CHI_calculate_guangdong_party_support_generic = yes
+    CHI_calculate_xinjiang_party_support_generic = yes
+    CHI_calculate_liaoning_party_support_generic = yes
+    CHI_calculate_jilin_party_support_generic = yes
+    CHI_calculate_heilongjiang_party_support_generic = yes
+    CHI_calculate_xingan_party_support_generic = yes
+    CHI_calculate_wusuli_party_support_generic = yes
+    CHI_calculate_haishenwei_party_support_generic = yes
+    CHI_calculate_rehe_party_support_generic = yes
+    CHI_calculate_shanxi_party_support_generic = yes
+    
+}
+
+# =========================================================
+# 广东省政治倾向计算
+#
+# 全国 margin：
+#   民主宪政联盟 - 人民民主统一战线
+#
+# 广东 margin：
+#   广东地方基本盘
+#   + 全国 margin * 广东全国风向敏感度
+#
+# 正数 = 民主宪政联盟领先
+# 负数 = 人民民主统一战线领先
+# =========================================================
+CHI_calculate_guangdong_margin = {
+
+    # -----------------------------------------
+    # 1. 计算全国蓝红差
+    # -----------------------------------------
+
+    set_variable = {
+        CHI_national_margin = CHI_DCA_support
+    }
+
+    subtract_from_variable = {
+        CHI_national_margin = CHI_PDUF_support
+    }
+
+
+    # -----------------------------------------
+    # 2. 复制全国 margin 给广东临时计算变量
+    # -----------------------------------------
+
+    set_variable = {
+        CHI_GD_national_effect = CHI_national_margin
+    }
+
+
+    # -----------------------------------------
+    # 3. 乘以广东对全国风向的敏感度
+    # -----------------------------------------
+
+    multiply_variable = {
+        CHI_GD_national_effect = CHI_GD_national_swing_weight
+    }
+
+
+    # -----------------------------------------
+    # 4. 广东 margin 从地方基本盘开始
+    # -----------------------------------------
+
+    set_variable = {
+        CHI_GD_margin = CHI_GD_regional_bias
+    }
+
+
+    # -----------------------------------------
+    # 5. 加入全国政治风向
+    # -----------------------------------------
+
+    add_to_variable = {
+        CHI_GD_margin = CHI_GD_national_effect
+    }
+
+
+    # -----------------------------------------
+    # 6. 根据 margin 分类
+    # -----------------------------------------
+
+    CHI_classify_guangdong_result = yes
+}
+
+
+CHI_classify_guangdong_result = {
+
+    set_variable = {
+        CHI_GD_map_state = 2
+    }
+
+    # =========================
+    # 先判断政治状态
+    # =========================
+
+    if = {
+        limit = {
+            NOT = {
+                check_variable = {
+                    CHI_GD_margin < 10
+                }
+            }
+        }
+
+        set_variable = {
+            CHI_GD_map_state = 1
+        }
+    }
+
+    else_if = {
+        limit = {
+            NOT = {
+                check_variable = {
+                    CHI_GD_margin > -10
+                }
+            }
+        }
+
+        set_variable = {
+            CHI_GD_map_state = 3
+        }
+    }
+
+
+    # =========================
+    # 再转换为地图 Frame
+    # =========================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_GD_map_state = 1
+            }
+        }
+
+        set_variable = {
+            CHI_guangdong_map_frame = 2
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_GD_map_state = 2
+            }
+        }
+
+        set_variable = {
+            CHI_guangdong_map_frame = 4
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_GD_map_state = 3
+            }
+        }
+
+        set_variable = {
+            CHI_guangdong_map_frame = 3
+        }
+    }
+}
+
+# =========================================================
+# 广东省九党地方支持率计算
+#
+# 流程：
+# 全国 baseline
+# × 广东 local_weight
+# = raw support
+#
+# 九党 raw 求和
+# ↓
+# 各党 raw / raw_total × 100
+# = 广东 normalized support
+#
+# 当前仍然是旁路系统：
+# 不直接影响广东地图
+# =========================================================
+
+CHI_calculate_guangdong_party_raw_support = {
+
+    # =====================================================
+    # 1. CPC
+    # =====================================================
+
+    set_variable = {
+        CHI_GD_CPC_raw_support = CHI_CPC_support
+    }
+
+    multiply_variable = {
+        CHI_GD_CPC_raw_support = CHI_GD_CPC_local_weight
+    }
+
+
+    # =====================================================
+    # 2. RCCK
+    # =====================================================
+
+    set_variable = {
+        CHI_GD_RCCK_raw_support = CHI_RCCK_support
+    }
+
+    multiply_variable = {
+        CHI_GD_RCCK_raw_support = CHI_GD_RCCK_local_weight
+    }
+
+
+    # =====================================================
+    # 3. CAPD
+    # =====================================================
+
+    set_variable = {
+        CHI_GD_CAPD_raw_support = CHI_CAPD_support
+    }
+
+    multiply_variable = {
+        CHI_GD_CAPD_raw_support = CHI_GD_CAPD_local_weight
+    }
+
+
+    # =====================================================
+    # 4. JSS
+    # =====================================================
+
+    set_variable = {
+        CHI_GD_JSS_raw_support = CHI_JSS_support
+    }
+
+    multiply_variable = {
+        CHI_GD_JSS_raw_support = CHI_GD_JSS_local_weight
+    }
+
+
+    # =====================================================
+    # 5. CDL
+    # =====================================================
+
+    set_variable = {
+        CHI_GD_CDL_raw_support = CHI_CDL_support
+    }
+
+    multiply_variable = {
+        CHI_GD_CDL_raw_support = CHI_GD_CDL_local_weight
+    }
+
+
+    # =====================================================
+    # 6. IND
+    # =====================================================
+
+    set_variable = {
+        CHI_GD_IND_raw_support = CHI_IND_support
+    }
+
+    multiply_variable = {
+        CHI_GD_IND_raw_support = CHI_GD_IND_local_weight
+    }
+
+
+    # =====================================================
+    # 7. ZGD
+    # =====================================================
+
+    set_variable = {
+        CHI_GD_ZGD_raw_support = CHI_ZGD_support
+    }
+
+    multiply_variable = {
+        CHI_GD_ZGD_raw_support = CHI_GD_ZGD_local_weight
+    }
+
+
+    # =====================================================
+    # 8. KMT
+    # =====================================================
+
+    set_variable = {
+        CHI_GD_KMT_raw_support = CHI_KMT_support
+    }
+
+    multiply_variable = {
+        CHI_GD_KMT_raw_support = CHI_GD_KMT_local_weight
+    }
+
+
+    # =====================================================
+    # 9. YP
+    # =====================================================
+
+    set_variable = {
+        CHI_GD_YP_raw_support = CHI_YP_support
+    }
+
+    multiply_variable = {
+        CHI_GD_YP_raw_support = CHI_GD_YP_local_weight
+    }
+
+
+    # =====================================================
+    # 10. 九党 raw 总和
+    # =====================================================
+
+    set_variable = {
+        CHI_GD_raw_total = CHI_GD_CPC_raw_support
+    }
+
+    add_to_variable = {
+        CHI_GD_raw_total = CHI_GD_RCCK_raw_support
+    }
+
+    add_to_variable = {
+        CHI_GD_raw_total = CHI_GD_CAPD_raw_support
+    }
+
+    add_to_variable = {
+        CHI_GD_raw_total = CHI_GD_JSS_raw_support
+    }
+
+    add_to_variable = {
+        CHI_GD_raw_total = CHI_GD_CDL_raw_support
+    }
+
+    add_to_variable = {
+        CHI_GD_raw_total = CHI_GD_IND_raw_support
+    }
+
+    add_to_variable = {
+        CHI_GD_raw_total = CHI_GD_ZGD_raw_support
+    }
+
+    add_to_variable = {
+        CHI_GD_raw_total = CHI_GD_KMT_raw_support
+    }
+
+    add_to_variable = {
+        CHI_GD_raw_total = CHI_GD_YP_raw_support
+    }
+
+
+    # =====================================================
+    # 11. CPC normalized
+    # =====================================================
+
+    set_variable = {
+        CHI_GD_CPC_support = CHI_GD_CPC_raw_support
+    }
+
+    divide_variable = {
+        CHI_GD_CPC_support = CHI_GD_raw_total
+    }
+
+    multiply_variable = {
+        CHI_GD_CPC_support = 100
+    }
+
+
+    # =====================================================
+    # 12. RCCK normalized
+    # =====================================================
+
+    set_variable = {
+        CHI_GD_RCCK_support = CHI_GD_RCCK_raw_support
+    }
+
+    divide_variable = {
+        CHI_GD_RCCK_support = CHI_GD_raw_total
+    }
+
+    multiply_variable = {
+        CHI_GD_RCCK_support = 100
+    }
+
+
+    # =====================================================
+    # 13. CAPD normalized
+    # =====================================================
+
+    set_variable = {
+        CHI_GD_CAPD_support = CHI_GD_CAPD_raw_support
+    }
+
+    divide_variable = {
+        CHI_GD_CAPD_support = CHI_GD_raw_total
+    }
+
+    multiply_variable = {
+        CHI_GD_CAPD_support = 100
+    }
+
+
+    # =====================================================
+    # 14. JSS normalized
+    # =====================================================
+
+    set_variable = {
+        CHI_GD_JSS_support = CHI_GD_JSS_raw_support
+    }
+
+    divide_variable = {
+        CHI_GD_JSS_support = CHI_GD_raw_total
+    }
+
+    multiply_variable = {
+        CHI_GD_JSS_support = 100
+    }
+
+
+    # =====================================================
+    # 15. CDL normalized
+    # =====================================================
+
+    set_variable = {
+        CHI_GD_CDL_support = CHI_GD_CDL_raw_support
+    }
+
+    divide_variable = {
+        CHI_GD_CDL_support = CHI_GD_raw_total
+    }
+
+    multiply_variable = {
+        CHI_GD_CDL_support = 100
+    }
+
+
+    # =====================================================
+    # 16. IND normalized
+    # =====================================================
+
+    set_variable = {
+        CHI_GD_IND_support = CHI_GD_IND_raw_support
+    }
+
+    divide_variable = {
+        CHI_GD_IND_support = CHI_GD_raw_total
+    }
+
+    multiply_variable = {
+        CHI_GD_IND_support = 100
+    }
+
+
+    # =====================================================
+    # 17. ZGD normalized
+    # =====================================================
+
+    set_variable = {
+        CHI_GD_ZGD_support = CHI_GD_ZGD_raw_support
+    }
+
+    divide_variable = {
+        CHI_GD_ZGD_support = CHI_GD_raw_total
+    }
+
+    multiply_variable = {
+        CHI_GD_ZGD_support = 100
+    }
+
+
+    # =====================================================
+    # 18. KMT normalized
+    # =====================================================
+
+    set_variable = {
+        CHI_GD_KMT_support = CHI_GD_KMT_raw_support
+    }
+
+    divide_variable = {
+        CHI_GD_KMT_support = CHI_GD_raw_total
+    }
+
+    multiply_variable = {
+        CHI_GD_KMT_support = 100
+    }
+
+
+    # =====================================================
+    # 19. YP normalized
+    # =====================================================
+
+    set_variable = {
+        CHI_GD_YP_support = CHI_GD_YP_raw_support
+    }
+
+    divide_variable = {
+        CHI_GD_YP_support = CHI_GD_raw_total
+    }
+
+    multiply_variable = {
+        CHI_GD_YP_support = 100
+    }
+}
+
+# =========================================================
+# 广东省地方联盟支持率计算
+#
+# 联盟编号：
+# 0 = 中立
+# 1 = 人民民主统一战线
+# 2 = 民主宪政联盟
+#
+# 输入：
+# CHI_GD_XXX_support
+#
+# 输出：
+# CHI_GD_PDUF_support
+# CHI_GD_DCA_support
+# CHI_GD_NEUTRAL_support
+# =========================================================
+
+CHI_calculate_guangdong_alliance_support = {
+
+    # -----------------------------------------
+    # 每次重新计算前清零
+    # -----------------------------------------
+
+    set_variable = {
+        CHI_GD_PDUF_support = 0
+    }
+
+    set_variable = {
+        CHI_GD_DCA_support = 0
+    }
+
+    set_variable = {
+        CHI_GD_NEUTRAL_support = 0
+    }
+
+
+    # =========================================
+    # CPC
+    # =========================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_CPC_alliance = 0
+            }
+        }
+
+        add_to_variable = {
+            CHI_GD_NEUTRAL_support = CHI_GD_CPC_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_CPC_alliance = 1
+            }
+        }
+
+        add_to_variable = {
+            CHI_GD_PDUF_support = CHI_GD_CPC_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_CPC_alliance = 2
+            }
+        }
+
+        add_to_variable = {
+            CHI_GD_DCA_support = CHI_GD_CPC_support
+        }
+    }
+
+
+    # =========================================
+    # RCCK
+    # =========================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_RCCK_alliance = 0
+            }
+        }
+
+        add_to_variable = {
+            CHI_GD_NEUTRAL_support = CHI_GD_RCCK_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_RCCK_alliance = 1
+            }
+        }
+
+        add_to_variable = {
+            CHI_GD_PDUF_support = CHI_GD_RCCK_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_RCCK_alliance = 2
+            }
+        }
+
+        add_to_variable = {
+            CHI_GD_DCA_support = CHI_GD_RCCK_support
+        }
+    }
+
+
+    # =========================================
+    # CAPD
+    # =========================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_CAPD_alliance = 0
+            }
+        }
+
+        add_to_variable = {
+            CHI_GD_NEUTRAL_support = CHI_GD_CAPD_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_CAPD_alliance = 1
+            }
+        }
+
+        add_to_variable = {
+            CHI_GD_PDUF_support = CHI_GD_CAPD_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_CAPD_alliance = 2
+            }
+        }
+
+        add_to_variable = {
+            CHI_GD_DCA_support = CHI_GD_CAPD_support
+        }
+    }
+
+
+    # =========================================
+    # JSS
+    # =========================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_JSS_alliance = 0
+            }
+        }
+
+        add_to_variable = {
+            CHI_GD_NEUTRAL_support = CHI_GD_JSS_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_JSS_alliance = 1
+            }
+        }
+
+        add_to_variable = {
+            CHI_GD_PDUF_support = CHI_GD_JSS_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_JSS_alliance = 2
+            }
+        }
+
+        add_to_variable = {
+            CHI_GD_DCA_support = CHI_GD_JSS_support
+        }
+    }
+
+
+    # =========================================
+    # CDL
+    # =========================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_CDL_alliance = 0
+            }
+        }
+
+        add_to_variable = {
+            CHI_GD_NEUTRAL_support = CHI_GD_CDL_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_CDL_alliance = 1
+            }
+        }
+
+        add_to_variable = {
+            CHI_GD_PDUF_support = CHI_GD_CDL_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_CDL_alliance = 2
+            }
+        }
+
+        add_to_variable = {
+            CHI_GD_DCA_support = CHI_GD_CDL_support
+        }
+    }
+
+
+    # =========================================
+    # IND
+    # =========================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_IND_alliance = 0
+            }
+        }
+
+        add_to_variable = {
+            CHI_GD_NEUTRAL_support = CHI_GD_IND_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_IND_alliance = 1
+            }
+        }
+
+        add_to_variable = {
+            CHI_GD_PDUF_support = CHI_GD_IND_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_IND_alliance = 2
+            }
+        }
+
+        add_to_variable = {
+            CHI_GD_DCA_support = CHI_GD_IND_support
+        }
+    }
+
+
+    # =========================================
+    # ZGD
+    # =========================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_ZGD_alliance = 0
+            }
+        }
+
+        add_to_variable = {
+            CHI_GD_NEUTRAL_support = CHI_GD_ZGD_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_ZGD_alliance = 1
+            }
+        }
+
+        add_to_variable = {
+            CHI_GD_PDUF_support = CHI_GD_ZGD_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_ZGD_alliance = 2
+            }
+        }
+
+        add_to_variable = {
+            CHI_GD_DCA_support = CHI_GD_ZGD_support
+        }
+    }
+
+
+    # =========================================
+    # KMT
+    # =========================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_KMT_alliance = 0
+            }
+        }
+
+        add_to_variable = {
+            CHI_GD_NEUTRAL_support = CHI_GD_KMT_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_KMT_alliance = 1
+            }
+        }
+
+        add_to_variable = {
+            CHI_GD_PDUF_support = CHI_GD_KMT_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_KMT_alliance = 2
+            }
+        }
+
+        add_to_variable = {
+            CHI_GD_DCA_support = CHI_GD_KMT_support
+        }
+    }
+
+
+    # =========================================
+    # YP
+    # =========================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_YP_alliance = 0
+            }
+        }
+
+        add_to_variable = {
+            CHI_GD_NEUTRAL_support = CHI_GD_YP_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_YP_alliance = 1
+            }
+        }
+
+        add_to_variable = {
+            CHI_GD_PDUF_support = CHI_GD_YP_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_YP_alliance = 2
+            }
+        }
+
+        add_to_variable = {
+            CHI_GD_DCA_support = CHI_GD_YP_support
+        }
+    }
+    # =====================================================
+    # 广东地方联盟 Margin
+    #
+    # 正数 = 民主宪政联盟领先
+    # 负数 = 人民民主统一战线领先
+    # =====================================================
+
+    set_variable = {
+        CHI_GD_margin = CHI_GD_DCA_support
+    }
+
+    subtract_from_variable = {
+        CHI_GD_margin = CHI_GD_PDUF_support
+    }
+
+
+    # =====================================================
+    # 根据新地方 Margin 更新政治状态与地图 Frame
+    # =====================================================
+
+    CHI_classify_guangdong_result = yes
+}
+
+# =========================================================
+# 08A-1
+# 广东参数装载到通用地区工作区
+# =========================================================
+
+CHI_load_guangdong_to_region_workspace = {
+
+    set_variable = {
+        CHI_REG_CPC_weight = CHI_GD_CPC_local_weight
+    }
+
+    set_variable = {
+        CHI_REG_RCCK_weight = CHI_GD_RCCK_local_weight
+    }
+
+    set_variable = {
+        CHI_REG_CAPD_weight = CHI_GD_CAPD_local_weight
+    }
+
+    set_variable = {
+        CHI_REG_JSS_weight = CHI_GD_JSS_local_weight
+    }
+
+    set_variable = {
+        CHI_REG_CDL_weight = CHI_GD_CDL_local_weight
+    }
+
+    set_variable = {
+        CHI_REG_IND_weight = CHI_GD_IND_local_weight
+    }
+
+    set_variable = {
+        CHI_REG_ZGD_weight = CHI_GD_ZGD_local_weight
+    }
+
+    set_variable = {
+        CHI_REG_KMT_weight = CHI_GD_KMT_local_weight
+    }
+
+    set_variable = {
+        CHI_REG_YP_weight = CHI_GD_YP_local_weight
+    }
+}
+
+# =========================================================
+# 通用地区九党支持率计算器
+#
+# 输入：
+# CHI_REG_XXX_weight
+#
+# 全国 baseline 直接读取：
+# CHI_CPC_support
+# CHI_RCCK_support
+# ...
+#
+# 输出：
+# CHI_REG_XXX_support
+# =========================================================
+
+CHI_calculate_region_party_support = {
+
+    # =====================================================
+    # RAW SUPPORT
+    # =====================================================
+
+    set_variable = {
+        CHI_REG_CPC_raw = CHI_CPC_support
+    }
+    multiply_variable = {
+        CHI_REG_CPC_raw = CHI_REG_CPC_weight
+    }
+
+    set_variable = {
+        CHI_REG_RCCK_raw = CHI_RCCK_support
+    }
+    multiply_variable = {
+        CHI_REG_RCCK_raw = CHI_REG_RCCK_weight
+    }
+
+    set_variable = {
+        CHI_REG_CAPD_raw = CHI_CAPD_support
+    }
+    multiply_variable = {
+        CHI_REG_CAPD_raw = CHI_REG_CAPD_weight
+    }
+
+    set_variable = {
+        CHI_REG_JSS_raw = CHI_JSS_support
+    }
+    multiply_variable = {
+        CHI_REG_JSS_raw = CHI_REG_JSS_weight
+    }
+
+    set_variable = {
+        CHI_REG_CDL_raw = CHI_CDL_support
+    }
+    multiply_variable = {
+        CHI_REG_CDL_raw = CHI_REG_CDL_weight
+    }
+
+    set_variable = {
+        CHI_REG_IND_raw = CHI_IND_support
+    }
+    multiply_variable = {
+        CHI_REG_IND_raw = CHI_REG_IND_weight
+    }
+
+    set_variable = {
+        CHI_REG_ZGD_raw = CHI_ZGD_support
+    }
+    multiply_variable = {
+        CHI_REG_ZGD_raw = CHI_REG_ZGD_weight
+    }
+
+    set_variable = {
+        CHI_REG_KMT_raw = CHI_KMT_support
+    }
+    multiply_variable = {
+        CHI_REG_KMT_raw = CHI_REG_KMT_weight
+    }
+
+    set_variable = {
+        CHI_REG_YP_raw = CHI_YP_support
+    }
+    multiply_variable = {
+        CHI_REG_YP_raw = CHI_REG_YP_weight
+    }
+
+
+    # =====================================================
+    # RAW TOTAL
+    # =====================================================
+
+    set_variable = {
+        CHI_REG_raw_total = CHI_REG_CPC_raw
+    }
+
+    add_to_variable = {
+        CHI_REG_raw_total = CHI_REG_RCCK_raw
+    }
+
+    add_to_variable = {
+        CHI_REG_raw_total = CHI_REG_CAPD_raw
+    }
+
+    add_to_variable = {
+        CHI_REG_raw_total = CHI_REG_JSS_raw
+    }
+
+    add_to_variable = {
+        CHI_REG_raw_total = CHI_REG_CDL_raw
+    }
+
+    add_to_variable = {
+        CHI_REG_raw_total = CHI_REG_IND_raw
+    }
+
+    add_to_variable = {
+        CHI_REG_raw_total = CHI_REG_ZGD_raw
+    }
+
+    add_to_variable = {
+        CHI_REG_raw_total = CHI_REG_KMT_raw
+    }
+
+    add_to_variable = {
+        CHI_REG_raw_total = CHI_REG_YP_raw
+    }
+
+
+    # =====================================================
+    # NORMALIZED SUPPORT
+    # =====================================================
+
+    set_variable = {
+        CHI_REG_CPC_support = CHI_REG_CPC_raw
+    }
+    divide_variable = {
+        CHI_REG_CPC_support = CHI_REG_raw_total
+    }
+    multiply_variable = {
+        CHI_REG_CPC_support = 100
+    }
+
+
+    set_variable = {
+        CHI_REG_RCCK_support = CHI_REG_RCCK_raw
+    }
+    divide_variable = {
+        CHI_REG_RCCK_support = CHI_REG_raw_total
+    }
+    multiply_variable = {
+        CHI_REG_RCCK_support = 100
+    }
+
+
+    set_variable = {
+        CHI_REG_CAPD_support = CHI_REG_CAPD_raw
+    }
+    divide_variable = {
+        CHI_REG_CAPD_support = CHI_REG_raw_total
+    }
+    multiply_variable = {
+        CHI_REG_CAPD_support = 100
+    }
+
+
+    set_variable = {
+        CHI_REG_JSS_support = CHI_REG_JSS_raw
+    }
+    divide_variable = {
+        CHI_REG_JSS_support = CHI_REG_raw_total
+    }
+    multiply_variable = {
+        CHI_REG_JSS_support = 100
+    }
+
+
+    set_variable = {
+        CHI_REG_CDL_support = CHI_REG_CDL_raw
+    }
+    divide_variable = {
+        CHI_REG_CDL_support = CHI_REG_raw_total
+    }
+    multiply_variable = {
+        CHI_REG_CDL_support = 100
+    }
+
+
+    set_variable = {
+        CHI_REG_IND_support = CHI_REG_IND_raw
+    }
+    divide_variable = {
+        CHI_REG_IND_support = CHI_REG_raw_total
+    }
+    multiply_variable = {
+        CHI_REG_IND_support = 100
+    }
+
+
+    set_variable = {
+        CHI_REG_ZGD_support = CHI_REG_ZGD_raw
+    }
+    divide_variable = {
+        CHI_REG_ZGD_support = CHI_REG_raw_total
+    }
+    multiply_variable = {
+        CHI_REG_ZGD_support = 100
+    }
+
+
+    set_variable = {
+        CHI_REG_KMT_support = CHI_REG_KMT_raw
+    }
+    divide_variable = {
+        CHI_REG_KMT_support = CHI_REG_raw_total
+    }
+    multiply_variable = {
+        CHI_REG_KMT_support = 100
+    }
+
+
+    set_variable = {
+        CHI_REG_YP_support = CHI_REG_YP_raw
+    }
+    divide_variable = {
+        CHI_REG_YP_support = CHI_REG_raw_total
+    }
+    multiply_variable = {
+        CHI_REG_YP_support = 100
+    }
+}
+
+# =========================================================
+# 通用工作区结果保存为广东结果
+# =========================================================
+
+CHI_save_region_workspace_to_guangdong = {
+
+    set_variable = {
+        CHI_GD_CPC_support = CHI_REG_CPC_support
+    }
+
+    set_variable = {
+        CHI_GD_RCCK_support = CHI_REG_RCCK_support
+    }
+
+    set_variable = {
+        CHI_GD_CAPD_support = CHI_REG_CAPD_support
+    }
+
+    set_variable = {
+        CHI_GD_JSS_support = CHI_REG_JSS_support
+    }
+
+    set_variable = {
+        CHI_GD_CDL_support = CHI_REG_CDL_support
+    }
+
+    set_variable = {
+        CHI_GD_IND_support = CHI_REG_IND_support
+    }
+
+    set_variable = {
+        CHI_GD_ZGD_support = CHI_REG_ZGD_support
+    }
+
+    set_variable = {
+        CHI_GD_KMT_support = CHI_REG_KMT_support
+    }
+
+    set_variable = {
+        CHI_GD_YP_support = CHI_REG_YP_support
+    }
+
+    # =====================================================
+    # 保存广东地方联盟结果
+    # =====================================================
+
+    set_variable = {
+        CHI_GD_PDUF_support = CHI_REG_PDUF_support
+    }
+
+    set_variable = {
+        CHI_GD_DCA_support = CHI_REG_DCA_support
+    }
+
+    set_variable = {
+        CHI_GD_NEUTRAL_support = CHI_REG_NEUTRAL_support
+    }
+
+
+    # =====================================================
+    # 保存广东 Margin / State
+    # =====================================================
+
+    set_variable = {
+        CHI_GD_margin = CHI_REG_margin
+    }
+
+    set_variable = {
+        CHI_GD_map_state = CHI_REG_state
+    }
+}
+
+# =========================================================
+# 广东：调用通用地区计算器
+# =========================================================
+
+CHI_calculate_guangdong_party_support_generic = {
+
+    # 1. 广东参数 → 通用工作区
+    CHI_load_guangdong_to_region_workspace = yes
+
+    # 2. 算九党地方支持率
+    CHI_calculate_region_party_support = yes
+
+    # 3. 算三联盟 + margin
+    CHI_calculate_region_alliance_support = yes
+
+    # 4. 算政治状态
+    CHI_classify_region_result = yes
+
+    # 5. 通用结果 → 广东
+    CHI_save_region_workspace_to_guangdong = yes
+
+    # 6. 广东自己的 GUI frame 映射
+    CHI_update_guangdong_map_frame = yes
+}
+
+# =========================================================
+# 广东地图显示映射
+#
+# GD state:
+# 1 = 蓝
+# 2 = 摇摆
+# 3 = 红
+#
+# DDS Frame:
+# 1 = 白色动画帧
+# 2 = 蓝
+# 3 = 红
+# 4 = 摇摆
+# =========================================================
+
+CHI_update_guangdong_map_frame = {
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_GD_map_state = 1
+            }
+        }
+
+        set_variable = {
+            CHI_guangdong_map_frame = 2
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_GD_map_state = 2
+            }
+        }
+
+        set_variable = {
+            CHI_guangdong_map_frame = 4
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_GD_map_state = 3
+            }
+        }
+
+        set_variable = {
+            CHI_guangdong_map_frame = 3
+        }
+    }
+}
+
+# =========================================================
+# 08A-2
+# 通用地区联盟支持率计算
+#
+# 联盟编号：
+# 0 = 中立
+# 1 = 人民民主统一战线
+# 2 = 民主宪政联盟
+#
+# 输入：
+# CHI_REG_XXX_support
+#
+# 输出：
+# CHI_REG_PDUF_support
+# CHI_REG_DCA_support
+# CHI_REG_NEUTRAL_support
+# =========================================================
+
+CHI_calculate_region_alliance_support = {
+
+    # -----------------------------------------
+    # 每次计算前清零
+    # -----------------------------------------
+
+    set_variable = {
+        CHI_REG_PDUF_support = 0
+    }
+
+    set_variable = {
+        CHI_REG_DCA_support = 0
+    }
+
+    set_variable = {
+        CHI_REG_NEUTRAL_support = 0
+    }
+
+
+    # =========================================
+    # CPC
+    # =========================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_CPC_alliance = 0
+            }
+        }
+
+        add_to_variable = {
+            CHI_REG_NEUTRAL_support = CHI_REG_CPC_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_CPC_alliance = 1
+            }
+        }
+
+        add_to_variable = {
+            CHI_REG_PDUF_support = CHI_REG_CPC_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_CPC_alliance = 2
+            }
+        }
+
+        add_to_variable = {
+            CHI_REG_DCA_support = CHI_REG_CPC_support
+        }
+    }
+
+
+    # =========================================
+    # RCCK
+    # =========================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_RCCK_alliance = 0
+            }
+        }
+
+        add_to_variable = {
+            CHI_REG_NEUTRAL_support = CHI_REG_RCCK_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_RCCK_alliance = 1
+            }
+        }
+
+        add_to_variable = {
+            CHI_REG_PDUF_support = CHI_REG_RCCK_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_RCCK_alliance = 2
+            }
+        }
+
+        add_to_variable = {
+            CHI_REG_DCA_support = CHI_REG_RCCK_support
+        }
+    }
+
+
+    # =========================================
+    # CAPD
+    # =========================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_CAPD_alliance = 0
+            }
+        }
+
+        add_to_variable = {
+            CHI_REG_NEUTRAL_support = CHI_REG_CAPD_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_CAPD_alliance = 1
+            }
+        }
+
+        add_to_variable = {
+            CHI_REG_PDUF_support = CHI_REG_CAPD_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_CAPD_alliance = 2
+            }
+        }
+
+        add_to_variable = {
+            CHI_REG_DCA_support = CHI_REG_CAPD_support
+        }
+    }
+
+
+    # =========================================
+    # JSS
+    # =========================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_JSS_alliance = 0
+            }
+        }
+
+        add_to_variable = {
+            CHI_REG_NEUTRAL_support = CHI_REG_JSS_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_JSS_alliance = 1
+            }
+        }
+
+        add_to_variable = {
+            CHI_REG_PDUF_support = CHI_REG_JSS_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_JSS_alliance = 2
+            }
+        }
+
+        add_to_variable = {
+            CHI_REG_DCA_support = CHI_REG_JSS_support
+        }
+    }
+
+
+    # =========================================
+    # CDL
+    # =========================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_CDL_alliance = 0
+            }
+        }
+
+        add_to_variable = {
+            CHI_REG_NEUTRAL_support = CHI_REG_CDL_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_CDL_alliance = 1
+            }
+        }
+
+        add_to_variable = {
+            CHI_REG_PDUF_support = CHI_REG_CDL_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_CDL_alliance = 2
+            }
+        }
+
+        add_to_variable = {
+            CHI_REG_DCA_support = CHI_REG_CDL_support
+        }
+    }
+
+
+    # =========================================
+    # IND
+    # =========================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_IND_alliance = 0
+            }
+        }
+
+        add_to_variable = {
+            CHI_REG_NEUTRAL_support = CHI_REG_IND_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_IND_alliance = 1
+            }
+        }
+
+        add_to_variable = {
+            CHI_REG_PDUF_support = CHI_REG_IND_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_IND_alliance = 2
+            }
+        }
+
+        add_to_variable = {
+            CHI_REG_DCA_support = CHI_REG_IND_support
+        }
+    }
+
+
+    # =========================================
+    # ZGD
+    # =========================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_ZGD_alliance = 0
+            }
+        }
+
+        add_to_variable = {
+            CHI_REG_NEUTRAL_support = CHI_REG_ZGD_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_ZGD_alliance = 1
+            }
+        }
+
+        add_to_variable = {
+            CHI_REG_PDUF_support = CHI_REG_ZGD_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_ZGD_alliance = 2
+            }
+        }
+
+        add_to_variable = {
+            CHI_REG_DCA_support = CHI_REG_ZGD_support
+        }
+    }
+
+
+    # =========================================
+    # KMT
+    # =========================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_KMT_alliance = 0
+            }
+        }
+
+        add_to_variable = {
+            CHI_REG_NEUTRAL_support = CHI_REG_KMT_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_KMT_alliance = 1
+            }
+        }
+
+        add_to_variable = {
+            CHI_REG_PDUF_support = CHI_REG_KMT_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_KMT_alliance = 2
+            }
+        }
+
+        add_to_variable = {
+            CHI_REG_DCA_support = CHI_REG_KMT_support
+        }
+    }
+
+
+    # =========================================
+    # YP
+    # =========================================
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_YP_alliance = 0
+            }
+        }
+
+        add_to_variable = {
+            CHI_REG_NEUTRAL_support = CHI_REG_YP_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_YP_alliance = 1
+            }
+        }
+
+        add_to_variable = {
+            CHI_REG_PDUF_support = CHI_REG_YP_support
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_YP_alliance = 2
+            }
+        }
+
+        add_to_variable = {
+            CHI_REG_DCA_support = CHI_REG_YP_support
+        }
+    }
+
+
+    # =========================================
+    # 地区 Margin
+    #
+    # 正数 = DCA 领先
+    # 负数 = PDUF 领先
+    # =========================================
+
+    set_variable = {
+        CHI_REG_margin = CHI_REG_DCA_support
+    }
+
+    subtract_from_variable = {
+        CHI_REG_margin = CHI_REG_PDUF_support
+    }
+}
+
+# =========================================================
+# 通用地区政治状态分类
+#
+# 1 = 民主宪政联盟优势（蓝）
+# 2 = 摇摆
+# 3 = 人民民主统一战线优势（红）
+#
+# 当前阈值：
+# >= +10 = 蓝
+# <= -10 = 红
+# 其他 = 摇摆
+# =========================================================
+
+CHI_classify_region_result = {
+
+    # 默认摇摆
+    set_variable = {
+        CHI_REG_state = 2
+    }
+
+    # 蓝
+    if = {
+        limit = {
+            NOT = {
+                check_variable = {
+                    CHI_REG_margin < 10
+                }
+            }
+        }
+
+        set_variable = {
+            CHI_REG_state = 1
+        }
+    }
+
+    # 红
+    else_if = {
+        limit = {
+            NOT = {
+                check_variable = {
+                    CHI_REG_margin > -10
+                }
+            }
+        }
+
+        set_variable = {
+            CHI_REG_state = 3
+        }
+    }
+}
+
+# =========================================================
+# 08B-1
+# 新疆参数装载到通用地区工作区
+# =========================================================
+
+CHI_load_xinjiang_to_region_workspace = {
+
+    set_variable = {
+        CHI_REG_CPC_weight = CHI_XJ_CPC_local_weight
+    }
+
+    set_variable = {
+        CHI_REG_RCCK_weight = CHI_XJ_RCCK_local_weight
+    }
+
+    set_variable = {
+        CHI_REG_CAPD_weight = CHI_XJ_CAPD_local_weight
+    }
+
+    set_variable = {
+        CHI_REG_JSS_weight = CHI_XJ_JSS_local_weight
+    }
+
+    set_variable = {
+        CHI_REG_CDL_weight = CHI_XJ_CDL_local_weight
+    }
+
+    set_variable = {
+        CHI_REG_IND_weight = CHI_XJ_IND_local_weight
+    }
+
+    set_variable = {
+        CHI_REG_ZGD_weight = CHI_XJ_ZGD_local_weight
+    }
+
+    set_variable = {
+        CHI_REG_KMT_weight = CHI_XJ_KMT_local_weight
+    }
+
+    set_variable = {
+        CHI_REG_YP_weight = CHI_XJ_YP_local_weight
+    }
+}
+
+# =========================================================
+# 08B-2
+# 通用工作区结果保存为新疆结果
+# =========================================================
+
+CHI_save_region_workspace_to_xinjiang = {
+
+    # 九党支持率
+
+    set_variable = {
+        CHI_XJ_CPC_support = CHI_REG_CPC_support
+    }
+
+    set_variable = {
+        CHI_XJ_RCCK_support = CHI_REG_RCCK_support
+    }
+
+    set_variable = {
+        CHI_XJ_CAPD_support = CHI_REG_CAPD_support
+    }
+
+    set_variable = {
+        CHI_XJ_JSS_support = CHI_REG_JSS_support
+    }
+
+    set_variable = {
+        CHI_XJ_CDL_support = CHI_REG_CDL_support
+    }
+
+    set_variable = {
+        CHI_XJ_IND_support = CHI_REG_IND_support
+    }
+
+    set_variable = {
+        CHI_XJ_ZGD_support = CHI_REG_ZGD_support
+    }
+
+    set_variable = {
+        CHI_XJ_KMT_support = CHI_REG_KMT_support
+    }
+
+    set_variable = {
+        CHI_XJ_YP_support = CHI_REG_YP_support
+    }
+
+
+    # =====================================================
+    # 保存新疆地方联盟结果
+    # =====================================================
+
+    set_variable = {
+        CHI_XJ_PDUF_support = CHI_REG_PDUF_support
+    }
+
+    set_variable = {
+        CHI_XJ_DCA_support = CHI_REG_DCA_support
+    }
+
+    set_variable = {
+        CHI_XJ_NEUTRAL_support = CHI_REG_NEUTRAL_support
+    }
+
+
+    # =====================================================
+    # 保存新疆 Margin / State
+    # =====================================================
+
+    set_variable = {
+        CHI_XJ_margin = CHI_REG_margin
+    }
+
+    set_variable = {
+        CHI_XJ_map_state = CHI_REG_state
+    }
+}
+
+# =========================================================
+# 08B-3
+# 新疆：调用通用地区计算器
+# =========================================================
+
+CHI_calculate_xinjiang_party_support_generic = {
+
+    # 1. 新疆参数 → 通用工作区
+    CHI_load_xinjiang_to_region_workspace = yes
+
+    # 2. 算九党地方支持率
+    CHI_calculate_region_party_support = yes
+
+    # 3. 算三联盟 + margin
+    CHI_calculate_region_alliance_support = yes
+
+    # 4. 算政治状态
+    CHI_classify_region_result = yes
+
+    # 5. 通用结果 → 新疆
+    CHI_save_region_workspace_to_xinjiang = yes
+
+    # 6. 新疆自己的 GUI frame 映射
+    CHI_update_xinjiang_map_frame = yes
+}
+
+# =========================================================
+# 08B-4
+# 新疆地图显示映射
+#
+# XJ state:
+# 1 = 蓝
+# 2 = 摇摆
+# 3 = 红
+#
+# DDS Frame:
+# 1 = 白色动画帧
+# 2 = 蓝
+# 3 = 红
+# 4 = 摇摆
+# =========================================================
+
+CHI_update_xinjiang_map_frame = {
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_XJ_map_state = 1
+            }
+        }
+
+        set_variable = {
+            CHI_xinjiang_map_frame = 2
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_XJ_map_state = 2
+            }
+        }
+
+        set_variable = {
+            CHI_xinjiang_map_frame = 4
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_XJ_map_state = 3
+            }
+        }
+
+        set_variable = {
+            CHI_xinjiang_map_frame = 3
+        }
+    }
+}
+
+# =========================================================
+# 辽宁-1
+# 辽宁参数装载到通用地区工作区
+# =========================================================
+
+CHI_load_liaoning_to_region_workspace = {
+
+    set_variable = { CHI_REG_CPC_weight = CHI_LN_CPC_local_weight }
+    set_variable = { CHI_REG_RCCK_weight = CHI_LN_RCCK_local_weight }
+    set_variable = { CHI_REG_CAPD_weight = CHI_LN_CAPD_local_weight }
+    set_variable = { CHI_REG_JSS_weight = CHI_LN_JSS_local_weight }
+    set_variable = { CHI_REG_CDL_weight = CHI_LN_CDL_local_weight }
+    set_variable = { CHI_REG_IND_weight = CHI_LN_IND_local_weight }
+    set_variable = { CHI_REG_ZGD_weight = CHI_LN_ZGD_local_weight }
+    set_variable = { CHI_REG_KMT_weight = CHI_LN_KMT_local_weight }
+    set_variable = { CHI_REG_YP_weight = CHI_LN_YP_local_weight }
+}
+
+
+
+# =========================================================
+# 辽宁-2
+# 通用工作区结果保存为辽宁结果
+# =========================================================
+
+CHI_save_region_workspace_to_liaoning = {
+
+    set_variable = { CHI_LN_CPC_support = CHI_REG_CPC_support }
+    set_variable = { CHI_LN_RCCK_support = CHI_REG_RCCK_support }
+    set_variable = { CHI_LN_CAPD_support = CHI_REG_CAPD_support }
+    set_variable = { CHI_LN_JSS_support = CHI_REG_JSS_support }
+    set_variable = { CHI_LN_CDL_support = CHI_REG_CDL_support }
+    set_variable = { CHI_LN_IND_support = CHI_REG_IND_support }
+    set_variable = { CHI_LN_ZGD_support = CHI_REG_ZGD_support }
+    set_variable = { CHI_LN_KMT_support = CHI_REG_KMT_support }
+    set_variable = { CHI_LN_YP_support = CHI_REG_YP_support }
+
+    set_variable = { CHI_LN_PDUF_support = CHI_REG_PDUF_support }
+    set_variable = { CHI_LN_DCA_support = CHI_REG_DCA_support }
+    set_variable = { CHI_LN_NEUTRAL_support = CHI_REG_NEUTRAL_support }
+
+    set_variable = { CHI_LN_margin = CHI_REG_margin }
+    set_variable = { CHI_LN_map_state = CHI_REG_state }
+}
+
+# =========================================================
+# 辽宁-3
+# 辽宁：调用通用地区计算器
+# =========================================================
+
+CHI_calculate_liaoning_party_support_generic = {
+
+    CHI_load_liaoning_to_region_workspace = yes
+
+    CHI_calculate_region_party_support = yes
+
+    CHI_calculate_region_alliance_support = yes
+
+    CHI_classify_region_result = yes
+
+    CHI_save_region_workspace_to_liaoning = yes
+
+    CHI_update_liaoning_map_frame = yes
+}
+
+# =========================================================
+# 辽宁-4
+# 辽宁地图显示映射
+#
+# State:
+# 1 = 蓝
+# 2 = 摇摆
+# 3 = 红
+#
+# DDS:
+# Frame 1 = 白
+# Frame 2 = 蓝
+# Frame 3 = 红
+# Frame 4 = 摇摆
+# =========================================================
+
+CHI_update_liaoning_map_frame = {
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_LN_map_state = 1
+            }
+        }
+
+        set_variable = {
+            CHI_liaoning_map_frame = 2
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_LN_map_state = 2
+            }
+        }
+
+        set_variable = {
+            CHI_liaoning_map_frame = 4
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_LN_map_state = 3
+            }
+        }
+
+        set_variable = {
+            CHI_liaoning_map_frame = 3
+        }
+    }
+}
+
+# =========================================================
+# 吉林-1
+# 吉林参数装载到通用地区工作区
+# =========================================================
+
+CHI_load_jilin_to_region_workspace = {
+
+    set_variable = { CHI_REG_CPC_weight = CHI_JL_CPC_local_weight }
+    set_variable = { CHI_REG_RCCK_weight = CHI_JL_RCCK_local_weight }
+    set_variable = { CHI_REG_CAPD_weight = CHI_JL_CAPD_local_weight }
+    set_variable = { CHI_REG_JSS_weight = CHI_JL_JSS_local_weight }
+    set_variable = { CHI_REG_CDL_weight = CHI_JL_CDL_local_weight }
+    set_variable = { CHI_REG_IND_weight = CHI_JL_IND_local_weight }
+    set_variable = { CHI_REG_ZGD_weight = CHI_JL_ZGD_local_weight }
+    set_variable = { CHI_REG_KMT_weight = CHI_JL_KMT_local_weight }
+    set_variable = { CHI_REG_YP_weight = CHI_JL_YP_local_weight }
+}
+
+# =========================================================
+# 吉林-2
+# 通用工作区结果保存为吉林结果
+# =========================================================
+
+CHI_save_region_workspace_to_jilin = {
+
+    set_variable = { CHI_JL_CPC_support = CHI_REG_CPC_support }
+    set_variable = { CHI_JL_RCCK_support = CHI_REG_RCCK_support }
+    set_variable = { CHI_JL_CAPD_support = CHI_REG_CAPD_support }
+    set_variable = { CHI_JL_JSS_support = CHI_REG_JSS_support }
+    set_variable = { CHI_JL_CDL_support = CHI_REG_CDL_support }
+    set_variable = { CHI_JL_IND_support = CHI_REG_IND_support }
+    set_variable = { CHI_JL_ZGD_support = CHI_REG_ZGD_support }
+    set_variable = { CHI_JL_KMT_support = CHI_REG_KMT_support }
+    set_variable = { CHI_JL_YP_support = CHI_REG_YP_support }
+
+    set_variable = { CHI_JL_PDUF_support = CHI_REG_PDUF_support }
+    set_variable = { CHI_JL_DCA_support = CHI_REG_DCA_support }
+    set_variable = { CHI_JL_NEUTRAL_support = CHI_REG_NEUTRAL_support }
+
+    set_variable = { CHI_JL_margin = CHI_REG_margin }
+    set_variable = { CHI_JL_map_state = CHI_REG_state }
+}
+
+# =========================================================
+# 吉林-3
+# 吉林：调用通用地区计算器
+# =========================================================
+
+CHI_calculate_jilin_party_support_generic = {
+
+    CHI_load_jilin_to_region_workspace = yes
+
+    CHI_calculate_region_party_support = yes
+
+    CHI_calculate_region_alliance_support = yes
+
+    CHI_classify_region_result = yes
+
+    CHI_save_region_workspace_to_jilin = yes
+
+    CHI_update_jilin_map_frame = yes
+}
+
+# =========================================================
+# 吉林-4
+# 吉林地图显示映射
+#
+# State:
+# 1 = 蓝
+# 2 = 摇摆
+# 3 = 红
+#
+# DDS:
+# Frame 1 = 白
+# Frame 2 = 蓝
+# Frame 3 = 红
+# Frame 4 = 摇摆
+# =========================================================
+
+CHI_update_jilin_map_frame = {
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_JL_map_state = 1
+            }
+        }
+
+        set_variable = {
+            CHI_jilin_map_frame = 2
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_JL_map_state = 2
+            }
+        }
+
+        set_variable = {
+            CHI_jilin_map_frame = 4
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_JL_map_state = 3
+            }
+        }
+
+        set_variable = {
+            CHI_jilin_map_frame = 3
+        }
+    }
+}
+
+# =========================================================
+# 黑龙江-1
+# 黑龙江参数装载到通用地区工作区
+# =========================================================
+
+CHI_load_heilongjiang_to_region_workspace = {
+
+    set_variable = { CHI_REG_CPC_weight = CHI_HLJ_CPC_local_weight }
+    set_variable = { CHI_REG_RCCK_weight = CHI_HLJ_RCCK_local_weight }
+    set_variable = { CHI_REG_CAPD_weight = CHI_HLJ_CAPD_local_weight }
+    set_variable = { CHI_REG_JSS_weight = CHI_HLJ_JSS_local_weight }
+    set_variable = { CHI_REG_CDL_weight = CHI_HLJ_CDL_local_weight }
+    set_variable = { CHI_REG_IND_weight = CHI_HLJ_IND_local_weight }
+    set_variable = { CHI_REG_ZGD_weight = CHI_HLJ_ZGD_local_weight }
+    set_variable = { CHI_REG_KMT_weight = CHI_HLJ_KMT_local_weight }
+    set_variable = { CHI_REG_YP_weight = CHI_HLJ_YP_local_weight }
+}
+
+# =========================================================
+# 黑龙江-2
+# 通用工作区结果保存为黑龙江结果
+# =========================================================
+
+CHI_save_region_workspace_to_heilongjiang = {
+
+    set_variable = { CHI_HLJ_CPC_support = CHI_REG_CPC_support }
+    set_variable = { CHI_HLJ_RCCK_support = CHI_REG_RCCK_support }
+    set_variable = { CHI_HLJ_CAPD_support = CHI_REG_CAPD_support }
+    set_variable = { CHI_HLJ_JSS_support = CHI_REG_JSS_support }
+    set_variable = { CHI_HLJ_CDL_support = CHI_REG_CDL_support }
+    set_variable = { CHI_HLJ_IND_support = CHI_REG_IND_support }
+    set_variable = { CHI_HLJ_ZGD_support = CHI_REG_ZGD_support }
+    set_variable = { CHI_HLJ_KMT_support = CHI_REG_KMT_support }
+    set_variable = { CHI_HLJ_YP_support = CHI_REG_YP_support }
+
+    set_variable = { CHI_HLJ_PDUF_support = CHI_REG_PDUF_support }
+    set_variable = { CHI_HLJ_DCA_support = CHI_REG_DCA_support }
+    set_variable = { CHI_HLJ_NEUTRAL_support = CHI_REG_NEUTRAL_support }
+
+    set_variable = { CHI_HLJ_margin = CHI_REG_margin }
+    set_variable = { CHI_HLJ_map_state = CHI_REG_state }
+}
+
+# =========================================================
+# 黑龙江-3
+# 黑龙江：调用通用地区计算器
+# =========================================================
+
+CHI_calculate_heilongjiang_party_support_generic = {
+
+    CHI_load_heilongjiang_to_region_workspace = yes
+
+    CHI_calculate_region_party_support = yes
+
+    CHI_calculate_region_alliance_support = yes
+
+    CHI_classify_region_result = yes
+
+    CHI_save_region_workspace_to_heilongjiang = yes
+
+    CHI_update_heilongjiang_map_frame = yes
+}
+
+# =========================================================
+# 黑龙江-4
+# 黑龙江地图显示映射
+#
+# State:
+# 1 = 蓝
+# 2 = 摇摆
+# 3 = 红
+#
+# DDS:
+# Frame 1 = 白
+# Frame 2 = 蓝
+# Frame 3 = 红
+# Frame 4 = 摇摆
+# =========================================================
+
+CHI_update_heilongjiang_map_frame = {
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_HLJ_map_state = 1
+            }
+        }
+
+        set_variable = {
+            CHI_heilongjiang_map_frame = 2
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_HLJ_map_state = 2
+            }
+        }
+
+        set_variable = {
+            CHI_heilongjiang_map_frame = 4
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_HLJ_map_state = 3
+            }
+        }
+
+        set_variable = {
+            CHI_heilongjiang_map_frame = 3
+        }
+    }
+}
+
+# =========================================================
+# 兴安-1
+# 兴安参数装载到通用地区工作区
+# =========================================================
+
+CHI_load_xingan_to_region_workspace = {
+
+    set_variable = { CHI_REG_CPC_weight = CHI_XA_CPC_local_weight }
+    set_variable = { CHI_REG_RCCK_weight = CHI_XA_RCCK_local_weight }
+    set_variable = { CHI_REG_CAPD_weight = CHI_XA_CAPD_local_weight }
+    set_variable = { CHI_REG_JSS_weight = CHI_XA_JSS_local_weight }
+    set_variable = { CHI_REG_CDL_weight = CHI_XA_CDL_local_weight }
+    set_variable = { CHI_REG_IND_weight = CHI_XA_IND_local_weight }
+    set_variable = { CHI_REG_ZGD_weight = CHI_XA_ZGD_local_weight }
+    set_variable = { CHI_REG_KMT_weight = CHI_XA_KMT_local_weight }
+    set_variable = { CHI_REG_YP_weight = CHI_XA_YP_local_weight }
+}
+
+# =========================================================
+# 兴安-2
+# 通用工作区结果保存为兴安结果
+# =========================================================
+
+CHI_save_region_workspace_to_xingan = {
+
+    set_variable = { CHI_XA_CPC_support = CHI_REG_CPC_support }
+    set_variable = { CHI_XA_RCCK_support = CHI_REG_RCCK_support }
+    set_variable = { CHI_XA_CAPD_support = CHI_REG_CAPD_support }
+    set_variable = { CHI_XA_JSS_support = CHI_REG_JSS_support }
+    set_variable = { CHI_XA_CDL_support = CHI_REG_CDL_support }
+    set_variable = { CHI_XA_IND_support = CHI_REG_IND_support }
+    set_variable = { CHI_XA_ZGD_support = CHI_REG_ZGD_support }
+    set_variable = { CHI_XA_KMT_support = CHI_REG_KMT_support }
+    set_variable = { CHI_XA_YP_support = CHI_REG_YP_support }
+
+    set_variable = { CHI_XA_PDUF_support = CHI_REG_PDUF_support }
+    set_variable = { CHI_XA_DCA_support = CHI_REG_DCA_support }
+    set_variable = { CHI_XA_NEUTRAL_support = CHI_REG_NEUTRAL_support }
+
+    set_variable = { CHI_XA_margin = CHI_REG_margin }
+    set_variable = { CHI_XA_map_state = CHI_REG_state }
+}
+
+# =========================================================
+# 兴安-3
+# 兴安：调用通用地区计算器
+# =========================================================
+
+CHI_calculate_xingan_party_support_generic = {
+
+    CHI_load_xingan_to_region_workspace = yes
+
+    CHI_calculate_region_party_support = yes
+
+    CHI_calculate_region_alliance_support = yes
+
+    CHI_classify_region_result = yes
+
+    CHI_save_region_workspace_to_xingan = yes
+
+    CHI_update_xingan_map_frame = yes
+}
+
+# =========================================================
+# 兴安-4
+# 兴安地图显示映射
+#
+# State:
+# 1 = 蓝
+# 2 = 摇摆
+# 3 = 红
+#
+# DDS:
+# Frame 1 = 白
+# Frame 2 = 蓝
+# Frame 3 = 红
+# Frame 4 = 摇摆
+# =========================================================
+
+CHI_update_xingan_map_frame = {
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_XA_map_state = 1
+            }
+        }
+
+        set_variable = {
+            CHI_xingan_map_frame = 2
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_XA_map_state = 2
+            }
+        }
+
+        set_variable = {
+            CHI_xingan_map_frame = 4
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_XA_map_state = 3
+            }
+        }
+
+        set_variable = {
+            CHI_xingan_map_frame = 3
+        }
+    }
+}
+
+# =========================================================
+# 乌苏里-1
+# 乌苏里参数装载到通用地区工作区
+# =========================================================
+
+CHI_load_wusuli_to_region_workspace = {
+
+    set_variable = { CHI_REG_CPC_weight = CHI_WSL_CPC_local_weight }
+    set_variable = { CHI_REG_RCCK_weight = CHI_WSL_RCCK_local_weight }
+    set_variable = { CHI_REG_CAPD_weight = CHI_WSL_CAPD_local_weight }
+    set_variable = { CHI_REG_JSS_weight = CHI_WSL_JSS_local_weight }
+    set_variable = { CHI_REG_CDL_weight = CHI_WSL_CDL_local_weight }
+    set_variable = { CHI_REG_IND_weight = CHI_WSL_IND_local_weight }
+    set_variable = { CHI_REG_ZGD_weight = CHI_WSL_ZGD_local_weight }
+    set_variable = { CHI_REG_KMT_weight = CHI_WSL_KMT_local_weight }
+    set_variable = { CHI_REG_YP_weight = CHI_WSL_YP_local_weight }
+}
+# =========================================================
+# 乌苏里-2
+# 通用工作区结果保存为乌苏里结果
+# =========================================================
+
+CHI_save_region_workspace_to_wusuli = {
+
+    set_variable = { CHI_WSL_CPC_support = CHI_REG_CPC_support }
+    set_variable = { CHI_WSL_RCCK_support = CHI_REG_RCCK_support }
+    set_variable = { CHI_WSL_CAPD_support = CHI_REG_CAPD_support }
+    set_variable = { CHI_WSL_JSS_support = CHI_REG_JSS_support }
+    set_variable = { CHI_WSL_CDL_support = CHI_REG_CDL_support }
+    set_variable = { CHI_WSL_IND_support = CHI_REG_IND_support }
+    set_variable = { CHI_WSL_ZGD_support = CHI_REG_ZGD_support }
+    set_variable = { CHI_WSL_KMT_support = CHI_REG_KMT_support }
+    set_variable = { CHI_WSL_YP_support = CHI_REG_YP_support }
+
+    set_variable = { CHI_WSL_PDUF_support = CHI_REG_PDUF_support }
+    set_variable = { CHI_WSL_DCA_support = CHI_REG_DCA_support }
+    set_variable = { CHI_WSL_NEUTRAL_support = CHI_REG_NEUTRAL_support }
+
+    set_variable = { CHI_WSL_margin = CHI_REG_margin }
+    set_variable = { CHI_WSL_map_state = CHI_REG_state }
+}
+# =========================================================
+# 乌苏里-3
+# 乌苏里：调用通用地区计算器
+# =========================================================
+
+CHI_calculate_wusuli_party_support_generic = {
+
+    CHI_load_wusuli_to_region_workspace = yes
+
+    CHI_calculate_region_party_support = yes
+
+    CHI_calculate_region_alliance_support = yes
+
+    CHI_classify_region_result = yes
+
+    CHI_save_region_workspace_to_wusuli = yes
+
+    CHI_update_wusuli_map_frame = yes
+}
+
+# =========================================================
+# 乌苏里-4
+# 乌苏里地图显示映射
+#
+# State:
+# 1 = 蓝
+# 2 = 摇摆
+# 3 = 红
+#
+# DDS:
+# Frame 1 = 白
+# Frame 2 = 蓝
+# Frame 3 = 红
+# Frame 4 = 摇摆
+# =========================================================
+
+CHI_update_wusuli_map_frame = {
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_WSL_map_state = 1
+            }
+        }
+
+        set_variable = {
+            CHI_wusuli_map_frame = 2
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_WSL_map_state = 2
+            }
+        }
+
+        set_variable = {
+            CHI_wusuli_map_frame = 4
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_WSL_map_state = 3
+            }
+        }
+
+        set_variable = {
+            CHI_wusuli_map_frame = 3
+        }
+    }
+}
+
+# =========================================================
+# 海参崴-1
+# 海参崴参数装载到通用地区工作区
+# =========================================================
+
+CHI_load_haishenwei_to_region_workspace = {
+
+    set_variable = { CHI_REG_CPC_weight = CHI_HSW_CPC_local_weight }
+    set_variable = { CHI_REG_RCCK_weight = CHI_HSW_RCCK_local_weight }
+    set_variable = { CHI_REG_CAPD_weight = CHI_HSW_CAPD_local_weight }
+    set_variable = { CHI_REG_JSS_weight = CHI_HSW_JSS_local_weight }
+    set_variable = { CHI_REG_CDL_weight = CHI_HSW_CDL_local_weight }
+    set_variable = { CHI_REG_IND_weight = CHI_HSW_IND_local_weight }
+    set_variable = { CHI_REG_ZGD_weight = CHI_HSW_ZGD_local_weight }
+    set_variable = { CHI_REG_KMT_weight = CHI_HSW_KMT_local_weight }
+    set_variable = { CHI_REG_YP_weight = CHI_HSW_YP_local_weight }
+}
+# =========================================================
+# 海参崴-2
+# 通用工作区结果保存为海参崴结果
+# =========================================================
+
+CHI_save_region_workspace_to_haishenwei = {
+
+    set_variable = { CHI_HSW_CPC_support = CHI_REG_CPC_support }
+    set_variable = { CHI_HSW_RCCK_support = CHI_REG_RCCK_support }
+    set_variable = { CHI_HSW_CAPD_support = CHI_REG_CAPD_support }
+    set_variable = { CHI_HSW_JSS_support = CHI_REG_JSS_support }
+    set_variable = { CHI_HSW_CDL_support = CHI_REG_CDL_support }
+    set_variable = { CHI_HSW_IND_support = CHI_REG_IND_support }
+    set_variable = { CHI_HSW_ZGD_support = CHI_REG_ZGD_support }
+    set_variable = { CHI_HSW_KMT_support = CHI_REG_KMT_support }
+    set_variable = { CHI_HSW_YP_support = CHI_REG_YP_support }
+
+    set_variable = { CHI_HSW_PDUF_support = CHI_REG_PDUF_support }
+    set_variable = { CHI_HSW_DCA_support = CHI_REG_DCA_support }
+    set_variable = { CHI_HSW_NEUTRAL_support = CHI_REG_NEUTRAL_support }
+
+    set_variable = { CHI_HSW_margin = CHI_REG_margin }
+    set_variable = { CHI_HSW_map_state = CHI_REG_state }
+}
+
+# =========================================================
+# 海参崴-3
+# 海参崴：调用通用地区计算器
+# =========================================================
+
+CHI_calculate_haishenwei_party_support_generic = {
+
+    CHI_load_haishenwei_to_region_workspace = yes
+
+    CHI_calculate_region_party_support = yes
+
+    CHI_calculate_region_alliance_support = yes
+
+    CHI_classify_region_result = yes
+
+    CHI_save_region_workspace_to_haishenwei = yes
+
+    CHI_update_haishenwei_map_frame = yes
+}
+
+# =========================================================
+# 海参崴-4
+# 海参崴地图显示映射
+#
+# State:
+# 1 = 蓝
+# 2 = 摇摆
+# 3 = 红
+#
+# DDS:
+# Frame 1 = 白
+# Frame 2 = 蓝
+# Frame 3 = 红
+# Frame 4 = 摇摆
+# =========================================================
+
+CHI_update_haishenwei_map_frame = {
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_HSW_map_state = 1
+            }
+        }
+
+        set_variable = {
+            CHI_haishenwei_map_frame = 2
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_HSW_map_state = 2
+            }
+        }
+
+        set_variable = {
+            CHI_haishenwei_map_frame = 4
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_HSW_map_state = 3
+            }
+        }
+
+        set_variable = {
+            CHI_haishenwei_map_frame = 3
+        }
+    }
+}
+
+# =========================================================
+# 热河省政党地方基本盘系数-1
+# 热河参数装载到通用地区工作区
+# =========================================================
+
+CHI_load_rehe_to_region_workspace = {
+
+    set_variable = { CHI_REG_CPC_weight = CHI_RH_CPC_local_weight }
+    set_variable = { CHI_REG_RCCK_weight = CHI_RH_RCCK_local_weight }
+    set_variable = { CHI_REG_CAPD_weight = CHI_RH_CAPD_local_weight }
+    set_variable = { CHI_REG_JSS_weight = CHI_RH_JSS_local_weight }
+    set_variable = { CHI_REG_CDL_weight = CHI_RH_CDL_local_weight }
+    set_variable = { CHI_REG_IND_weight = CHI_RH_IND_local_weight }
+    set_variable = { CHI_REG_ZGD_weight = CHI_RH_ZGD_local_weight }
+    set_variable = { CHI_REG_KMT_weight = CHI_RH_KMT_local_weight }
+    set_variable = { CHI_REG_YP_weight = CHI_RH_YP_local_weight }
+}
+# =========================================================
+# 热河-2
+# 通用工作区结果保存为热河结果
+# =========================================================
+
+CHI_save_region_workspace_to_rehe = {
+
+    set_variable = { CHI_RH_CPC_support = CHI_REG_CPC_support }
+    set_variable = { CHI_RH_RCCK_support = CHI_REG_RCCK_support }
+    set_variable = { CHI_RH_CAPD_support = CHI_REG_CAPD_support }
+    set_variable = { CHI_RH_JSS_support = CHI_REG_JSS_support }
+    set_variable = { CHI_RH_CDL_support = CHI_REG_CDL_support }
+    set_variable = { CHI_RH_IND_support = CHI_REG_IND_support }
+    set_variable = { CHI_RH_ZGD_support = CHI_REG_ZGD_support }
+    set_variable = { CHI_RH_KMT_support = CHI_REG_KMT_support }
+    set_variable = { CHI_RH_YP_support = CHI_REG_YP_support }
+
+    set_variable = { CHI_RH_PDUF_support = CHI_REG_PDUF_support }
+    set_variable = { CHI_RH_DCA_support = CHI_REG_DCA_support }
+    set_variable = { CHI_RH_NEUTRAL_support = CHI_REG_NEUTRAL_support }
+
+    set_variable = { CHI_RH_margin = CHI_REG_margin }
+    set_variable = { CHI_RH_map_state = CHI_REG_state }
+}
+# =========================================================
+# 热河-3
+# 热河：调用通用地区计算器
+# =========================================================
+
+CHI_calculate_rehe_party_support_generic = {
+
+    CHI_load_rehe_to_region_workspace = yes
+
+    CHI_calculate_region_party_support = yes
+
+    CHI_calculate_region_alliance_support = yes
+
+    CHI_classify_region_result = yes
+
+    CHI_save_region_workspace_to_rehe = yes
+
+    CHI_update_rehe_map_frame = yes
+}
+# =========================================================
+# 热河-4
+# 热河地图显示映射
+#
+# State:
+# 1 = 蓝
+# 2 = 摇摆
+# 3 = 红
+#
+# DDS:
+# Frame 1 = 白
+# Frame 2 = 蓝
+# Frame 3 = 红
+# Frame 4 = 摇摆
+# =========================================================
+
+CHI_update_rehe_map_frame = {
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_RH_map_state = 1
+            }
+        }
+
+        set_variable = {
+            CHI_rehe_map_frame = 2
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_RH_map_state = 2
+            }
+        }
+
+        set_variable = {
+            CHI_rehe_map_frame = 4
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_RH_map_state = 3
+            }
+        }
+
+        set_variable = {
+            CHI_rehe_map_frame = 3
+        }
+    }
+}
+
+
+# =========================================================
+# 08C-1
+# 山西参数装载到通用地区工作区
+# =========================================================
+
+CHI_load_shanxi_to_region_workspace = {
+
+    set_variable = { CHI_REG_CPC_weight = CHI_SX_CPC_local_weight }
+    set_variable = { CHI_REG_RCCK_weight = CHI_SX_RCCK_local_weight }
+    set_variable = { CHI_REG_CAPD_weight = CHI_SX_CAPD_local_weight }
+    set_variable = { CHI_REG_JSS_weight = CHI_SX_JSS_local_weight }
+    set_variable = { CHI_REG_CDL_weight = CHI_SX_CDL_local_weight }
+    set_variable = { CHI_REG_IND_weight = CHI_SX_IND_local_weight }
+    set_variable = { CHI_REG_ZGD_weight = CHI_SX_ZGD_local_weight }
+    set_variable = { CHI_REG_KMT_weight = CHI_SX_KMT_local_weight }
+    set_variable = { CHI_REG_YP_weight = CHI_SX_YP_local_weight }
+}
+
+# =========================================================
+# 08C-2
+# 通用工作区结果保存为山西结果
+# =========================================================
+
+CHI_save_region_workspace_to_shanxi = {
+
+    set_variable = { CHI_SX_CPC_support = CHI_REG_CPC_support }
+    set_variable = { CHI_SX_RCCK_support = CHI_REG_RCCK_support }
+    set_variable = { CHI_SX_CAPD_support = CHI_REG_CAPD_support }
+    set_variable = { CHI_SX_JSS_support = CHI_REG_JSS_support }
+    set_variable = { CHI_SX_CDL_support = CHI_REG_CDL_support }
+    set_variable = { CHI_SX_IND_support = CHI_REG_IND_support }
+    set_variable = { CHI_SX_ZGD_support = CHI_REG_ZGD_support }
+    set_variable = { CHI_SX_KMT_support = CHI_REG_KMT_support }
+    set_variable = { CHI_SX_YP_support = CHI_REG_YP_support }
+
+    set_variable = { CHI_SX_PDUF_support = CHI_REG_PDUF_support }
+    set_variable = { CHI_SX_DCA_support = CHI_REG_DCA_support }
+    set_variable = { CHI_SX_NEUTRAL_support = CHI_REG_NEUTRAL_support }
+
+    set_variable = { CHI_SX_margin = CHI_REG_margin }
+    set_variable = { CHI_SX_map_state = CHI_REG_state }
+}
+
+# =========================================================
+# 08C-3
+# 山西：调用通用地区计算器
+# =========================================================
+
+CHI_calculate_shanxi_party_support_generic = {
+
+    CHI_load_shanxi_to_region_workspace = yes
+
+    CHI_calculate_region_party_support = yes
+
+    CHI_calculate_region_alliance_support = yes
+
+    CHI_classify_region_result = yes
+
+    CHI_save_region_workspace_to_shanxi = yes
+
+    CHI_update_shanxi_map_frame = yes
+}
+
+# =========================================================
+# 08C-4
+# 山西地图显示映射
+#
+# State:
+# 1 = 蓝
+# 2 = 摇摆
+# 3 = 红
+#
+# DDS:
+# Frame 1 = 白
+# Frame 2 = 蓝
+# Frame 3 = 红
+# Frame 4 = 摇摆
+# =========================================================
+
+CHI_update_shanxi_map_frame = {
+
+    if = {
+        limit = {
+            check_variable = {
+                CHI_SX_map_state = 1
+            }
+        }
+
+        set_variable = {
+            CHI_shanxi_map_frame = 2
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_SX_map_state = 2
+            }
+        }
+
+        set_variable = {
+            CHI_shanxi_map_frame = 4
+        }
+    }
+
+    else_if = {
+        limit = {
+            check_variable = {
+                CHI_SX_map_state = 3
+            }
+        }
+
+        set_variable = {
+            CHI_shanxi_map_frame = 3
+        }
+    }
+}
+
+

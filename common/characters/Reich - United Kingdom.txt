@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country Leaders
+	ENG_Roy_Jenkins = {
+		name = ENG_Roy_Jenkins
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ENG/ENG_Roy_Jenkins.png"
+			}
+		}
+		country_leader = {
+			desc = " "
+			ideology = paternalism_left_wing_corporatism_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}

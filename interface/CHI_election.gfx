@@ -1,0 +1,95 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_CHI_election_map_base"
+        texturefile = "gfx/interface/CHI/CHI_election_gui/CHI_election_map_base_1000x600.dds"
+    }
+
+    spriteType = {
+        name = "GFX_CHI_guangdong_fill"
+        texturefile = "gfx/interface/CHI/CHI_election_gui/CHI_guangdong_fill_4frames.dds"
+        noOfFrames = 4
+    }
+
+    spriteType = {
+        name = "GFX_CHI_xinjiang_fill"
+        texturefile = "gfx/interface/CHI/CHI_election_gui/CHI_xinjiang_fill_4frames.dds"
+        noOfFrames = 4
+    }
+
+    spriteType = {
+        name = "GFX_CHI_liaoning_fill"
+        texturefile = "gfx/interface/CHI/CHI_election_gui/CHI_liaoning_fill_4frames.dds"
+        noOfFrames = 4
+    }
+
+    spriteType = {
+        name = "GFX_CHI_jilin_fill"
+        texturefile = "gfx/interface/CHI/CHI_election_gui/CHI_jilin_fill_4frames.dds"
+        noOfFrames = 4
+    }
+
+    spriteType = {
+        name = "GFX_CHI_heilongjiang_fill"
+        texturefile = "gfx/interface/CHI/CHI_election_gui/CHI_heilongjiang_fill_4frames.dds"
+        noOfFrames = 4
+    }
+
+    spriteType = {
+        name = "GFX_CHI_xingan_fill"
+        texturefile = "gfx/interface/CHI/CHI_election_gui/CHI_xingan_fill_4frames.dds"
+        noOfFrames = 4
+    }
+
+    spriteType = {
+        name = "GFX_CHI_wusuli_fill"
+        texturefile = "gfx/interface/CHI/CHI_election_gui/CHI_wusuli_fill_4frames.dds"
+        noOfFrames = 4
+    }
+
+    spriteType = {
+        name = "GFX_CHI_haishenwei_fill"
+        texturefile = "gfx/interface/CHI/CHI_election_gui/CHI_haishenwei_fill_4frames.dds"
+        noOfFrames = 4
+    }
+
+    spriteType = {
+        name = "GFX_CHI_rehe_fill"
+        texturefile = "gfx/interface/CHI/CHI_election_gui/CHI_rehe_fill_4frames.dds"
+        noOfFrames = 4
+    }
+
+    spriteType = {
+        name = "GFX_CHI_shanxi_fill"
+        texturefile = "gfx/interface/CHI/CHI_election_gui/CHI_shanxi_fill_4frames.dds"
+        noOfFrames = 4
+    }
+
+    spriteType = {
+        name = "GFX_CHI_guangdong_selected"
+        texturefile = "gfx/interface/CHI/CHI_election_gui/CHI_guangdong_selected_1000x600.dds"
+
+        transparencecheck = yes
+    }
+
+    spriteType = {
+        name = "GFX_CHI_hitbox_64x48"
+        texturefile = "gfx/interface/CHI/CHI_election_gui/hitboxes/CHI_hitbox_64x48.dds"
+    }
+
+    spriteType = {
+        name = "GFX_CHI_hitbox_40x40"
+        texturefile = "gfx/interface/CHI/CHI_election_gui/hitboxes/CHI_hitbox_40x40.dds"
+    }
+
+    spriteType = {
+        name = "GFX_CHI_hitbox_25x25"
+        texturefile = "gfx/interface/CHI/CHI_election_gui/hitboxes/CHI_hitbox_25x25.dds"
+    }
+
+    spriteType = {
+        name = "GFX_CHI_lifayuan_base"
+        texturefile = "gfx/interface/CHI/CHI_election_gui/GFX_CHI_lifayuan_base.png"
+    }
+}
+

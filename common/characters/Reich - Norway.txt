@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country Leaders
+	NOR_Kare_Willoch = {
+		name = NOR_Kare_Willoch
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOR/NOR_Kare_Willoch.png"
+			}
+		}
+		country_leader = {
+			desc = " "
+			ideology = conservatism_liberal_corporatism_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}

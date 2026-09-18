@@ -403,17 +403,17 @@ add_to_faction = GUY
 add_to_faction = SUR
 add_to_faction = BLZ
 add_to_faction = HAI
-add_to_faction = JAM
-add_to_faction = BRB
 add_to_faction = BAH
-add_to_faction = SKN
-add_to_faction = SVI
-add_to_faction = TRI
 add_to_faction = FAR
 add_to_faction = FIJ
 add_to_faction = PAP
 add_to_faction = SAF
-
+add_to_faction = CUB
+add_to_faction = WIN
+add_to_faction = DOM
+add_to_faction = CUR
+add_to_faction = CLL
+add_to_faction = GUC
 
 set_research_slots = 4 #KD's Notes - 5 is excessive, you always end up researching 1970 tech in 1965
 set_convoys = 500

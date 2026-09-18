@@ -1,10 +1,8 @@
-capital = 566
+capital = 1442
 
 add_manpower = 12500
 
-set_province_controller = 10543
-set_province_controller = 8671
-set_province_controller = 1810
+
 
 oob = "IRK_1962"
 set_air_oob = "IRK_1962_air"
@@ -27,14 +25,17 @@ set_politics = {
 }
 
 set_popularities = {
-	communist = 65
+	communist = 35
+	communist_2 = 29
+	communist_3 = 15
 	ultranationalism = 0
 	national_socialism = 0
-	socialist = 35
-	progressivism = 0
+	socialist = 0
+	progressivism = 11
+	progressivism_2 = 3
 	liberalism = 0
-
-	conservatism = 0
+	liberal_conservatism = 1
+	conservatism = 6
 	paternalism = 0
 	despotism = 0
 	fascism = 0
@@ -47,6 +48,13 @@ recruit_character = IRK_Generic_Vacant
 # Leaders
 recruit_character = IRK_Genrikh_Yagoda
 recruit_character = IRK_Sablinite_Sympathizers
+recruit_character = IRK_Yuri_Andropov
+recruit_character = IRK_Konstantin_Chernenko
+recruit_character = IRK_Lazar_Kaganovich
+recruit_character = IRK_Alexander_Yakovlev
+recruit_character = IRK_Moisey_Vainberg
+recruit_character = IRK_gelurenma
+recruit_character = IRK_Boris_Yeltsin
 
 # Ministers
 recruit_character = IRK_Yakov_Agranov
@@ -77,29 +85,12 @@ recruit_character = IRK_Zhambal_Gomboev
 
 set_country_flag = is_russian_nation
 
-
 ###Playable
 set_country_flag = tno_playable_country
 
-#ECON_SPHERE
-set_country_flag = HAS_ECON_SPHERE
-
-#econtype
-set_variable = { TNO_economy_type = token:Econ_Type_Capitalism }
-set_variable = { TNO_economy_subtype = token:Econ_Subtype_Yagoda}
-
-### DIPLOMACY ###
-create_faction_from_template = { name = Moscowpakt icon = GFX_moscowpakt template = faction_template_generic }
-add_faction_goal_slot = { category = short_term  value = -10 }
-add_faction_goal_slot = { category = medium_term value = -10 }
-add_faction_goal_slot = { category = long_term   value = -10 }
-add_to_faction = AFG
-add_to_faction = RFI
-add_to_faction = IRA
-
-
 add_ideas = {
 	##STANDARD##
+	
 	
 	##MINISTERS##
 	IRK_Yakov_Agranov_hog
@@ -159,6 +150,21 @@ set_research_slots = 3
 
 set_country_flag = tno_defined_startup_effectiveness
 
+#ECON_SPHERE
+set_country_flag = HAS_ECON_SPHERE
+
+
+create_faction_from_template = { name = Moscowpakt icon = GFX_moscowpakt template = faction_template_generic }
+add_faction_goal_slot = { category = short_term  value = -10 }
+add_faction_goal_slot = { category = medium_term value = -10 }
+add_faction_goal_slot = { category = long_term   value = -10 }
+add_to_faction = IRK
+add_to_faction = RFI
+add_to_faction = IRA
+add_to_faction = AFG
+
+
+
 
 # ECONOMIC LAWS
 set_variable = { tno_trade_laws_effectiveness = 50 }
@@ -192,7 +198,7 @@ set_variable = { tno_military_supervision_effectiveness = 60 }
 set_variable = { tno_training_effectiveness = 55 }
 set_variable = { tno_draft_exemptions_effectiveness = 75 }
 
-load_focus_tree = 
+load_focus_tree = IRK_intro
 
 set_technology = {
 	basic_train = 1

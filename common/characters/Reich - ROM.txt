@@ -1,0 +1,18 @@
+characters = {
+	# Starting Country Leaders
+	ROM_Georgi_Lecausa = {
+		name = ROM_Georgi_Lecausa
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ROM/ROM_Georgi_Lecausa.png"
+			}
+		}
+		country_leader = {
+			desc = " "
+			ideology = conservatism_agrarianism_subtype
+			traits = { }
+			expire = "2019.1.1.1"
+			id = -1
+		}
+	}
+}

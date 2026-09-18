@@ -1,0 +1,6 @@
+SpriteTypes = {
+	SpriteType = {
+		name = "GFX_focus_Happy_New_Year"
+		texturefile = "gfx/interface/goals/CHI/focus_Happy_New_Year.dds"
+	}
+}

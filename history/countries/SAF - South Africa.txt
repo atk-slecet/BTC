@@ -52,6 +52,8 @@ set_variable = { SAF_free_prod_units = 12 }
 
 country_lock_all_division_template = yes
 
+add_opinion_modifier = { target = ENG modifier = ENG_illegitimate_government }
+
 add_ideas = {
 	#
 

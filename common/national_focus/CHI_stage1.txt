@@ -1,7 +1,11 @@
 shared_focus = {
     #新年快乐#
     id = Happy_New_Year
+<<<<<<< HEAD
     icon GFX_focus_Happy_New_Year
+=======
+    icon = GFX_focus_Happy_New_Year
+>>>>>>> 8c93f7d0e4e07a45a68f2d587f6a02f468e32124
     x = 5
     y = 0
     cost = 1

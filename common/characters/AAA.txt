@@ -1,0 +1,19 @@
+characters = {
+	# Leaders
+	AAA_nixon = {
+		name = AAA_nixon
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Portrait_Mr_Placeholder_the_Third.png"
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			traits = {}
+			expire = "1999.1.1.1"
+			ideology = socialist_left_wing_nationalism_subtype
+			id = -1
+		}
+	}
+}
